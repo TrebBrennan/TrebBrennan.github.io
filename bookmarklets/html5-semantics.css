@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{padding:40px;}
+
+header,
+nav,
+main,
+article,
+footer,
+[role="application"],
+[role="banner"],
+[role="complementary"],
+[role="contentinfo"],
+[role="form"],
+[role="main"],
+[role="navigation"],
+[role="search"] {
+	padding:40px;
+	border:solid 2px;
+	margin-bottom:40px;
+	position:relative;
+	background-color:rgba(0,0,0,0.05);
+}
+
+header:before,
+nav:before,
+main:before,
+article:before,
+footer:before {
+	position:absolute; top:0; left:0;
+	font-weight:bold;
+	background-color:#222;
+	color:white;
+	padding:0.40px 0.5em;
+}
+header:before {
+	content:'header' !important;
+}
+nav:before {
+	content:'nav' !important;
+}
+main:before {
+	content:'main' !important;
+}
+article:before {
+	content:'article' !important;
+}
+footer:before {
+	content:'footer' !important;
+}
+
+/*http://www.html5accessibility.com/tests/landmarks.html*/
+[role="application"]:after,
+[role="banner"]:after,
+[role="complementary"]:after,
+[role="contentinfo"]:after,
+[role="form"]:after,
+[role="main"]:after,
+[role="navigation"]:after,
+[role="search"]:after{
+	position:absolute; top:0; right:0;
+	font-weight:bold;
+	background-color:#222;
+	color:white;
+	padding:0.40px 0.5em;
+	
+	content:''attr(role)'' !important;
+}
+
+[alt]{
+	content:'alt:'attr(alt)'' !important;
+}
+
+section{
+	padding:40px;
+	border:dashed 2px;
+	margin-bottom:40px;
+	position:relative;
+	background-color:rgba(0,0,0,0.05);
+}
+section:before {
+	background-color:#222;
+	color:white;
+	padding:0.40px 0.5em;
+	position:absolute; top:-2px; left:-2px;
+	font-weight:bold;
+	content:'section' !important;
+}
+
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before,
+p:before,
+ul:before,
+ol:before,
+li:before{
+	background-color:#222;
+	color:white;
+	padding:0.40px 0.5em;
+	margin-right:0.5em;
+}
+h1:before{
+	content:'H1' !important;
+}
+h2:before{
+	content:'H2' !important;
+}
+h3:before{
+	content:'H3' !important;
+}
+h4:before{
+	content:'H4' !important;
+}
+h5:before{
+	content:'H5' !important;
+}
+h6:before{
+	content:'H6' !important;
+}
+p:before{
+	content:'p' !important;
+}
+ul:before{
+	content:'ul' !important;
+    margin-left: -1em;
+}
+ol:before{
+	content:'ol' !important;
+    margin-left: -1em;
+}
+li:before{
+	content:'li' !important;
+}
+

@@ -1,0 +1,73 @@
+{
+  "title": "Dead tree lookout",
+  "setting": "You are standing on a rocky outcrop #txt01. Nestled in the #txt02 valley below you can #txt03 of a small town. #txt04",
+
+  "settingVars": {
+    "txt01":[
+      {"00:00:00":"deep shadows cast by the moonlight envelop the hills"},
+      {"03:00:00":"the pale light of dawn still soft against the night sky"},
+      {"05:00:00":"the golden glow of the morning sun stretches over the hills"},
+      {"09:00:00":"the sun beats down bright and glaring"},
+      {"15:00:00":"a low sun casts long jagged shadows across the hills"},
+      {"21:30:00":"deep shadows cast by the moonlight envelop the hills"}
+    ],
+
+    "txt02":[
+      {"00:00:00":"silent"},
+      {"03:00:00":"misty"},
+      {"05:00:00":"dim"},
+      {"09:00:00":"dusy"},
+      {"15:00:00":"warm"},
+      {"21:30:00":"silent"}
+    ],
+
+    "txt03":[
+      {"00:00:00":"just make out the dark geometric shapes"},
+      {"03:00:00":"see the quite buildings"},
+      {"05:00:00":"see morning movements"},
+      {"09:00:00":"see the bustle"},
+      {"15:00:00":"see the flicker from the lamp lights"},
+      {"21:30:00":"just make out the dark geometric shapes"}
+    ],
+
+    "txt04":[
+      {"00:00:00":"The deathly silence of the night is deeply unsettling."},
+      {"03:00:00":"The cool breeze of dawn carries the low rhythmic chirp of insects across the wilderness."},
+      {"05:00:00":"The songs of waking birds can be heard above the the gentle rustle of a light breeze."},
+      {"09:00:00":"The voices of the town folk echo up from the valley, cutting through the still hot air."},
+      {"15:00:00":"The faint and haunting tune of the town saloon is carried up the valley in the evening wind."},
+      {"21:30:00":"The deathly silence of the night is deeply unsettling."}
+    ]
+  },
+
+  "exits": {
+    "exit1":[
+      {"00:00:00":"A dark [rocky trail](#room-02) leads towards town."},
+      {"05:30:00":"A [rocky trail](#room-02) leads towards town."},
+      {"21:30:00":"A dark [rocky trail](#room-02) leads towards town."}
+    ],
+    "exit2":[
+      {"00:00:00":"Further up the hill you can barely see a [small hut.](#room-03)."},
+      {"05:30:00":"Further up the hill you can see a [small hut.](#room-03)."},
+      {"21:30:00":"Further up the hill you can barely see a [small hut.](#room-03)."}
+    ]
+  },
+
+  "events":[
+    {"00:30:00":"A light gust of wind teases your hair."},
+    {"05:00:00":"A strong wind blows a cloud of dust across the valley."},
+    {"05:30:00":"The silence is broken by the wail of a Rooster calling in dawn."},
+    {"06:30:00":"A grey hare silently slips into view."},
+    {"06:31:00":"A grey hare sits quietly chewing a tuft of grass."},
+    {"06:33:00":"A grey hare startled by your presence bounds off up the hill."},
+    {"10:00:00":"You shield your eyes as a strong gust of wind kicks up a cloud of sand."},
+    {"11:20:00":"The shrill cries of a hawk call out somewhere in the mountains."},
+    {"11:25:00":"High over the valley a single hawk circles the sky."},
+    {"13:40:00":"A small red breasted bird lands on a shrub nearby watching you curiously."},
+    {"13:41:00":"[A,The] small bird flits from branch to branch chipping peacefully."},
+    {"13:42:00":"[A,The] flits off into the distance."},
+    {"17:50:00":"Whooping and laughing can be heard from the town saloon."},
+    {"18:30:00":"A dog barks somewhere within the town."},
+    {"20:30:00":"The howl of a coyote echos distantly in the hills."}
+  ]
+}
