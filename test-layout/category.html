@@ -1,4 +1,9 @@
-<html>
+
+<!DOCTYPE html>
+<!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -7,7 +12,7 @@
 
 <body>
 
-<header style="" id="top">
+<header id="top" style="background-image: url('img/hero-01.png');">
   <div class="ribbon">
     <div class="wrapper clearfix">
       <div class="govau"><img src="img/govau-star.svg" />GOV.AU</div>
@@ -16,10 +21,22 @@
     </div>
   </div><!--ribbon-->
 
-  <div class="intro wrapper">
+  <div class="wrapper">
     <div class="banner clearfix">
-      <h1><a href="index.html">Service Manual</a></h1>
-      <div class="searchbox">search</div><!--searchbox-->
+      <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
+      <div class="searchbox">
+
+        <div class="site-search">
+          <form action="/search/" role="search" method="get">
+            <label for="site-search-text">Search dta.gov.au</label>
+            <div class="site-search-border">
+              <input type="search" name="q" id="site-search-text" title="Search" class="search-input">
+              <input class="submit" type="submit" value="Search">
+            </div>
+          </form>
+        </div>
+
+      </div><!--searchbox-->
     </div><!--header-->
 
     <div class="promo padLrg">
@@ -57,8 +74,9 @@ Section: why
 <section id="why" class="padLrg blue-on-grey">
   <div class="wrapper clearfix">
 
-    <div class="col-6">
       <p class="psudoH">Why <span></span></p>
+
+    <div class="col-6">
       <h2 class="hugeHeading">Why is user research important?</h2>
       <p>To deliver a service that meets your users’ needs, you have to understand:</p>
       <ul>
@@ -276,8 +294,8 @@ Footer
 <div class="legal">
   <div class="wrapper">
     <h2>License &amp; copyright</h2>
-    <p>This page uses content adapted from the UK Government Digital Service under the Open Government Licence v3.0.</p>
-    <p>DTA Service manual on GitHub</p>
+    <p>This page uses content adapted from the <a href="#">UK Government Digital Service</a> under the <a href="#">Open Government Licence v3.0.</a></p>
+    <p><a href="#">DTA Service manual on GitHub</a></p>
     <p>With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.</p>
     <p><a href="#top" class="back-to-top">Back to top</a></p>
   </div>
@@ -300,5 +318,48 @@ Footer
     </div>
   </div><!--wrapper-->
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+document.documentElement.className = 'js';
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
 
 </html>

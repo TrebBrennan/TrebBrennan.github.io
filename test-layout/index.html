@@ -1,4 +1,8 @@
-<html>
+
+<!DOCTYPE html>
+<!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -6,103 +10,337 @@
 
 <body>
 
-<header>
+<header style="background:#224A61">
   <div class="ribbon">
-    <div class="wrapper">
-      User Research
+    <div class="wrapper clearfix">
+      <div class="govau"><img src="img/govau-star.svg" />GOV.AU</div>
+      <div class="official">An official website of the Australian Government</div>
+      <button><span>How to check</span></button>
     </div>
-  </div>
+  </div><!--ribbon-->
 
 
   <div class="wrapper">
     <div class="banner clearfix">
-      <h1>Service Manual</h1>
-      <div class="searchbox">search</div><!--searchbox-->
+      <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
+      <div class="searchbox">
+
+        <div class="site-search">
+          <form action="/search/" role="search" method="get">
+            <label for="site-search-text">Search dta.gov.au</label>
+            <div class="site-search-border">
+              <input type="search" name="q" id="site-search-text" title="Search" class="search-input">
+              <input class="submit" type="submit" value="Search">
+            </div>
+          </form>
+        </div>
+
+      </div><!--searchbox-->
     </div><!--header-->
 
-    <div class="intro">
+    <div class="intro padLrg">
+      <h2>Service manual</h2>
       <p>Helping government teams create and run great digital services for Australia.</p>
     </div><!--intro-->
+
   </div>
 </header>
 
 
-<section class="promo">
+<!--
+====================================================
+Section: why
+====================================================
+-->
+<section id="dss" class="padLrg white-on-blue">
+  <div class="wrapper clearfix">
+
+      <p class="psudoH">Digital Service Standard <span></span></p>
+
+    <div class="col-6">
+      <h2 class="hugeHeading">Digital Service Standard</h2>
+      <p>The Digital Service Standard ensures digital teams build government services that are simple, clear and fast.</p>
+    </div>
+
+    <div class="dss-callout">
+      <div class="content">
+        <h3>What is the Digital Service Standard?</h3>
+      </div>
+      <a href="#" class="dss-cta">Read the Criteria </a>
+    </div>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+<!--
+====================================================
+Latest categories
+====================================================
+-->
+<section id="guides2" class="padLrg blue-on-grey">
+  <div class="wrapper clearfix">
+
+      <p class="psudoH">Getting started  <span></span></p>
+      <h2 class="hugeHeading">Latest categories</h2>
+
+      <ul class="cards clearfix">
+        <li>
+          <a href="category.html" class="white-on-bond">
+            <img src="img/tile-01.jpg"/>
+            <div class="content">
+              <h3>User research</h3>
+              <p>User research helps teams learn about users and create services that meet their needs.</p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="white-on-teal">
+            <div class="spacer"><!--img--></div>
+            <div class="content">
+              <h3>Managing a service team</h3>
+              <p>Managing a service team: recruiting the people you need, training and working with contractors.</p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="white-on-purple">
+            <div class="spacer"><!--img--></div>
+            <div class="content">
+              <h3>Agile delivery</h3>
+              <p>How to work in an agile way: principles, tools and governance.</p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="white-on-grey">
+            <div class="spacer"><!--img--></div>
+            <div class="content">
+              <h3>Accessibility</h3>
+              <p>Meeting the accessibility standard, and how to test your service.</p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="white-on-blue">
+            <div class="spacer"><!--img--></div>
+            <div class="content">
+              <h3>Service assessments</h3>
+              <p>Managing a service team: recruiting the people you need, training and working with contractors.</p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="disabled">
+            <div class="spacer"><!--img--></div>
+            <div class="content">
+              <h3>Coming soon</h3>
+              <p>Helping government teams create and run great digital services that meet the Digital Service Standard.</p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+
+<!--
+====================================================
+Section: guides-1
+====================================================
+-->
+<section id="guides" class="padLrg grey-on-white">
+  <div class="wrapper clearfix">
+
+      <p class="psudoH">guides  <span></span></p>
+      <h2 class="hugeHeading">Featured topics</h2>
+
+      <ul class="cards clearfix">
+        <li>
+          <a href="#">
+            <div class="content">
+              <h3>Getting support for user research</h3>
+              <p>How to get support in your agency to do user research.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Planning user research</h3>
+            <p>How to create a user research plan.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>User research is a team sport</h3>
+            <p>Why everyone in the team needs to do user research.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Paying incentives for user research</h3>
+            <p>How to pay users for their time.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Interviewing users</h3>
+            <p>How to do a good interview.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Synthesising user research</h3>
+            <p>How to act on your user research.</p>
+          </div>
+        </a>
+        </li>
+
+      </ul>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+
+
+
+<!--
+====================================================
+Section: guides-2
+====================================================
+-->
+<section id="guides2" class="padLrg blue-on-grey">
+  <div class="wrapper clearfix">
+
+      <p class="psudoH">guides  <span></span></p>
+      <h2 class="hugeHeading">Examples and case studies</h2>
+
+      <ul class="cards clearfix">
+        <li>
+          <a href="#">
+            <img src="https://www.dta.gov.au/images/blog-content/user-research-hero.jpg"/>
+            <div class="content">
+              <h3>Ensuring informed consent in user research</h3>
+              <p>How to get support in your agency to do user research.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://www.dta.gov.au/images/blog-content/walkingthetalk-content.JPG"/>
+            <div class="content">
+              <h3>Researching how people register a new business</h3>
+              <p>How to create a user research plan.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://www.dta.gov.au/images/blog-content/walkingthetalk-content.JPG"/>
+            <div class="content">
+              <h3>Finding out what new mothers need</h3>
+              <p>Why everyone in the team needs to do user research.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+
+<!--
+====================================================
+Footer
+====================================================
+-->
+<div class="legal">
   <div class="wrapper">
-    <h2>Digital Service Standard</h2>
-    <p>The Digital Service Standard ensures digital teams build government services that are simple, clear and fast.</p>
-    <a href="https://www.dta.gov.au/standard/">Digital Service Standard</a>
+    <h2>License &amp; copyright</h2>
+    <p>This page uses content adapted from the <a href="#">UK Government Digital Service</a> under the <a href="#">Open Government Licence v3.0.</a></p>
+    <p><a href="#">DTA Service manual on GitHub</a></p>
+    <p>With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.</p>
+    <p><a href="#top" class="back-to-top">Back to top</a></p>
   </div>
-</section>
-
-<section class="topics"><div class="wrapper">
-
-  <h2>Topics</h2>
-
-  <ul class="cats clearfix">
-    <li>
-      <a href="category.html" class="brochure">
-        <h3>Starting a team</h3>
-      </a>
-    </li>
-    <li>
-      <a href="category.html" class="brochure">
-        <h3>User research</h3>
-      </a>
-    </li>
-    <li>
-      <a href="category.html" class="brochure">
-        <h3>Accessibility</h3>
-      </a>
-    </li>
-    <li>
-      <a href="category.html" class="brochure comingsoon">
-        <h3>coming soon
-          <br>Agile</h3>
-
-      </a>
-    </li>
-  </ul>
-
-</div></section>
-
-
-<section class="guides"><div class="wrapper">
-
-  <h2>Guides</h2>
-
-  <ul class="cats clearfix">
-    <li>
-      <a href="#" class="brochure">
-        <h3>Digital Service Standard</h3>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="brochure">
-        <h3>Content Guide</h3>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="brochure">
-        <h3>Design Guide</h3>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="brochure">
-        <h3>User research</h3>
-      </a>
-    </li>
-  </ul>
-
-</div></section>
-
+</div><!--legal-->
 
 <footer>
   <div class="wrapper">
-    <p>With the exception of the <a href="https://www.dpmc.gov.au/government/commonwealth-coat-arms">Commonwealth Coat of Arms</a> and where otherwise noted, this work is <a href="https://github.com/govau/content-guide/blob/master/LICENSE.md">licensed under the CC BY 4.0 license.</a></p>
-  </div>
+    <div class="coat-of-arms">
+      &nbsp;
+    </div>
+    <div class="links">
+      <ul class="nav">
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Need help?</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+      <p>&copy; Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.</p>
+    </div>
+  </div><!--wrapper-->
 </footer>
 
 
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+document.documentElement.className = 'js';
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
 </html>
