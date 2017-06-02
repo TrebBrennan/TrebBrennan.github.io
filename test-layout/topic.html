@@ -1,95 +1,318 @@
-<html>
+
+<!DOCTYPE html>
+<!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
-
 </head>
 
 
 <body>
 
-<header style="">
+<header style="background:#224A61">
   <div class="ribbon">
-    <div class="wrapper">
-
-      <div>
-        <div class="govau">GOV.AU</div>
-        <div>An official website of the Australian Government</div>
-        <a href="#">How to check</a>
-      <div>
-
+    <div class="wrapper clearfix">
+      <div class="govau"><img src="img/govau-star.svg" />GOV.AU</div>
+      <div class="official">An official website of the Australian Government</div>
+      <button><span>How to check</span></button>
     </div>
-  </div>
+  </div><!--ribbon-->
 
 
   <div class="wrapper">
     <div class="banner clearfix">
-      <h1><a href="index.html">Service Manual</a></h1>
-      <!-- <div class="searchbox">search</div> -->
+      <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
+      <div class="searchbox">
+
+        <div class="site-search">
+          <form action="/search/" role="search" method="get">
+            <label for="site-search-text">Search dta.gov.au</label>
+            <div class="site-search-border">
+              <input type="search" name="q" id="site-search-text" title="Search" class="search-input">
+              <input class="submit" type="submit" value="Search">
+            </div>
+          </form>
+        </div>
+
+      </div><!--searchbox-->
     </div><!--header-->
+
+    <nav class="uikit-breadcrumbs uikit-breadcrumbs--inverted clearfix" aria-label="breadcrumb">
+    	<ul class="uikit-link-list uikit-link-list--inline">
+    		<li><a href="index.html">Service Manual</a></li>
+    		<li><a href="category.html">User research</a></li>
+    		<li>Synthesising user research</li>
+    	</ul>
+    </nav>
 
   </div>
 </header>
 
-<nav class="breadcrumbs">
-  <div class="wrapper">
-    <a href="index.html">home</a> &raquo;
-    <a href="index.html">User research</a>
-    Topic title
-  </div>
-</nav>
 
-
-<div>
+<!--
+====================================================
+Section: why
+====================================================
+-->
+<section id="dss" class="padLrg blue-on-grey">
   <div class="wrapper clearfix">
-    <div class="sidebar">
+
+    <p class="psudoH">user research guide <span></span></p>
+
+    <div class="col-6">
+      <h2 class="hugeHeading">Synthesising user research</h2>
+      <p class="abstract">How to understand your user research and how to feed it into your solution.</p>
+
+      <p>User research activities produce a lot of raw data, for example:</p>
       <ul>
+        <li>written and digital notes </li>
+        <li>sketches and photos</li>
+        <li>audio and video recordings</li>
+      </ul>
+      <p>You need to filter, organise and interpret this data so you can produce useful insights that will help you design and deliver your service.</p>
+      <p>Follow your user research plan and keep asking yourself ‘What’s the problem you’re trying to solve for the user?’</p>
+      <p>The way you do user research changes during the stages of the service design and delivery process.</p>
+    </div>
+
+
+    <div class="col-4 right">
+      <nav class="index-links">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#">Meeting the Digital Service Standard</a></li>
+          <li><a href="#">Plan analysis sessions</a></li>
+          <li><a href="#">Extract observations</a></li>
+          <li><a href="#">Sort observations</a></li>
+          <li><a href="#">Determine findings</a></li>
+          <li><a href="#">Decide actions</a></li>
+          <li><a href="#">Share your findings</a></li>
+          <li><a href="#">Case studies and examples</a></li>
+          <li><a href="#">Related guides</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+<!--
+====================================================
+Latest categories
+====================================================
+-->
+<section id="guides2" class="padLrg grey-on-white">
+  <div class="wrapper clearfix">
+
+    <div class="col-6">
+
+      <h2>Meeting the Digital Service Standard</h2>
+      <p>To pass Criteria 1: Understand user needs in your service assessments you must show that you’ve developed a deep understanding of your users, including those with the lowest level of digital access, skill and literacy.</p>
+      <p>The Digital Service Standard guides teams to build services that are simpler, clearer and faster.</p>
+
+      <h2>Plan analysis sessions</h2>
+      <p>Invite anyone who observed the user research to take part in the analysis session. You should do analysis as soon as you can after each round of research, while it is still fresh in people’s minds.</p>
+      <p>Involving lots of people helps your team make better decision. It reduces the risk of researcher bias and limits the influence of individual team members or stakeholders. It also means you can decide as a group what the next most important thing to work on should be.</p>
+      <p>Aim to spend 1 hour analysing every 2 hours of research.</p>
+
+    </div>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+
+
+
+<!--
+====================================================
+Section: guides-2
+====================================================
+-->
+<section id="guides2" class="padLrg blue-on-grey">
+  <div class="wrapper clearfix">
+
+      <p class="psudoH">guides  <span></span></p>
+      <h2 class="hugeHeading">Examples and case studies</h2>
+
+      <ul class="cards clearfix">
         <li>
-          <a href="#">Understanding user needs saves money</a>
-          <ul>
-            <li><a href="#">Level2</a></li>
-            <li><a href="#">Level2</a>
-              <ul>
-                <li><a href="#">Level3</a></li>
-                <li><a href="#">Level3</a></li>
-                <li><a href="#">Level3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Level2</a></li>
-          </ul>
+          <a href="#">
+            <img src="https://www.dta.gov.au/images/blog-content/user-research-hero.jpg"/>
+            <div class="content">
+              <h3>Ensuring informed consent in user research</h3>
+              <p>How to get support in your agency to do user research.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://www.dta.gov.au/images/blog-content/walkingthetalk-content.JPG"/>
+            <div class="content">
+              <h3>Researching how people register a new business</h3>
+              <p>How to create a user research plan.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://www.dta.gov.au/images/blog-content/walkingthetalk-content.JPG"/>
+            <div class="content">
+              <h3>Finding out what new mothers need</h3>
+              <p>Why everyone in the team needs to do user research.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
         </li>
       </ul>
-    </div>
 
-    <div class="content">
-      <h1>Putting the user at the centre of everything</h1>
-      <p>The first design principle of the <a href="/standard/">Digital Service Standard</a> is “users first”. To support this we are working to better understand what users really need, expect, prefer and actually experience when interacting with government.</p>
-      <p>There is no whole of government approach to understanding users. We are going to change that. Today there is a mountain of agency specific research but these results are often not shared and don’t take a whole of government view. The DTO has been collecting this research, analysing it and identifying key insights about user needs to share with the people designing and delivering government services.</p>
-      <p>Some of the key insights that we’ve found so far include:</p>
-      <p>The first design principle of the <a href="/standard/">Digital Service Standard</a> is “users first”. To support this we are working to better understand what users really need, expect, prefer and actually experience when interacting with government.</p>
-      <p>There is no whole of government approach to understanding users. We are going to change that. Today there is a mountain of agency specific research but these results are often not shared and don’t take a whole of government view. The DTO has been collecting this research, analysing it and identifying key insights about user needs to share with the people designing and delivering government services.</p>
-      <p>Some of the key insights that we’ve found so far include:</p>
-      <p>The first design principle of the <a href="/standard/">Digital Service Standard</a> is “users first”. To support this we are working to better understand what users really need, expect, prefer and actually experience when interacting with government.</p>
-      <p>There is no whole of government approach to understanding users. We are going to change that. Today there is a mountain of agency specific research but these results are often not shared and don’t take a whole of government view. The DTO has been collecting this research, analysing it and identifying key insights about user needs to share with the people designing and delivering government services.</p>
-      <p>Some of the key insights that we’ve found so far include:</p>
-      <p>The first design principle of the <a href="/standard/">Digital Service Standard</a> is “users first”. To support this we are working to better understand what users really need, expect, prefer and actually experience when interacting with government.</p>
-      <p>There is no whole of government approach to understanding users. We are going to change that. Today there is a mountain of agency specific research but these results are often not shared and don’t take a whole of government view. The DTO has been collecting this research, analysing it and identifying key insights about user needs to share with the people designing and delivering government services.</p>
-      <p>Some of the key insights that we’ve found so far include:</p>
-    </div>
+  </div><!--wrapper-->
+</section><!--why-->
+
+<!--
+====================================================
+Section: guides-1
+====================================================
+-->
+<section id="guides" class="padLrg grey-on-white">
+  <div class="wrapper clearfix">
+
+      <p class="psudoH">guides  <span></span></p>
+      <h2 class="hugeHeading">Related guides</h2>
+
+      <ul class="cards clearfix">
+        <li>
+          <a href="#">
+            <div class="content">
+              <h3>Getting support for user research</h3>
+              <p>How to get support in your agency to do user research.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Planning user research</h3>
+            <p>How to create a user research plan.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>User research is a team sport</h3>
+            <p>Why everyone in the team needs to do user research.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Paying incentives for user research</h3>
+            <p>How to pay users for their time.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Interviewing users</h3>
+            <p>How to do a good interview.</p>
+          </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="content">
+            <h3>Synthesising user research</h3>
+            <p>How to act on your user research.</p>
+          </div>
+        </a>
+        </li>
+
+      </ul>
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+
+
+<!--
+====================================================
+Footer
+====================================================
+-->
+<div class="legal">
+  <div class="wrapper">
+    <h2>License &amp; copyright</h2>
+    <p>This page uses content adapted from the <a href="#">UK Government Digital Service</a> under the <a href="#">Open Government Licence v3.0.</a></p>
+    <p><a href="#">DTA Service manual on GitHub</a></p>
+    <p>With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.</p>
+    <p><a href="#top" class="back-to-top">Back to top</a></p>
   </div>
-</div><!--main-->
-
-
-
+</div><!--legal-->
 
 <footer>
-  <div class="wrapper">
-    <p>Author: <a href="https://www.dta.gov.au/what-we-do/partnerships/communities/">Service design community</a></p>
-    <p>Last updated: 1 day ago</p>
-    <hr>
-    <p>This page uses content adapted from the UK <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a> under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0.</a></p>
-    <p>With the exception of the <a href="https://www.dpmc.gov.au/government/commonwealth-coat-arms">Commonwealth Coat of Arms</a> and where otherwise noted, this work is <a href="https://github.com/govau/content-guide/blob/master/LICENSE.md">licensed under the CC BY 4.0 license.</a></p>
-  </div>
+  <div class="wrapper clearfix">
+    <div class="coat-of-arms">
+      <img src="img/gov-logo.png"/>
+    </div>
+    <div class="links">
+      <ul class="nav">
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Need help?</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+      <p>&copy; Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license.</p>
+    </div>
+  </div><!--wrapper-->
 </footer>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+document.documentElement.className = 'js';
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
 
 </html>
