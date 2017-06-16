@@ -32,6 +32,9 @@ img {
 .padLrg {
   padding: 96px 0;
 }
+.padMed {
+  padding: 32px 0;
+}
 
 .col-6 {
   float: left;

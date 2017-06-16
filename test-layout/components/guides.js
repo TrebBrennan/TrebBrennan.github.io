@@ -24,7 +24,7 @@ var html = `
         </a>
         </li>
         <li>
-          <a href="#">
+          <a href="detail-guide.html">
             <div class="content">
             <h3>Content management<br>toolkit</h3>
             <p>Why everyone in the team needs to do user research.</p>

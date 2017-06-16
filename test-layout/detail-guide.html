@@ -9,39 +9,47 @@
 
 
 <body>
+  <header id="top">
+    <div class="ribbon">
+      <div class="wrapper clearfix">
+        <div class="govau"><img src="img/govau-star.svg" />GOV.AU</div>
+        <div class="official">An official website of the Australian Government</div>
+        <button><span>How to check</span></button>
+      </div>
+    </div><!--ribbon-->
 
-<header style="background:#224A61">
+    <div class="wrapper">
+      <div class="banner clearfix">
+        <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
+        <div class="searchbox">
 
-    <script src="components/ribbon.js"></script>
+          <div class="site-search">
+            <form action="/search/" role="search" method="get">
+              <label for="site-search-text">Search dta.gov.au</label>
+              <div class="site-search-border">
+                <input type="search" name="q" id="site-search-text" title="Search" class="search-input">
+                <input class="submit" type="submit" value="Search">
+              </div>
+            </form>
+          </div>
 
+        </div><!--searchbox-->
+      </div><!--header-->
 
-  <div class="wrapper">
-    <div class="banner clearfix">
-      <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
-      <div class="searchbox">
+      <div class="promo padMed" style="text-align:left; margin-left:0">
+          <h1>Content management toolkit</h1> <!--CATEGORY TITLE-->
+          <p>A guide to help Australian Government teams design simple, clear and fast content.</p><!--ABSTRACT-->
+      </div>
 
-        <div class="site-search">
-          <form action="/search/" role="search" method="get">
-            <label for="site-search-text">Search dta.gov.au</label>
-            <div class="site-search-border">
-              <input type="search" name="q" id="site-search-text" title="Search" class="search-input">
-              <input class="submit" type="submit" value="Search">
-            </div>
-          </form>
-        </div>
+      <nav class="uikit-breadcrumbs uikit-breadcrumbs--inverted clearfix" aria-label="breadcrumb">
+        <ul class="uikit-link-list uikit-link-list--inline">
+          <li><a href="index.html">Service Manual</a></li>
+          <li>Content management</li>
+        </ul>
+      </nav>
+    </div><!--intro-->
 
-      </div><!--searchbox-->
-    </div><!--header-->
-
-    <nav class="uikit-breadcrumbs uikit-breadcrumbs--inverted clearfix" aria-label="breadcrumb">
-    	<ul class="uikit-link-list uikit-link-list--inline">
-    		<li><a href="index.html">Service Manual</a></li>
-    		<li>Digital Service Standard</li>
-    	</ul>
-    </nav>
-
-  </div>
-</header>
+  </header>
 
 
 <!--
@@ -55,66 +63,8 @@ Section: why
     <!-- <p class="psudoH">user research guide <span></span></p> -->
 
     <div class="col-6">
-      <h2 class="hugeHeading">Digital Service Standard</h2>
-      <p class="abstract">The Digital Service Standard ensures digital teams build government services that are simple, clear and fast.</p>
 
-      <h2>The Criteria</h2>
-
-      <p>Government agencies will be expected to:</p>
-      <ol>
-    		<li>
-    			<h3><a href="/standard/1-user-needs/">Understand user needs</a></h3>
-    			<p>Understand user needs. Research to develop a deep knowledge of the users and their context for the service.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/2-multidisciplinary-team/">Have a multidisciplinary team</a></h3>
-    			<p>Establish a sustainable multidisciplinary team to design, build, operate and iterate the service, led by an experienced product manager with decision-making responsibility.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/3-agile-and-user-centred/">Agile and user-centred process</a></h3>
-    			<p>Design and build the service using the <a href="/standard/service-design-and-delivery-process/">service design and delivery process</a>, taking an agile and user-centred approach.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/4-tools-and-systems/">Understand tools and systems</a></h3>
-    			<p>Understand the tools and systems required to build, host, operate and measure the service and how to adopt, adapt or procure them.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/5-make-it-secure/">Make it secure</a></h3>
-    			<p>Identify the data and information the service will use or create. Put appropriate legal, privacy and security measures in place.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/6-consistent-and-responsive/">Consistent and responsive design</a></h3>
-    			<p>Build the service with responsive design methods using common design patterns and the style guide.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/7-open-standards-and-common-platforms/">Use open standards and common platforms</a></h3>
-    			<p>Build using open standards and common government platforms where appropriate.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/8-make-source-code-open/">Make source code open</a></h3>
-    			<p>Make all new source code open by default.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/9-make-it-accessible/">Make it accessible</a></h3>
-    			<p>Ensure the service is accessible to all users regardless of their ability and environment.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/10-test-the-service/">Test the service</a></h3>
-    			<p>Test the service from end to end, in an environment that replicates the live version.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/11-measure-performance/">Measure performance</a></h3>
-    			<p>Measure performance against KPIs set out in the guides. Report on public dashboard.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/12-non-digital-experience/">Don’t forget the non-digital experience</a></h3>
-    			<p>Ensure that people who use the digital service can also use the other available channels if needed, without repetition or confusion.</p>
-    		</li>
-    		<li>
-    			<h3><a href="/standard/13-encourage-use-of-the-digital-service/">Encourage everyone to use the digital service</a></h3>
-    			<p>Encourage users to choose the digital service and consolidate or phase out existing alternative channels where appropriate.</p>
-    		</li>
-    	</ol>
+      <p>Content</p>
 
     </div>
 
@@ -123,45 +73,11 @@ Section: why
       <nav>
         <ul>
         		<li>
-        			<a class="is-current is-active" href="/standard/">Digital Service Standard</a>
+        			<a class="is-current is-active" href="#"><strong>Content management</strong></a>
         			<ul>
-        				<li>
-        					<a class="" href="/standard/scope-of-standard/">Scope of Standard</a>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/moratorium/">Moratorium</a>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/meeting-standard/">Meeting the Standard</a>
-        					<ul>
-        						<li>
-        							<a class="" href="/standard/meeting-standard/staged-assessment-process/">Staged assessment process</a>
-        						</li>
-        					</ul>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/assessments/">Assessment reports</a>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/design-principles/">Design principles</a>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/service-design-and-delivery-process/">Service design and delivery process</a>
-        					<ul>
-        						<li>
-        							<a class="" href="/standard/service-design-and-delivery-process/discovery/">Discovery</a>
-        						</li>
-        					</ul>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/design-guides/">Guides</a>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/common-solutions/">Common solutions</a>
-        				</li>
-        				<li>
-        					<a class="" href="/standard/glossary/">Glossary</a>
-        				</li>
+        				<li><a class="" href="detail-guide-lvl1.html">Content Auditing</a>
+                <li><a class="" href="detail-guide-lvl1.html">UX writing</a></li>
+                <li><a class="" href="detail-guide-lvl1.html">Buy in</a></li>
         			</ul>
         		</li>
         	</ul>
