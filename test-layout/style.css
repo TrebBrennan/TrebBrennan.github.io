@@ -702,7 +702,8 @@ sidebar
     line-height: 52px;
 }
 
-.col-4.right{
+.col-4.right,
+.col-3.right{
   float: right;
 }
 

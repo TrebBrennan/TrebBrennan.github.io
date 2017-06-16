@@ -11,8 +11,15 @@
 <body>
 
 <header style="background:#224A61">
+  <div class="ribbon">
+    <div class="wrapper clearfix">
+      <div class="govau"><img src="img/govau-star.svg" />GOV.AU</div>
+      <div class="official">An official website of the Australian Government</div>
+      <button><span>How to check</span></button>
+    </div>
+  </div><!--ribbon-->
 
-  <script src="components/ribbon.js"></script>
+
   <div class="wrapper">
     <div class="banner clearfix">
       <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
@@ -31,10 +38,13 @@
       </div><!--searchbox-->
     </div><!--header-->
 
-    <div class="intro padLrg">
-      <h2>Service manual</h2>
-      <p>Helping government teams create and run great digital services for Australia.</p>
-    </div><!--intro-->
+    <nav class="uikit-breadcrumbs uikit-breadcrumbs--inverted clearfix" aria-label="breadcrumb">
+    	<ul class="uikit-link-list uikit-link-list--inline">
+    		<li><a href="index.html">Service Manual</a></li>
+    		<li><a href="articles.html">Articles</a></li>
+    		<li>Sketching in code to build online services</li>
+    	</ul>
+    </nav>
 
   </div>
 </header>
@@ -45,49 +55,40 @@
 Section: why
 ====================================================
 -->
-<section id="dss" class="padLrg white-on-blue">
+<section id="dss" class="padLrg">
   <div class="wrapper clearfix">
 
-      <p class="psudoH">Digital Service Standard <span></span></p>
-
     <div class="col-6">
-      <h2 class="hugeHeading">Digital Service Standard</h2>
-      <p>The Digital Service Standard ensures digital teams build government services that are simple, clear and fast.</p>
+      <h2 class="hugeHeading">Sketching in code to build online services</h2>
+      <p>Simon Schwartz — Apr 13, 2017</p>
+
+      <img src="https://www.dta.gov.au/images/blog-content/sketching-in-code-banner.jpg"/>
+
+      <p>A great online service is the result of bringing together excellent design and code. To deliver these services it is critical designers and developers work together.</p>
+      <p>It is no use if a designer gives a developer a set of high fidelity specs that don’t consider the constraints of the technology the product is being built in, or the browsers it will be displayed on.</p>
+      <p>Luckily, this is a pretty easy problem to solve — allow designers and developer to work closely together, and sketch in code. At the DTA, this approach is business as usual, and produces great results.</p>
+
     </div>
 
-    <div class="dss-callout">
-      <div class="content">
-        <h3>What is the Digital Service Standard?</h3>
-      </div>
-      <a href="dss.html" class="dss-cta">Read the Criteria </a>
+    <div class="col-3 right">
+      <nav>
+        <h3>Articles</h3>
+        <ul>
+          <li><a href="#">Ensuring informed consent in user research</a></li>
+          <li><a href="#">Researching how people register a new business</a></li>
+          <li><a href="#">Finding out what new mothers need</a></li>
+        </ul>
+
+        <h4>Tags</h4>
+        <ul>
+          <li>Tag</li>
+          <li>Tag</li>
+        </ul>
+      </nav>
     </div>
 
   </div><!--wrapper-->
 </section><!--why-->
-
-<!--
-====================================================
-Latest categories
-====================================================
--->
-<script src="components/categories.js"></script>
-
-
-<!--
-====================================================
-Section: guides-1
-====================================================
--->
-<script src="components/guides.js"></script>
-
-
-
-<!--
-====================================================
-Section: guides-2
-====================================================
--->
-<script src="components/cases.js"></script>
 
 
 <!--
@@ -97,8 +98,6 @@ Footer
 -->
 <script src="components/legal.js"></script>
 <script src="components/footer.js"></script>
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>

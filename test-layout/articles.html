@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if lte IE 7]>     <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
@@ -11,8 +11,15 @@
 <body>
 
 <header style="background:#224A61">
+  <div class="ribbon">
+    <div class="wrapper clearfix">
+      <div class="govau"><img src="img/govau-star.svg" />GOV.AU</div>
+      <div class="official">An official website of the Australian Government</div>
+      <button><span>How to check</span></button>
+    </div>
+  </div><!--ribbon-->
 
-  <script src="components/ribbon.js"></script>
+
   <div class="wrapper">
     <div class="banner clearfix">
       <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
@@ -31,63 +38,73 @@
       </div><!--searchbox-->
     </div><!--header-->
 
-    <div class="intro padLrg">
-      <h2>Service manual</h2>
-      <p>Helping government teams create and run great digital services for Australia.</p>
-    </div><!--intro-->
+    <nav class="uikit-breadcrumbs uikit-breadcrumbs--inverted clearfix" aria-label="breadcrumb">
+      <ul class="uikit-link-list uikit-link-list--inline">
+      	<li><a href="index.html">Service Manual</a></li>
+      	<li>Articles</li>
+      </ul>
+    </nav>
 
   </div>
 </header>
 
 
+
+
 <!--
 ====================================================
-Section: why
+Section: guides
 ====================================================
 -->
-<section id="dss" class="padLrg white-on-blue">
+<section id="guides" class="padLrg grey-on-white">
   <div class="wrapper clearfix">
 
-      <p class="psudoH">Digital Service Standard <span></span></p>
+<div class="col-3">
+  <h2 class="hugeHeading">Articles</h2>
+  <h3>Tags</h3>
+  <ul>
+    <li>Tag</li>
+    <li>Tag</li>
+  </ul>
+  </ul>
+</div>
 
-    <div class="col-6">
-      <h2 class="hugeHeading">Digital Service Standard</h2>
-      <p>The Digital Service Standard ensures digital teams build government services that are simple, clear and fast.</p>
-    </div>
-
-    <div class="dss-callout">
-      <div class="content">
-        <h3>What is the Digital Service Standard?</h3>
-      </div>
-      <a href="dss.html" class="dss-cta">Read the Criteria </a>
-    </div>
-
+<div class="col-9">
+      <ul class="cards clearfix">
+        <li>
+          <a href="article.html">
+            <img src="https://www.dta.gov.au/images/blog-content/user-research-hero.jpg"/>
+            <div class="content">
+              <h3>Ensuring informed consent in user research</h3>
+              <p>How to get support in your agency to do user research.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="article.html">
+            <img src="https://www.dta.gov.au/images/blog-content/walkingthetalk-content.JPG"/>
+            <div class="content">
+              <h3>Researching how people register a new business</h3>
+              <p>How to create a user research plan.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="article.html">
+            <img src="https://www.dta.gov.au/images/blog-content/walkingthetalk-content.JPG"/>
+            <div class="content">
+              <h3>Finding out what new mothers need</h3>
+              <p>Why everyone in the team needs to do user research.</p>
+              <span>Read the case study</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+</div>
   </div><!--wrapper-->
-</section><!--why-->
-
-<!--
-====================================================
-Latest categories
-====================================================
--->
-<script src="components/categories.js"></script>
-
-
-<!--
-====================================================
-Section: guides-1
-====================================================
--->
-<script src="components/guides.js"></script>
-
-
-
-<!--
-====================================================
-Section: guides-2
-====================================================
--->
-<script src="components/cases.js"></script>
+</section>
 
 
 <!--
@@ -97,6 +114,8 @@ Footer
 -->
 <script src="components/legal.js"></script>
 <script src="components/footer.js"></script>
+
+
 
 
 

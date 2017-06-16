@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+
+<header style="background:#224A61">
+
+    <script src="components/ribbon.js"></script>
+
+
+  <div class="wrapper">
+    <div class="banner clearfix">
+      <h1><a href="index.html"><img src="img/gov-logo.png"/>Service Manual</a></h1>
+      <div class="searchbox">
+
+        <div class="site-search">
+          <form action="/search/" role="search" method="get">
+            <label for="site-search-text">Search dta.gov.au</label>
+            <div class="site-search-border">
+              <input type="search" name="q" id="site-search-text" title="Search" class="search-input">
+              <input class="submit" type="submit" value="Search">
+            </div>
+          </form>
+        </div>
+
+      </div><!--searchbox-->
+    </div><!--header-->
+
+    <nav class="uikit-breadcrumbs uikit-breadcrumbs--inverted clearfix" aria-label="breadcrumb">
+    	<ul class="uikit-link-list uikit-link-list--inline">
+    		<li><a href="index.html">Service Manual</a></li>
+    		<li><a href="dss.html">Digital Service Standard</a></li>
+        <li>1. Understand user needs</li>
+    	</ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<!--
+====================================================
+Section: why
+====================================================
+-->
+<section id="dss" class="padLrg">
+  <div class="wrapper clearfix">
+
+    <!-- <p class="psudoH">user research guide <span></span></p> -->
+
+    <div class="col-6">
+      <h2 class="hugeHeading"><strong>1</strong><br>Understand user needs</h2>
+      <p class="abstract">Understand user needs. Research to develop a deep knowledge of the users and their context for using the service.</p>
+
+      <h2>Why it’s in the Standard</h2>
+
+      <p>You need to understand the people who use your service (your users) and what they want to do (their user needs) in order to build a service that works for them. You need to understand users and their needs from their point of view and not solely through the lens of the project you have been tasked with.</p>
+      <p>To do this, you will need to really understand what users are trying to do when they encounter your part of the service and you need to design services that address that context. This will often involve understanding things that are not ‘in scope’ or part of your responsibility so that you can design better services.</p>
+      <p>You will need to understand all aspects (end to end and across channels) of your users’ current experience. You should include as users everyone who is involved in the service delivery: end users, public servants delivering the service and other intermediaries who support end users to access the service.</p>
+      <p>Your user research needs to cover a wide range of users and show that you understand how different user scenarios may impact service design and delivery. You must include from the earliest stages users who may need assistance to interact digitally, or are unable to interact digitally at all</p>
+
+    </div>
+
+
+    <div class="col-4 right">
+      <nav>
+        <ul>
+      		<li>
+      			<a class="is-active" href="dss.html">Digital Service Standard</a>
+      			<ul>
+      				<li>
+      					<a class="is-current is-active" href="dss-sub.html"><strong>1. Understand user needs</strong></a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">2. Have a multidisciplinary team</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">3. Agile and user-centred process</a>
+      				</li>
+      				<li>
+      					<a class=""  href="dss-sub.html">4. Understand tools and systems</a>
+      				</li>
+      				<li>
+      					<a class=""  href="dss-sub.html">5. Make it secure</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">6. Consistent and responsive design</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">7. Use open standards and common platforms</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">8. Make source code open</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">9. Make it accessible</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">10. Test the service</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">11. Measure performance</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">12. Don't forget non-digital experience</a>
+      				</li>
+      				<li>
+      					<a class="" href="dss-sub.html">13. Encourage everyone to use the digital service</a>
+      				</li>
+      			</ul>
+      		</li>
+      	</ul>
+      </nav>
+    </div>
+
+
+  </div><!--wrapper-->
+</section><!--why-->
+
+
+
+
+<!--
+====================================================
+Footer
+====================================================
+-->
+<script src="components/legal.js"></script>
+<script src="components/footer.js"></script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+document.documentElement.className = 'js';
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
+</html>
