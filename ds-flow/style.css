@@ -413,7 +413,6 @@ nav .active:hover {
   position: sticky;
   top: -1px;
   font-size: 14px;
-  font-weight: bold;
 }
 .inthispage ul ul{
   font-weight: normal;
