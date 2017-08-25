@@ -412,10 +412,13 @@ nav .active:hover {
   margin-right:-150px;
   position: sticky;
   top: -1px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .inthispage ul ul{
   font-weight: normal;
+  font-size: 14px;
+  padding-left: 0.5em;
 }
 .inthispage h4 {
   margin: 0; padding: 0; margin-bottom: 1em;
@@ -423,6 +426,9 @@ nav .active:hover {
 .inthispage ul{
   list-style: none;
   margin: 0; padding: 0;
+}
+.inthispage li {
+  margin-bottom: 0.2em;
 }
 
 .codetabs {
@@ -445,6 +451,20 @@ nav .active:hover {
 .smllist li {
   margin-bottom: 0.5em;
 }
+
+.content h1 {
+  font-size: 2.5em;
+  margin-top:0;
+}
+
+.content h1 sub {
+  font-size: 0.8em;
+  font-weight: normal;
+  vertical-align: inherit;
+  color: #717171;
+  letter-spacing: -0.1em;
+}
+
 
 /*
 DSS callout
