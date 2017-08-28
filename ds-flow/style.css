@@ -521,6 +521,9 @@ nav .active:hover {
   text-align: center;
   border-radius: 50%;
 }
+.content .inpageNav li {
+  margin-bottom: 0;
+}
 
 
 /*
@@ -578,6 +581,9 @@ content
 }
 .content p {
   max-width: 37rem;
+}
+.content li {
+  margin-bottom: 1.5em;
 }
 .content section{
   margin-bottom: 0
@@ -658,6 +664,7 @@ xmp {
   float: left;
   width: 30%;
   padding-right: 3%;
+  margin-bottom: 3%;
 }
 
 .examples p {

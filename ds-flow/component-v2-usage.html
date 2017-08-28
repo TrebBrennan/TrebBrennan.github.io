@@ -79,39 +79,41 @@
 
           <div class="clearfix examples">
             <div><img src="http://via.placeholder.com/300x400"/>
-            <p>Icons must have accompanying text</p>
+            <p>Icons need to have accompanying text</p>
             </div>
             <div><img src="http://via.placeholder.com/300x400"/>
-            <p>Icons must have accompanying text</p>
+            <p>Soft buttons are appropriate in dialogs.</p>
             </div>
             <div><img src="http://via.placeholder.com/300x400"/>
-            <p>Icons must have accompanying text</p>
+            <p>Soft buttons minimize distraction from content.</p>
             </div>
           </div>
           <div class="clearfix examples">
             <div><img src="http://via.placeholder.com/300x400"/>
-            <p>Icons must have accompanying text</p>
+            <p>Use default buttons to give more prominence to actions in layouts with a lot of varying content.</p>
             </div>
             <div><img src="http://via.placeholder.com/300x400"/>
-            <p>Icons must have accompanying text</p>
+            <p><strong>Do.</strong> Raised buttons stand out more than flat buttons.</p>
             </div>
             <div><img src="http://via.placeholder.com/300x400"/>
-            <p>Icons must have accompanying text</p>
+            <p><strong>Don't.</strong> Don’t use soft buttons in UIs where they would be difficult to see.</p>
             </div>
           </div>
 
           <br><br>
 
             <h2 id="usability">Usability</h2>
-            <p>Use 1 button per page to build a strong call to action. Multiple buttons will force the user to make a choice. If the user needs to make a choice use another kind of element, for example a radio button.</p>
-            <p>Use button text to describe what the button does. Keep it short. The button alignment in forms should put the primary action button at the left edge, in the user’s line of sight.</p>
-            <p>Don’t apply styles to disabled buttons.</p>
-
+            <p>Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
+            <p><strong>Function:</strong> Is it important and ubiquitous enough to be a floating action button?</p>
+            <p><strong>Dimension:</strong> Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.</p>
+            <p><strong>Layout:</strong> Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
+            <p>Button placement in non-standard dialogs and modal windows depends on the complexity of the content they contain.</p>
+            <p>For dialogs with relatively simple content, it is recommended to place buttons on the right side of a dialog, with the affirmative button to the right of the dismissive button.</p>
+            <p>For lengthy or complex forms, it is recommended to place buttons on the left of the form, with the affirmative button to the left of the dismissive button.</p>
             <br><br>
 
             <h2 id="accessibility">Accessibility</h2>
-            <p>Use 1 button per page to build a strong call to action. Multiple buttons will force the user to make a choice. If the user needs to make a choice use another kind of element, for example a radio button.</p>
-            <p>Use button text to describe what the button does. Keep it short. The button alignment in forms should put the primary action button at the left edge, in the user’s line of sight. Don’t apply styles to disabled buttons.</p>
+            <p>When the button role is used, user agents should expose the element as a button control in the operating system's accessibility API. Screen readers should announce the element as a button and describe its accessible name. Speech recognition software should allow the button to be activated by saying "click" followed by the button's accessible name.</p>
 
 
 
