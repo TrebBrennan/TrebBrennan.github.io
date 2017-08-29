@@ -227,7 +227,7 @@ GovAU
 ====================
 */
 .ribbon {
-  background-color: rgba(0,0,0,0.5);
+  background-color: #115361;
   padding: 8px 0;
   font-size: 14px;
 }
@@ -393,13 +393,33 @@ nav .right {
 }
 nav .active,
 nav .active:hover {
-  border-bottom-color:blue;
+  border-bottom-color:#007dab;
+}
+
+.main-nav-bdr {
+  border-bottom: solid 4px rgba(0,0,0,0.0);
+}
+.main-nav a{
+  color: white;
+  margin-bottom: -4px;
+  border-bottom-color: rgba(0,0,0,0);
+}
+.main-nav a:hover{
+  background-color:  rgba(0,0,0,0.1);
+    border-bottom-color: rgba(0,0,0,0);
+}
+.main-nav .active {
+  border-bottom-color: cyan;
+}
+.main-nav .active:hover{
+  border-bottom-color: cyan;
 }
 
 
 .breadcrumbs {
-  padding: 1em;
+  /*padding: 1em;*/
   font-size: 14px;
+  margin: 0;
 }
 .bits-list h4,
 .bits-list li,
@@ -512,7 +532,7 @@ nav .active:hover {
       margin-bottom: -4px;
 }
 .inpageNav sup {
-  background: blue;
+  background: #333;
   color: white;
   width: 20px;
   height:20px;
@@ -1136,7 +1156,7 @@ padding: 0.8em 0; }
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E    %3Cpath fill='%23fff' d='M128 64l-64 64-16-16 64-64'/%3E    %3Cpath fill='%23fff' d='M128 64l-16 16-64-64L64 0'/%3E   %3C/svg%3E")
   }
 
-  a { color: #007dab !important; }
+  a { color: #007dab; }
   a[href="#"],
   a[href="javascript:;"]{
     color: black !important;

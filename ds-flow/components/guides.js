@@ -16,7 +16,7 @@ var html = `
           </a>
         </li>
         <li>
-          <a href="https://guides.service.gov.au/content-guide/">
+          <a href="https://service-manual.apps.staging.digital.gov.au/content-guide/">
             <div class="content">
             <h3>Content design<br>toolkit</h3>
             <p>A guide to help teams design simple, clear and fast content.</p>
