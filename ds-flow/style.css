@@ -73,6 +73,7 @@ img {
     padding: 0.5em 1em;
     border: solid 1px;
     text-align: center;
+    text-decoration: none;
 }
 .button.full {
   display: block;
