@@ -786,6 +786,15 @@ Events
 cards
 ====================
 */
+.thebestcard {
+	display: block;
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 #D8D8D8;
+  width: 100%; /*cause flex?*/
+}
+
 .cards {
   list-style: none;
   padding: 0;
