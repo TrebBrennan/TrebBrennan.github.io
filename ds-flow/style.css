@@ -528,9 +528,15 @@ nav .active:hover {
 }
 .inpageNav {
   border-bottom: solid 4px #eee;
+  background: white;
+  position: sticky;
+  top: -1px;
 }
 .inpageNav a{
       margin-bottom: -4px;
+}
+.inpageNav a.active {
+  background: cyan;
 }
 .inpageNav sup {
   background: #333;
