@@ -43,7 +43,7 @@ var html = `
     <li><a href="component-v2-overview.html"></a></li>
   </ul>
 
-  <h4>Sugestions <sup>Discovery</sup></h4>
+  <h4>Sugestions <sup>New</sup></h4>
   <ul>
     <li><a href="component-v2-overview.html">Errors</a></li>
     <li><a href="component-v2-overview.html">Breadcrumbs</a></li>

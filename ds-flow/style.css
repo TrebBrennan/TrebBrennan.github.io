@@ -430,7 +430,17 @@ nav .active:hover {
   list-style: none;
 }
 .bits-list ul {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+.bits-list sup {
+  font-size: 12px;
+  vertical-align: middle;
+  background: #333;
+  color: white;
+  border-radius: 999px;
+  padding: 0 0.3em;
+  margin-left: 0.2em;
+  font-weight: normal;
 }
 
 
@@ -802,8 +812,8 @@ component footer
   margin-top:5em;
   border-top:solid 1px #999;
 }
-.componentFooter .left{width:45%; float:left}
-.componentFooter .right{width:45%; float:right}
+.componentFooter .left{width:30%; float:left}
+.componentFooter .right{width:30%; float:right}
 
 
 /*
