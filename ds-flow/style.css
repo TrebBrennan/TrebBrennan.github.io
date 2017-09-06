@@ -531,6 +531,7 @@ nav .active:hover {
   background: white;
   position: sticky;
   top: -1px;
+  margin-top: 1em;
 }
 .inpageNav li {
   float: left;
@@ -538,19 +539,23 @@ nav .active:hover {
 .inpageNav li.right {
   float: right;
 }
+
 .inpageNav a{
   margin-bottom: -4px;
   background: #f2f2f2;
   border-bottom-color: #61DAFF;
 }
-.inpageNav a:hover{
+.inpageNav a:hover,
+.inpageNav li.right a:hover{
     background: #E3E9ED;
   border-bottom-color: #61DAFF;
 }
 .inpageNav a.active {
   background: #61DAFF;
   color: #00425A;
-
+}
+.inpageNav li.right a{
+  background: transparent;
 }
 .inpageNav sup {
   background: #333;
@@ -564,6 +569,17 @@ nav .active:hover {
 }
 .content .inpageNav li {
   margin-bottom: 0;
+}
+
+/*
+tags
+====================
+*/
+.tags a {
+  display: inline-block;
+  background: #eee;
+  border-radius: 999px;
+  padding: 0 12px;
 }
 
 
