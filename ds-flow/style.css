@@ -577,7 +577,8 @@ tags
 */
 .tags a {
   display: inline-block;
-  background: #eee;
+  background: #61DAFF;
+  color: #00425A;
   border-radius: 999px;
   padding: 0 12px;
 }

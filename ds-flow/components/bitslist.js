@@ -5,24 +5,25 @@ var html = `
   <input type="search" placeholder="search patterns">
   <br><br>
 
-  <h4>Core</h4>
+  <h4>Released <sup>Live</sup></h4>
   <ul>
     <li><a href="component-v2-overview.html">Principles</a></li>
     <li><a href="component-v2-overview.html">Variables</a></li>
-  </ul>
-
-  <h4>Foundations</h4>
-  <ul>
+    <li><a href="component-v2-overview.html">Buttons</a></li>
     <li><a href="component-v2-overview.html">Colours</a></li>
     <li><a href="component-v2-overview.html">Typeface</a></li>
     <li><a href="component-v2-overview.html">Grids</a></li>
+  </ul>
+
+  <h4>Refining <sup>Beta</sup></h4>
+  <ul>
     <li><a href="component-v2-overview.html">Spacing</a></li>
     <li><a href="component-v2-overview.html">Responsive breakpoints</a></li>
     <li><a href="component-v2-overview.html">Iconography</a></li>
     <li><a href="component-v2-overview.html">Headings &amp; body copy</a></li>
   </ul>
 
-  <h4>Components</h4>
+  <h4>Doing <sup>Alpha</sup></h4>
   <ul>
     <li><a href="component-v2-overview.html">Tags</a></li>
     <li><a href="component-v2-overview.html">Badges</a></li>
@@ -35,7 +36,6 @@ var html = `
     <li><a href="component-v2-overview.html">Accordions</a></li>
     <li><a href="component-v2-overview.html">Progress indicators</a></li>
     <li><a href="component-v2-overview.html">Notifications</a></li>
-    <li><a href="component-v2-overview.html">Buttons</a></li>
     <li><a href="component-v2-overview.html">Lists</a></li>
     <li><a href="component-v2-overview.html">Quotations</a></li>
     <li><a href="component-v2-overview.html">Charts &amp; graphs</a></li>
@@ -43,7 +43,7 @@ var html = `
     <li><a href="component-v2-overview.html"></a></li>
   </ul>
 
-  <h4>Patterns</h4>
+  <h4>Sugestions <sup>Discovery</sup></h4>
   <ul>
     <li><a href="component-v2-overview.html">Errors</a></li>
     <li><a href="component-v2-overview.html">Breadcrumbs</a></li>
