@@ -17,12 +17,22 @@ var html = `
       <li><a href="#">Visual loudness</a></li>
     </ul>
   </div>
-  <div class="right">
+  <div class="left">
     <h2 id="">Related Components</h2>
     <ul class="smllist">
       <li><a href="#">Forms</a></li>
       <li><a href="#">Login</a></li>
     </ul>
+  </div>
+
+  <div class="left">
+    <h2><strong>Contributors</strong></h2>
+    Thanks to <br>
+    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
+    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/sam/25/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
+    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/charleswalter/25/43914_1.png" class="avatar" title="charleswalter - Original Poster"></a>
+    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
+    <a href="#">20+</a>
   </div>
 </div><!--componentFooter-->
 `;

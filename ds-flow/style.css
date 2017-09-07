@@ -25,6 +25,10 @@ body {
   /*max-width: 960px;*/
 }
 
+h3 { position: relative; z-index: -1;}
+h3 i {
+  position: absolute; top: -4em;
+}
 @keyframes example {
     from {background-color: yellow;}
     to {background-color: white;}
