@@ -818,8 +818,8 @@ component footer
   margin-top:5em;
   /*border-top:solid 1px #999;*/
 }
-.componentFooter .left{width:30%; float:left}
-.componentFooter .right{width:30%; float:right}
+.componentFooter .left{width:24%; float:left; margin-right: 1%;}
+.componentFooter .right{width:24%; float:right}
 .componentFooter li {margin-bottom: 0.75em;}
 
 /*
