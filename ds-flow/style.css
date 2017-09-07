@@ -816,7 +816,7 @@ component footer
 }
 .componentFooter .left{width:30%; float:left}
 .componentFooter .right{width:30%; float:right}
-
+.componentFooter li {margin-bottom: 0.75em;}
 
 /*
 Events
