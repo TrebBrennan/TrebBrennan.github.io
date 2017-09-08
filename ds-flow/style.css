@@ -510,6 +510,9 @@ nav .active:hover {
   padding: 8px 8px 0 8px;
   font-size: 14px;
 }
+code {
+  color: #717171;
+}
 .left {
   float: left;
 }
