@@ -1249,10 +1249,15 @@ padding: 0.8em 0; }
 		margin-top: 5px;
 	}
 
-  .herobar{
+  .statusbox {
+    background:#eee;
+    padding:16px; font-size:14px;
+  }
+
+  /*.herobar{
     background: #333;
     color: white;
   }
   .herobar a {
     color:#61DAFF;
-  }
+  }*/
