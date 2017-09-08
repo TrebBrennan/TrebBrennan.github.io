@@ -1248,3 +1248,11 @@ padding: 0.8em 0; }
 	.stats p {
 		margin-top: 5px;
 	}
+
+  .herobar{
+    background: #333;
+    color: white;
+  }
+  .herobar a {
+    color:#61DAFF;
+  }
