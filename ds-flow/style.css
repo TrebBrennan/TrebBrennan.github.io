@@ -1275,6 +1275,17 @@ padding: 0.8em 0; }
     margin-bottom: 2em;
   }
 
+  .tightlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  .tightlist li {
+    margin: 0;
+    padding: 0.5em 0;
+  }
+
   /*.herobar{
     background: #333;
     color: white;
