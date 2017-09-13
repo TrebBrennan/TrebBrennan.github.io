@@ -869,6 +869,9 @@ cards
 
   display: flex;
 }
+.cards.micro li{
+  width: 22%;
+}
 .cards h3 {
   height: 4em;
   font-size: 1.3em;
@@ -890,6 +893,12 @@ cards
 }
 .cards .content{
   padding: 2em;
+}
+.cards.micro .content{
+  padding: 1.5em;
+}
+.cards.micro img {
+  display: block;
 }
 .content h3 {
   margin-top: 0;
