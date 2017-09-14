@@ -861,7 +861,8 @@ cards
   flex-wrap: wrap;
 }
 
-.cards li {
+.cards li,
+.cards .card {
   float: left;
   width: 30%;
   margin-right: 3%;
