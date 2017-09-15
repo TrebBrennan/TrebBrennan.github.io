@@ -946,6 +946,15 @@ cards
   padding: 33%;
 }
 
+.about a h2{
+  text-decoration: underline;
+  color: #007dab;
+  text-align: center;
+}
+.about a{
+  text-decoration: none !important;
+}
+
 /*
 Legal
 ====================
