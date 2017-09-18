@@ -15,9 +15,9 @@ var html = `
     <li><a href="component-v4-overview.html">Grids</a></li>
   </ul>
 
-  <h3 style="border-top:solid 1px silver">Roadmap:</h3>
+  <h3 style="border-top:solid 1px silver">In the lab</h3>
   <h4>Refining <sup>Beta</sup></h4>
-  <ul>
+  <ul style="display:none">
     <li><a href="component-v4-overview.html">Spacing</a></li>
     <li><a href="component-v4-overview.html">Responsive breakpoints</a></li>
     <li><a href="component-v4-overview.html">Iconography</a></li>
@@ -25,7 +25,7 @@ var html = `
   </ul>
 
   <h4>Doing <sup>Alpha</sup></h4>
-  <ul>
+  <ul style="display:none">
     <li><a href="component-v4-overview.html">Tags</a></li>
     <li><a href="component-v4-overview.html">Badges</a></li>
     <li><a href="component-v4-overview.html">Switch(toggle) buttons</a></li>
@@ -45,7 +45,7 @@ var html = `
   </ul>
 
   <h4>Sugestions <sup>New</sup></h4>
-  <ul>
+  <ul style="display:none">
     <li><a href="component-v4-overview.html">Errors</a></li>
     <li><a href="component-v4-overview.html">Breadcrumbs</a></li>
     <li><a href="component-v4-overview.html">Media</a></li>
@@ -55,7 +55,7 @@ var html = `
   </ul>
 
   <h4>! Excluded</h4>
-  <ul>
+  <ul style="display:none">
     <li><a href="component-v4-overview.html">Carousel</a></li>
   </ul>
 

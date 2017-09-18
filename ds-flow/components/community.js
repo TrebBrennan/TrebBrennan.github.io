@@ -20,7 +20,7 @@ var html = `
       <div class="event">
         <div class="title">Introduction training on user research</div>
         <div class="date">23 June 2017 - Canberra</div>
-        <div class="blurb">Find out how how to get started with user research.</div>
+        <div class="blurb">Find out how how to Getting started with user research.</div>
       </div>
 
       <h2 class="hugeHeading">Join the community</h2>
