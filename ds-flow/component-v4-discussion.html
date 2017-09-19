@@ -33,20 +33,8 @@
         </div> -->
       </div><!--wrapper-->
 
-      <div class="main-nav-bdr">
-      <nav class="clearfix main-nav wrapper">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="get-started.html">Getting started</a></li>
-          <li><a href="patterns.html" class="active">Components</a></li>
-          <li><a href="templates.html">Templates</a></li>
-          <li><a href="test.html">Community</a></li>
-          <li><a href="help.html">Help</a></li>
-          <li class="right"><a href="build.html"><img src="img/ic_file_download_white_24dp_2x.png" style="width:24px; vertical-align: middle; margin-right:0.5em;"/>Download</a></li>
-          <li class="right"><a href="https://github.com/govau/uikit"><img src="img/github.png" style="width:24px; vertical-align: middle; margin-right:0.5em;"/>Github</a></li>
-        </ul>
-      </nav>
-    </div><!--main-nav-bdr-->
+      <!-- Main nav -->
+      <script src="components/main-nav.js"></script>
     </header>
 
 
@@ -72,17 +60,8 @@
                 <div class="clearfix">
                   <div style="width:68%; float:left">
                     <p class="abstract" style="margin-top:0">Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.<!--text from polaris shopify--></p>
-                    <div class="inpageNav clearfix" style="border-bottom:none">
-                      <nav>
-                        <ul>
-                          <li><a href="component-v4-overview.html"style="background:none;  border-bottom:none">Summary</a></li>
-                          <li><a href="component-v4-usage.html" style="background:none; border-bottom:none">Usability</a></li>
-                          <li><a href="component-v4-rationale.html"style="background:none;  border-bottom:none">Accessibility</a></li>
-                          <li><a href="component-v4-discussion.html" class="active" style="background:none;">Discussion <sup>3</sup></a></li>
-                          <!-- <li class="right"><a href="component-demo.html">Live Demo <img src="img/ic_launch_black_24dp_2x.png" style="width:24px; vertical-align: middle; margin-left:0.5em;"></a></li> -->
-                        </ul>
-                      </nav>
-                    </div>
+                    <!-- component inline nav -->
+                    <script src="components/component-nav.js"></script>
                   </div>
                   <div style="width:32%; float:right">
 
@@ -188,5 +167,6 @@
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="scroll.js"></script>
+  <script src="js/main.js"></script>
+  <script>$('a[href="patterns.html"]').addClass('active');</script>
 </html>

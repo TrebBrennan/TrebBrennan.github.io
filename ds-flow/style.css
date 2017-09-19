@@ -544,7 +544,6 @@ code {
   border-radius: 50%;
 }
 .inpageNav {
-  border-bottom: solid 4px #61DAFF;
   background: white;
   position: sticky;
   top: -1px;
@@ -561,7 +560,6 @@ code {
 .inpageNav a{
   margin-bottom: -4px;
   background: #f2f2f2;
-  border-bottom-color: #61DAFF;
 }
 .inpageNav a:hover,
 .inpageNav li.right a:hover{
@@ -569,7 +567,7 @@ code {
   border-bottom-color: #61DAFF;
 }
 .inpageNav a.active {
-  background: #61DAFF;
+  /*background: #61DAFF;*/
   color: #00425A;
 }
 .inpageNav li.right a{
