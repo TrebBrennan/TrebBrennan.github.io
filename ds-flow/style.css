@@ -559,7 +559,7 @@ code {
 
 .inpageNav a{
   margin-bottom: -4px;
-  background: #f2f2f2;
+  /*background: #f2f2f2;*/
 }
 .inpageNav a:hover,
 .inpageNav li.right a:hover{
@@ -582,6 +582,8 @@ code {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -3px;
 }
 .content .inpageNav li {
   margin-bottom: 0;
@@ -1301,3 +1303,61 @@ padding: 0.8em 0; }
   .herobar a {
     color:#61DAFF;
   }*/
+
+
+  .buildsize {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 14px;
+    float: right;
+  }
+
+  .buildbox {
+    background: #eee;
+    border: solid 1px #999;
+  }
+
+  .build-item-box {
+    background: #eee;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .build-item-box .thumbnail {
+    float: left;
+    width: 20%;
+  }
+  .build-item-box .text-area {
+    float: left;
+    width: 50%;
+  }
+  .build-item-box .text-area h4{
+    margin: 0;
+    margin-bottom:8;
+  }
+  .build-item-box .text-area .padding {
+    padding: 0 16px;
+  }
+  .build-item-box .text-area p{
+    margin: 0;
+    font-size: 14px;
+  }
+  .build-item-box .actions {
+    float: left;
+    width: 30%;
+    text-align: right;
+  }
+  .build-item-box .actions input,
+  .custom-check {
+    width: 20px; height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    border: solid 2px black;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+  }
+.build-item-box .actions input[type=checkbox]:checked,
+.custom-check:checked {
+  background: black;
+}

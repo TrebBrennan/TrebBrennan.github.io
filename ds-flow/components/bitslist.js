@@ -44,7 +44,7 @@ var html = `
     <li><a href="component-v4-overview.html"></a></li>
   </ul>
 
-  <h4>Sugestions <sup>New</sup></h4>
+  <h4>Suggestions <sup>New</sup></h4>
   <ul style="display:none">
     <li><a href="component-v4-overview.html">Errors</a></li>
     <li><a href="component-v4-overview.html">Breadcrumbs</a></li>
