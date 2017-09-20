@@ -481,13 +481,24 @@ nav .active:hover {
 .fullcol .maincontent {
     padding-right: 0;
 }
+
+.sidebarRight {
+  padding-right:250px;
+  padding-left:0;
+}
+.sidebarRight .sidebar {
+  float: right;
+  margin-left: auto;
+      margin-right: -250px;
+}
+
 .inthispage {
   width:150px;
   margin-right:-150px;
   position: sticky;
   top: -1px;
   font-size: 16px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .inthispage ul ul{
   font-weight: normal;
