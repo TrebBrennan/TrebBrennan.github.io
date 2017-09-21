@@ -1372,3 +1372,21 @@ padding: 0.8em 0; }
 .custom-check:checked {
   background: black;
 }
+
+.promoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.promoList li{
+  display: inline-block;
+  margin: 1em 2em;
+  width: 150px;
+  vertical-align: top;
+  font-size: 14px;
+}
+.promoList li h3{
+  margin-bottom: 0.1em;
+  font-size:18px;
+  margin-top: 0;
+}
