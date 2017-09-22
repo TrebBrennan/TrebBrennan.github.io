@@ -32,60 +32,68 @@
             <input type="search" placeholder="search"/>
           </p>
         </div> -->
-
-
       </div><!--wrapper-->
+
 
       <!-- Main nav -->
       <script src="components/main-nav.js"></script>
-
     </header>
 
 
-    <section class="">
-      <div class="wrapper clearfix content">
-
-          <h1>Getting Started</h1>
+    <section class="wrapper">
+      <div class="clearfix main sidebarRight">
 
 
-          <div style="float:left; width:28%; margin-right:5%;">
-            <h2>The basics</h2>
-            <p>Design principles help us have a shared understanding of how we want to solve problems.</p>
-            <hr>
-            <ul>
-              <li style="margin-bottom:0.5em"><a href="#">GUI Design principles</a></li>
-              <li style="margin-bottom:0.5em"><a href="https://www.dta.gov.au/standard/design-principles/">Service Design principles</a></li>
+        <!--Sidebar-->
+        <div class="sidebar">
+          <div class="inthispage">
+            <h4 style="margin-bottom:0">On this page</h4>
+            <ul style="list-style: none; padding:0; margin:0;     margin: 1.6em 0 0;">
+              <li><a href="#community">Community</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#training">Training</a></li>
             </ul>
           </div>
+        </div>
 
-          <div style="float:left; width:28%; margin-right:5%;">
-            <h2>Designers</h2>
-            <p>Components are available in various file formats for high-fidelity mockups.</p>
-            <hr>
-            <ul style="">
-              <li style="margin-bottom:0.5em"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png" style="width:20px; vertical-align:middle; margin-right:0.5em"/>Download design files (Phototshop)</a></li>
-              <li style="margin-bottom:0.5em"><a href="#"><img src="https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png" style="width:20px; vertical-align:middle; margin-right:0.5em"/>Download design files (Sketch)</a></li>
-              <li style="margin-bottom:0.5em"><a href="#">Prototyping in code tutorial</a></li>
-            </ul>
+
+<!--
+================== ~Content ==================
+-->
+
+        <div class="content maincontent">
+
+          <div class="clearfix">
+            <h1 style="margin-bottom:1em; float:left" id="intro">Getting started</h1>
           </div>
 
-          <div style="float:left; width:28%; margin-right:5%;">
-            <h2>Developers</h2>
-            <p>Get quickly running with all uikit modules and some great npm scripts</p>
-            <hr>
-            <ul>
-              <li style="margin-bottom:0.5em"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" style="width:20px; vertical-align:middle; margin-right:0.5em"/><a href="https://github.com/govau/uikit-starter">Quick start pack</a></li>
-              <li style="margin-bottom:0.5em"><a href="https://github.com/govau/uikit"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" style="width:20px; vertical-align:middle; margin-right:0.5em"/>Full installation documentation</a></li>
-              <li style="margin-bottom:0.5em"><a href="test.html">Building components tutorial</a></li>
-              <li style="margin-bottom:0.5em"><a href="test.html">Customising components tutorial</a></li>
-            </ul>
-          </div>
+          <p class="abstract" style="margin-top:0">?</p>
 
-        </div><!--col-6-->
+          <h2>Starting a new project</h2>
+          <p>If you're kicking off a new project of even looking to do some prototyping in code the easiest way to get started is with the Starter Pack.</p>
 
-      </div><!--wrapper-->
+          <h3>1. Download the starter pack</h3>
+          The starter pack contains all of the base files you'll need.
+          Download the Starter Pack and unzip it in an appropriate project folder
+
+          2. Install dependencies
+          In Terminal (Mac) or CommanLine (Win) Navigate to your project folder and run.
+          > npm install
+
+          3. Install the components you need.
+          - Head over to our download page
+          - Select the components you want to use in your project
+          - Copy the command line prompts
+
+          4. Using it!
+          From here you can browser our Components page and use the HTML.
+
+
+        </div><!--maincontent-->
+
+      </div>
     </section>
-
 
 
     <script src="components/footer.js"></script>
@@ -93,4 +101,5 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
+
 </html>
