@@ -4,7 +4,9 @@
   <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
   <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
   <head>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fontawesome.io//assets/font-awesome/css/font-awesome.css">
   </head>
 
 
@@ -31,20 +33,9 @@
         </div>
       </div><!--wrapper-->
 
-      <div class="main-nav-bdr">
-      <nav class="clearfix main-nav wrapper">
-        <ul>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="get-started.html">Getting started</a></li>
-          <li><a href="patterns.html">Components</a></li>
-          <li><a href="templates.html">Templates</a></li>
-          <li><a href="test.html">Community</a></li>
-          <li><a href="help.html">Help</a></li>
-          <li class="right"><a href="build.html"><img src="img/ic_file_download_white_24dp_2x.png" style="width:24px; vertical-align: middle; margin-right:0.5em;"/>Download</a></li>
-          <li class="right"><a href="https://github.com/govau/uikit"><img src="img/github.png" style="width:24px; vertical-align: middle; margin-right:0.5em;"/>Github</a></li>
-        </ul>
-      </nav>
-    </div><!--main-nav-bdr-->
+      <!-- Main nav -->
+      <script src="components/main-nav.js"></script>
+
     </header>
 
 
@@ -57,7 +48,7 @@
           <p><a href="get-started.html" class="button">Getting started</a></p>
         </div>
         <div style="padding-right:50px;" class="col-4 right">
-          <img src="img/overview.png">
+          <img src="img/overview.svg">
         </div>
       </div>
     </section>
@@ -69,28 +60,28 @@
       <div class="cards">
         <div class="card about" style=" position:relative">
           <a href="patterns.html">
-            <div style="text-align:center"><img class="cardimg" src="img/compos.png"></div>
-            <div style="padding:20px; color:#000; padding-bottom:4em;">
+            <div style="text-align:center"><img class="cardimg" src="img/compos.png" style="width:100px"></div>
+            <div style="padding:20px">
               <h2>Components</h2>
-              <p>Components are a collection of interface elements that can be used by teams of designers and developers across government to build products.</p>                   
+              <p>Components are a collection of interface elements that can be used by teams of designers and developers across government to build products.</p>
             </div>
           </a>
         </div>
         <div class="card about" style=" position:relative">
           <a href="templates.html">
-            <div style="text-align:center"><img class="cardimg" src="img/templates.png"></div>
-            <div style="padding:20px; color:#000; padding-bottom:4em;">
-            <h2>Templates</h2>
-            <p>Templates include high value core elements and complex UI patterns like grids, cards and navigation. They are a great way to kickstart a project.</p>            
+            <div style="text-align:center"><img class="cardimg" src="img/templates.png" style="width:100px"></div>
+            <div style="padding:20px">
+              <h2>Templates</h2>
+              <p>Templates include high value core elements and complex UI patterns like grids, cards and navigation. They are a great way to kickstart a project.</p>
             </div>
           </a>
         </div>
         <div class="card about" style=" position:relative">
           <a href="test.html">
-            <div style="text-align:center"><img class="cardimg" src="img/discuss.png"></div>
-            <div style="padding:20px; color:#000; padding-bottom:4em;">
-            <h2>Community</h2>
-            <p>The Design System community has been created for designers and developers to help them transform their agency’s products and services.</p>            
+            <div style="text-align:center"><img class="cardimg" src="img/discuss.png" style="width:100px"></div>
+            <div style="padding:20px">
+              <h2>Community</h2>
+              <p>The Design System community has been created for designers and developers to help them transform their agency’s products and services.</p>
             </div>
           </a>
         </div>
@@ -100,18 +91,24 @@
 
     <section class="wrapper">
       <div class="clearfix">
-        <div class="col-6">
-          <h2>What's in our components</h2>
-          <ul>
-            <li>Best practices</li>
-            <li>Accessibility</li>
-            <li>Community Discussion</li>
-            <li>??</li>
+        <div class="" style="text-align:center">
+          <h2>What makes our components great?</h2>
+          <p style="max-width:30em; margin-left:auto; margin-right:auto;">When you install a Design System component you benefit from the shared efforts of a community dedicated to making Government products and services better, faster, easier. This means that all our components are ...</p>
+          <ul class="promoList">
+            <li><h3>Designed</h3> High-quality visual&nbsp;design</li> <!--One design direction-->
+            <li><h3>Modern</h3> HTML5 Semantics</li> <!--Contemporary?-->
+            <li><h3>Responsive </h3> Mobile first responsive design</li>
+            <li><h3>Tested</h3> Usability tested by the community</li>
+            <li><h3>Accessible</h3> WCAG 2.1 AA standard accessibility</li>
+            <li><h3>Robust</h3> Browser support back to IE8 and no-js fallbacks</li>
+            <li><h3>Flexible</h3> Options for common JavaScript, jQuery and React</li><!--Tech agnostic-->
+            <li><h3>Customisable</h3> Built on a detailed Sass ecosystem</li>
+            <li><h3>Modular</h3> Choose the components you need</li>
+            <li><h3>Versioned</h3> Only upgrade the components when you're ready</li>
+            <li><h3>Maintained</h3> Continuously improved</li>
+            <li><h3>Supported</h3> Empowered and driven by community</li>
           </ul>
-          <p><a href="get-started.html" class="button">See buttons</a></p>
-        </div>
-        <div style="padding-right:50px;" class="col-4 right">
-          <img src="img/overview.png">
+          <p><a href="component-v4-overview.html" class="button">See an example</a></p>
         </div>
       </div>
     </section>
@@ -143,15 +140,15 @@
       <h2>Usage statistics</h2>
       <ul class="stats clearfix">
 				<li>
-					<span class="stats-number">21</span>
+					<span class="stats-number">12</span>
 					<p>Agencies</p>
 				</li>
         <li>
-					<span class="stats-number">65</span>
+					<span class="stats-number">70</span>
 					<p>Github stars</p>
 				</li>
 				<li>
-					<span class="stats-number">2100</span>
+					<span class="stats-number">28526</span>
 					<p>Downloads</p>
 				</li>
       </ul>
@@ -195,6 +192,7 @@
                   </a>
                 </li>
               </ul>
+              <a href="articles.html">View all Articles</a>
 
       </div>
     </section>
@@ -205,5 +203,6 @@
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
 	<script src="number.js"></script>
 </html>

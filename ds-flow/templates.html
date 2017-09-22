@@ -4,7 +4,8 @@
   <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
   <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
   <head>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   </head>
 
 
@@ -34,29 +35,26 @@
       </div><!--wrapper-->
 
 
-      <div class="main-nav-bdr">
-      <nav class="clearfix main-nav wrapper">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="get-started.html">Getting started</a></li>
-          <li><a href="patterns.html">Components</a></li>
-          <li><a href="templates.html" class="active">Templates</a></li>
-          <li><a href="test.html">Community</a></li>
-          <li><a href="help.html">Help</a></li>
-          <li class="right"><a href="build.html"><img src="img/ic_file_download_white_24dp_2x.png" style="width:24px; vertical-align: middle; margin-right:0.5em;"/>Download</a></li>
-          <li class="right"><a href="https://github.com/govau/uikit"><img src="img/github.png" style="width:24px; vertical-align: middle; margin-right:0.5em;"/>Github</a></li>
-        </ul>
-      </nav>
-    </div><!--main-nav-bdr-->
+      <!-- Main nav -->
+      <script src="components/main-nav.js"></script>
     </header>
 
 
     <section class="wrapper">
-      <div class="clearfix main fullcol">
+      <div class="clearfix main sidebarRight">
 
 
       <!--Sidebar-->
-      <!-- <script src="components/bitslist.js"></script> -->
+      <div class="sidebar">
+        <div class="inthispage">
+          <h4 style="margin-bottom:0">On this page</h4>
+          <ul style="list-style: none; padding:0; margin:0;     margin: 1.6em 0 0;">
+            <li><a href="#page-templates">Page templates</a></li>
+            <li><a href="#site-templates">Site Templates</a></li>
+            <!-- <li style="margin-bottom:0.5em"><a href="#discussion">Discussion</a></li> -->
+          </ul>
+        </div>
+      </div>
 
 
 <!--
@@ -75,87 +73,14 @@
             </div>
           </div>
 
-
-<h2>Service Templates</h2>
-
-  <div class="clearfix herobar" style="background:#eeeeee;">
-    <div style="width:60%; float:left; text-align: center;">
-      <img src="http://via.placeholder.com/800x400"/>
-    </div>
-    <div style="width:35%; float:right"><div style="padding:2em">
-
-      <h3 style="">Information Service</h3>
-      <p>Templates for services which primarily provide information in the form of text. Such as agency websites, online publications, policy and standards.</p>
-      <p><a href="test.html">Documentation</a></p>
-      <p>
-        <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-        <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-      </p>
-    </div></div>
-  </div>
-
-  <p>&nbsp;</p>
-
-    <div class="clearfix herobar" style="background:#eeeeee;">
-      <div style="width:60%; float:left; text-align: center;">
-        <img src="http://via.placeholder.com/800x400"/>
-      </div>
-      <div style="width:35%; float:right"><div style="padding:2em">
-
-        <h3 style="">Long Form</h3>
-        <p>A template for services which require a long form, such as a survey, wizard style interface, or questionnaire.</p>
-        <p><a href="test.html">Documentation</a></p>
-        <p>
-          <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-          <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-        </p>
-      </div></div>
-    </div>
-
-    <p>&nbsp;</p>
-
-      <div class="clearfix herobar" style="background:#eeeeee;">
-        <div style="width:60%; float:left; text-align: center;">
-          <img src="http://via.placeholder.com/800x400"/>
-        </div>
-        <div style="width:35%; float:right"><div style="padding:2em">
-          <h3 style="">Campaign Service</h3>
-          <p>A template for a service that's primary purpose is to promote or provide campaign information. </p>
-          <p><a href="test.html">Documentation</a></p>
-          <p>
-            <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-            <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-          </p>
-        </div></div>
-      </div>
-
-      <p>&nbsp;</p>
-
-        <div class="clearfix herobar" style="background:#eeeeee;">
-          <div style="width:60%; float:left; text-align: center;">
-            <img src="http://via.placeholder.com/800x400"/>
-          </div>
-          <div style="width:35%; float:right"><div style="padding:2em">
-
-            <h3 style="">Transactional Service</h3>
-            <p>A templates for services which require a data transaction and typically including need a login.</p>
-            <p><a href="test.html">Documentation</a></p>
-            <p>
-              <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-              <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
-            </p>
-          </div></div>
-        </div>
-
-        <p>&nbsp;</p>
-<h2>Page templates</h2>
+          <h2 id="page-templates">Page templates</h2>
 
           <ul class="cards clearfix micro">
                   <li>
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Campaign home</h4>
+                        <h4>Campaign-style home page</h4>
                       </div>
                     </a>
                   </li>
@@ -163,7 +88,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Campaign media</h4>
+                        <h4>Campaign-style rich media page</h4>
                       </div>
                     </a>
                   </li>
@@ -171,7 +96,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Campaign details</h4>
+                        <h4>Campaign-style information page</h4>
                       </div>
                     </a>
                   </li>
@@ -179,7 +104,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Documentation</h4>
+                        <h4>Basic Documentation page</h4>
                       </div>
                     </a>
                   </li>
@@ -187,7 +112,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Section page</h4>
+                        <h4>Chapter or section page</h4>
                       </div>
                     </a>
                   </li>
@@ -195,7 +120,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Article or News</h4>
+                        <h4>Article or News page</h4>
                       </div>
                     </a>
                   </li>
@@ -203,7 +128,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Service introduction</h4>
+                        <h4>Article or News listing</h4>
                       </div>
                     </a>
                   </li>
@@ -211,7 +136,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Service form</h4>
+                        <h4>Service introduction page</h4>
                       </div>
                     </a>
                   </li>
@@ -219,7 +144,7 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Service thanks</h4>
+                        <h4>Service form page</h4>
                       </div>
                     </a>
                   </li>
@@ -227,11 +152,92 @@
                     <a href="template-demo.html">
                       <img src="http://via.placeholder.com/300x300">
                       <div class="content">
-                        <h4>Search Results</h4>
+                        <h4>Service thanks page</h4>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="template-demo.html">
+                      <img src="http://via.placeholder.com/300x300">
+                      <div class="content">
+                        <h4>Search Results page</h4>
                       </div>
                     </a>
                   </li>
                 </ul>
+
+                      <p>&nbsp;</p>
+
+                <h2 id="site-templates">Site Templates</h2>
+
+                  <div class="clearfix herobar" style="background:#eeeeee;">
+                    <div style="width:60%; float:left; text-align: center;">
+                      <img src="http://via.placeholder.com/800x400"/>
+                    </div>
+                    <div style="width:35%; float:right"><div style="padding:2em">
+
+                      <h3 style="">Documentation website</h3>
+                      <p>Templates for services which primarily provide information in the form of text. Such as agency websites, online publications, policy and standards.</p>
+                      <p><a href="test.html">Documentation</a></p>
+                      <p>
+                        <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                        <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                      </p>
+                    </div></div>
+                  </div>
+
+                  <p>&nbsp;</p>
+
+                    <div class="clearfix herobar" style="background:#eeeeee;">
+                      <div style="width:60%; float:left; text-align: center;">
+                        <img src="http://via.placeholder.com/800x400"/>
+                      </div>
+                      <div style="width:35%; float:right"><div style="padding:2em">
+
+                        <h3 style="">Long form</h3>
+                        <p>A template for services which require a long form, such as a survey, wizard style interface, or questionnaire.</p>
+                        <p><a href="test.html">Documentation</a></p>
+                        <p>
+                          <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                          <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                        </p>
+                      </div></div>
+                    </div>
+
+                    <p>&nbsp;</p>
+
+                      <div class="clearfix herobar" style="background:#eeeeee;">
+                        <div style="width:60%; float:left; text-align: center;">
+                          <img src="http://via.placeholder.com/800x400"/>
+                        </div>
+                        <div style="width:35%; float:right"><div style="padding:2em">
+                          <h3 style="">Campaign website</h3>
+                          <p>A template for a service that's primary purpose is to promote or provide campaign information. </p>
+                          <p><a href="test.html">Documentation</a></p>
+                          <p>
+                            <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                            <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                          </p>
+                        </div></div>
+                      </div>
+
+                      <p>&nbsp;</p>
+
+                        <div class="clearfix herobar" style="background:#eeeeee;">
+                          <div style="width:60%; float:left; text-align: center;">
+                            <img src="http://via.placeholder.com/800x400"/>
+                          </div>
+                          <div style="width:35%; float:right"><div style="padding:2em">
+
+                            <h3 style="">Transactional Service</h3>
+                            <p>A templates for services which require information from the user or a data transaction, and typically including a login.</p>
+                            <p><a href="test.html">Documentation</a></p>
+                            <p>
+                              <a href="template-demo.html"class="button">Live demo <img src="img/ic_launch_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                              <a href="downloads/govau-ds_template_v123.zip" class="button">Download<img src="img/ic_file_download_black_24dp_2x.png" style="width:20px; vertical-align: middle; margin-left:0.5em;"></a>
+                            </p>
+                          </div></div>
+                        </div>
 
 
 
@@ -245,5 +251,6 @@
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="scroll.js"></script>
+<script src="js/main.js"></script>
+
 </html>

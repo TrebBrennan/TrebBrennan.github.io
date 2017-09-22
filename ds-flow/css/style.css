@@ -481,13 +481,27 @@ nav .active:hover {
 .fullcol .maincontent {
     padding-right: 0;
 }
+
+.sidebarRight {
+  padding-right:250px;
+  padding-left:0;
+}
+.sidebarRight .sidebar {
+  float: right;
+  margin-left: auto;
+      margin-right: -250px;
+}
+.sidebarRight .maincontent{
+  padding-left: 0
+}
+
 .inthispage {
   width:150px;
   margin-right:-150px;
   position: sticky;
   top: -1px;
   font-size: 16px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .inthispage ul ul{
   font-weight: normal;
@@ -544,7 +558,6 @@ code {
   border-radius: 50%;
 }
 .inpageNav {
-  border-bottom: solid 4px #61DAFF;
   background: white;
   position: sticky;
   top: -1px;
@@ -560,8 +573,7 @@ code {
 
 .inpageNav a{
   margin-bottom: -4px;
-  background: #f2f2f2;
-  border-bottom-color: #61DAFF;
+  /*background: #f2f2f2;*/
 }
 .inpageNav a:hover,
 .inpageNav li.right a:hover{
@@ -569,7 +581,7 @@ code {
   border-bottom-color: #61DAFF;
 }
 .inpageNav a.active {
-  background: #61DAFF;
+  /*background: #61DAFF;*/
   color: #00425A;
 }
 .inpageNav li.right a{
@@ -584,6 +596,8 @@ code {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -3px;
 }
 .content .inpageNav li {
   margin-bottom: 0;
@@ -1303,3 +1317,79 @@ padding: 0.8em 0; }
   .herobar a {
     color:#61DAFF;
   }*/
+
+
+  .buildsize {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 14px;
+    float: right;
+  }
+
+  .buildbox {
+    background: #eee;
+    border: solid 1px #999;
+  }
+
+  .build-item-box {
+    background: #eee;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .build-item-box .thumbnail {
+    float: left;
+    width: 20%;
+  }
+  .build-item-box .text-area {
+    float: left;
+    width: 50%;
+  }
+  .build-item-box .text-area h4{
+    margin: 0;
+    margin-bottom:8;
+  }
+  .build-item-box .text-area .padding {
+    padding: 0 16px;
+  }
+  .build-item-box .text-area p{
+    margin: 0;
+    font-size: 14px;
+  }
+  .build-item-box .actions {
+    float: left;
+    width: 30%;
+    text-align: right;
+  }
+  .build-item-box .actions input,
+  .custom-check {
+    width: 20px; height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    border: solid 2px black;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+  }
+.build-item-box .actions input[type=checkbox]:checked,
+.custom-check:checked {
+  background: black;
+}
+
+.promoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.promoList li{
+  display: inline-block;
+  margin: 1em 2em;
+  width: 150px;
+  vertical-align: top;
+  font-size: 14px;
+}
+.promoList li h3{
+  margin-bottom: 0.1em;
+  font-size:18px;
+  margin-top: 0;
+}
