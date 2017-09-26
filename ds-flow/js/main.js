@@ -55,3 +55,23 @@ $('.hasActive').find('a').each(function() {
     $(this).addClass('active');
   }
 });
+
+
+// ============= Sidenav
+
+function openNav(target){
+  parent = target.closest('.navGroup');
+  parent.find('ul').slideToggle(200);
+  parent.toggleClass('open');
+}
+
+$('.navGroup h4 a').click(function(e){
+  var x = $(this);
+  openNav(x);
+});
+
+
+$( ".openByDefault" ).each(function() {
+    var x = $( this );
+    openNav(x);
+});
