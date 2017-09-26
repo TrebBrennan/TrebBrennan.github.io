@@ -527,6 +527,11 @@ nav .active:hover {
 code {
   color: #717171;
 }
+.code {
+  background: #eee;
+  padding: 0.2em 0.5em;
+  font-family: monospace;
+}
 .left {
   float: left;
 }
