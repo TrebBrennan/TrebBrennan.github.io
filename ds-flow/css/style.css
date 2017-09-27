@@ -1464,3 +1464,11 @@ padding: 0.8em 0; }
 .navGroup ul :last-child a{
   border-bottom:none;
 }
+
+.footerBits {
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+.footerBits strong{
+  font-size: 20px;
+}

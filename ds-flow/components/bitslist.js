@@ -10,8 +10,7 @@ var html = `
   <div class="navGroup open">
     <h4><a href="javascript:;" class=""><i class="fa fa-check-circle-o" aria-hidden="true"></i> Released <span>live</span></a></h4>
     <ul style="display:block">
-      <li><a href="component-v4-overview.html">Principles</a></li>
-      <li><a href="component-v4-overview.html">Variables</a></li>
+      <li><a href="component-v4-overview.html">Core</a></li>
       <li><a href="component-v4-overview.html">Buttons</a></li>
       <li><a href="component-v4-overview.html">Colours</a></li>
       <li><a href="component-v4-overview.html">Typeface</a></li>
