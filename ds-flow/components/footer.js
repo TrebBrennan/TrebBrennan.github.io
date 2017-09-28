@@ -7,7 +7,8 @@ var html = `
     </div>
     <div class="links">
     <div class="footerBits">
-      <strong>Community</strong> &nbsp; <a href="http://designsystem.trydiscourse.com/c/design-system">Forums</a> &nbsp; <a href="https://github.com/govau/uikit">Github</a> &nbsp; <a href="articles.html">Articles</a>
+      <strong>Community</strong> &nbsp; <a href="http://designsystem.trydiscourse.com/c/design-system">Forums</a> &nbsp; <a href="https://github.com/govau/uikit">Github</a> &nbsp; <a href="articles.html">Articles</a> &nbsp;
+      <a href="roadmap.html">Roadmap</a>
     </div>
       <ul class="nav">
         <li><a href="#">Privacy policy</a></li>
