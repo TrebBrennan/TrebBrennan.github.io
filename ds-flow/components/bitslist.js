@@ -4,7 +4,7 @@ var html = `
   <input type="search" placeholder="Search Components">
   <br><br>
   <div class="navGroup open">
-    <h4><a href="javascript:;" class=""> Released <span style="color:white; background:green">15</span></a></h4>
+    <h4><a href="javascript:;" class=""> Released <span style="color:white; background:#3A8530">28</span></a></h4>
     <ul style="display:block">
       <li><a href="component-v4-overview.html">Core</a></li>
       <li><a href="component-v4-overview.html">Buttons</a></li>
@@ -14,7 +14,7 @@ var html = `
     </ul>
   </div>
   <div class="navGroup">
-    <h4><a href="javascript:;" class=""> In progress  <span style="color:white; background:magenta">5</span></a></h4>
+    <h4><a href="javascript:;" class=""> In progress  <span style="color:white; background:#CB0F78">12</span></a></h4>
     <ul>
       <li><a href="component-v4-overview.html">Spacing</a></li>
       <li><a href="component-v4-overview.html">Responsive breakpoints</a></li>
@@ -29,7 +29,7 @@ var html = `
     </ul>
   </div>
   <div class="navGroup">
-    <h4><a href="javascript:;" class=""> Suggestions  <span style="color:white; background:purple">26</span></a></h4>
+    <h4><a href="javascript:;" class=""> Suggestions  <span style="color:white; background:#922688">5</span></a></h4>
     <ul>
       <li><a href="component-v4-overview.html">Tooltips</a></li>
       <li><a href="component-v4-overview.html">codetabs</a></li>
@@ -42,7 +42,7 @@ var html = `
       <li><a href="component-v4-overview.html">Labels</a></li>
     </ul>
   </div>
-  <p><a href="#">Make a Suggestion</a></p>
+  <p><a href="http://designsystem.trydiscourse.com/c/design-system/new-component-request">Make a Suggestion</a></p>
 </div>
 `;
 
