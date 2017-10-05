@@ -7,7 +7,7 @@ var html = `
     <h4><a href="javascript:;" class=""> Released <span style="color:white; background:#3A8530">28</span></a></h4>
     <ul style="display:block">
       <li><a href="component-v4-overview.html">Core</a></li>
-      <li><a href="component-v4-overview.html">Buttons</a></li>
+      <li><a href="component-v4-overview.html" id="p1">Buttons</a></li>
       <li><a href="component-v4-overview.html">Colours</a></li>
       <li><a href="component-v4-overview.html">Typeface</a></li>
       <li><a href="component-v4-overview.html">Grids</a></li>
@@ -21,6 +21,7 @@ var html = `
       <li><a href="component-wip.html">Iconography</a></li>
       <li><a href="component-wip.html">Headings &amp; body copy</a></li>
       <li><a href="component-wip.html">Tags</a></li>
+      <li><a href="component-wip.html" id="p2">Typeface</a></li>
       <li><a href="component-wip.html">Badges</a></li>
       <li><a href="component-wip.html">Switch(toggle) buttons</a></li>
       <li><a href="component-wip.html">Basic tables</a></li>
