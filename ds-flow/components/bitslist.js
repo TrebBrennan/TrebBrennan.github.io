@@ -3,7 +3,7 @@ var html = `
 <div class="bits-list sidebar">
   <input type="search" placeholder="Search Components">
   <br><br>
-  <div class="navGroup open">
+  <div class="navGroup open" id="live">
     <h4><a href="javascript:;" class=""> Released <span style="color:white; background:#3A8530">28</span></a></h4>
     <ul style="display:block">
       <li><a href="component-v4-overview.html">Core</a></li>
@@ -13,7 +13,7 @@ var html = `
       <li><a href="component-v4-overview.html">Grids</a></li>
     </ul>
   </div>
-  <div class="navGroup">
+  <div class="navGroup" id="beta">
     <h4><a href="javascript:;" class=""> In progress  <span style="color:white; background:#CB0F78">12</span></a></h4>
     <ul>
       <li><a href="component-wip.html">Spacing</a></li>
@@ -28,7 +28,7 @@ var html = `
       <li><a href="component-wip.html">Loading</a></li>
     </ul>
   </div>
-  <div class="navGroup">
+  <div class="navGroup" id="alpha">
     <h4><a href="javascript:;" class=""> Suggestions  <span style="color:white; background:#922688">5</span></a></h4>
     <ul>
       <li><a href="component-wip.html">Tooltips</a></li>
