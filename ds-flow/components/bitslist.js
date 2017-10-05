@@ -16,30 +16,30 @@ var html = `
   <div class="navGroup">
     <h4><a href="javascript:;" class=""> In progress  <span style="color:white; background:#CB0F78">12</span></a></h4>
     <ul>
-      <li><a href="component-v4-overview.html">Spacing</a></li>
-      <li><a href="component-v4-overview.html">Responsive breakpoints</a></li>
-      <li><a href="component-v4-overview.html">Iconography</a></li>
-      <li><a href="component-v4-overview.html">Headings &amp; body copy</a></li>
-      <li><a href="component-v4-overview.html">Tags</a></li>
-      <li><a href="component-v4-overview.html">Badges</a></li>
-      <li><a href="component-v4-overview.html">Switch(toggle) buttons</a></li>
-      <li><a href="component-v4-overview.html">Basic tables</a></li>
-      <li><a href="component-v4-overview.html">Complex tables</a></li>
-      <li><a href="component-v4-overview.html">Loading</a></li>
+      <li><a href="component-wip.html">Spacing</a></li>
+      <li><a href="component-wip.html">Responsive breakpoints</a></li>
+      <li><a href="component-wip.html">Iconography</a></li>
+      <li><a href="component-wip.html">Headings &amp; body copy</a></li>
+      <li><a href="component-wip.html">Tags</a></li>
+      <li><a href="component-wip.html">Badges</a></li>
+      <li><a href="component-wip.html">Switch(toggle) buttons</a></li>
+      <li><a href="component-wip.html">Basic tables</a></li>
+      <li><a href="component-wip.html">Complex tables</a></li>
+      <li><a href="component-wip.html">Loading</a></li>
     </ul>
   </div>
   <div class="navGroup">
     <h4><a href="javascript:;" class=""> Suggestions  <span style="color:white; background:#922688">5</span></a></h4>
     <ul>
-      <li><a href="component-v4-overview.html">Tooltips</a></li>
-      <li><a href="component-v4-overview.html">codetabs</a></li>
-      <li><a href="component-v4-overview.html">Accordions</a></li>
-      <li><a href="component-v4-overview.html">Progress indicators</a></li>
-      <li><a href="component-v4-overview.html">Notifications</a></li>
-      <li><a href="component-v4-overview.html">Lists</a></li>
-      <li><a href="component-v4-overview.html">Quotations</a></li>
-      <li><a href="component-v4-overview.html">Charts &amp; graphs</a></li>
-      <li><a href="component-v4-overview.html">Labels</a></li>
+      <li><a href="component-wip.html">Tooltips</a></li>
+      <li><a href="component-wip.html">codetabs</a></li>
+      <li><a href="component-wip.html">Accordions</a></li>
+      <li><a href="component-wip.html">Progress indicators</a></li>
+      <li><a href="component-wip.html">Notifications</a></li>
+      <li><a href="component-wip.html">Lists</a></li>
+      <li><a href="component-wip.html">Quotations</a></li>
+      <li><a href="component-wip.html">Charts &amp; graphs</a></li>
+      <li><a href="component-wip.html">Labels</a></li>
     </ul>
   </div>
   <p><a href="http://designsystem.trydiscourse.com/c/design-system/new-component-request">Make a Suggestion</a></p>

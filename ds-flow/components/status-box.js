@@ -2,7 +2,8 @@
 var html = `
 <div class="statusbox">
   <div class="clearfix">
-    <strong style="float:left; width:50%; display:block"><img src="img/ic_check_black_24dp_2x.png" style="width:24px; vertical-align:middle; margin-bottom:0.2em; margin-right:0.2em"/>Released</strong>
+    <strong style="float:left; width:50%; display:block">
+<i class="fa fa-check-circle-o" aria-hidden="true"></i> Released</strong>
   </div>
   <hr>
   Changelog: <a href="https://github.com/govau/uikit/blob/master/packages/buttons/CHANGELOG.md">2017 Aug 24</a><br>
