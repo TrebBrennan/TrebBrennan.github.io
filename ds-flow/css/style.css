@@ -1473,3 +1473,16 @@ padding: 0.8em 0; }
 .footerBits strong{
   font-size: 20px;
 }
+
+.alert {
+  background: #EE0000;
+  color:white;
+  padding: 4px;
+  /*text-align: center;*/
+  font-size:14px;
+}
+.alert strong {
+  font-size:16px;
+  text-transform: uppercase;
+  margin-right: 2em;
+}
