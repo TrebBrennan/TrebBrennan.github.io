@@ -1,0 +1,376 @@
+
+  <!DOCTYPE html>
+  <!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+  <body>
+
+    <header style="background:#333">
+
+      <script src="components/ribbon.js"></script>
+
+      <div class="wrapper">
+        <div class="banner clearfix">
+          <div style="float:left">
+            <img src="img/gov-logo.png"/>
+          </div>
+          <div style="float:left">
+            <h1 style="float:none; margin:0; padding:0"><a href="index.html">Guides</a></h1>
+            <h2 style="margin-top:0; line-height:1; font-size:1.75em; font-weight:normal; opacity:0.75;">Design System</h2>
+          </div>
+        </div><!--header-->
+
+        <!-- <div class="clearfix">
+          <h1 class="col-8">AusGov : Design System</h1>
+          <p class="col-3 right" style="text-align:right">
+            <input type="search" placeholder="search"/>
+          </p>
+        </div> -->
+      </div><!--wrapper-->
+
+      <!-- Main nav -->
+      <script src="components/main-nav.js"></script>
+    </header>
+
+
+    <section class="wrapper">
+      <div class="clearfix main">
+
+
+      <!--Sidebar-->
+      <script src="components/bitslist.js"></script>
+
+
+<!--
+================== ~Content ==================
+-->
+        <div class="content maincontent">
+
+          <div class="clearfix">
+            <h1 style="margin-bottom:0; float:left" id="intro">Buttons <sub>v1.1</sub></h1>
+          </div>
+            <p class="abstract">Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.<!--text from polaris shopify--></p>
+
+
+            <div class="details">
+              <table>
+                <tr>
+                  <td class="peeps">
+                    <p><strong>Contributors</strong></p>
+                    Thanks to <br>
+                    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
+                    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/sam/25/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
+                    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/charleswalter/25/43914_1.png" class="avatar" title="charleswalter - Original Poster"></a>
+                    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
+                    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/sam/25/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
+                    <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/charleswalter/25/43914_1.png" class="avatar" title="charleswalter - Original Poster"></a>
+                    <a href="#">20+</a>
+                  </td>
+                  <td>
+                    <p><a href="https://github.com/govau/uikit/blob/master/packages/buttons/CHANGELOG.md"><strong>Changelog</strong></a></p>
+                    <p>Version 0.5.0<br>2017 Aug 24 <br> Added pancake-react plugin, ES5 main file</p>
+
+                    <!-- <p>
+                    <strong>Version 1.1</strong><br>
+                    <a href="#">Changelog</a><br>
+                    <a href="https://codepen.io/treb/pen/wqBYNZ" class="button">Demo</a>
+                    </p> -->
+                  </td>
+                  <td>
+                    <p><a href="http://github.com/govau/uikit/blob/master/packages/buttons/README.md"><strong>Technical Documention</a></strong></p>
+                    <p>
+                    <span class="tab">Install:</span>  <span class="code">yarn add @gov.au/buttons</span><br>
+                    <span class="tab">NPM:</span>  <span class="code"><a href="https://www.npmjs.com/package/@gov.au/buttons">@gov.au/buttons</a></span><br>
+                    <!-- <span class="tab">GitHub</span> <a href="https://github.com/govau/uikit/tree/master/packages/buttons">buttons</a> -->
+                    </p>
+                  </td>
+                  <td width="120px">
+                    <p style="margin-bottom:0"><a href="component-demo.html" class="button full">Demo</a></p>
+                  </td>
+                </tr>
+              </table>
+            </div><!--details-->
+<!-- ======= details ======= -->
+
+<div class="" style="margin: 3.2em 0;
+    border-left: .4em solid #888;
+    padding: 0 0 .8em 1.2em;">
+  <h4 style="margin-bottom:0">Contents</h4>
+  <ul style="list-style: none; padding:0; margin:0;     margin: 1.6em 0 0;">
+    <li style="margin-bottom:0.5em"><a href="#variations">Variations</a>
+      <!-- <ul>
+        <li><a href="#default">Default Buttons</a></li>
+        <li><a href="#soft">Soft Buttons</a></li>
+        <li><a href="#disabled">Disabled buttons</a></li>
+        <li><a href="#icons">Buttons with icons</a></li>
+        <li><a href="#sizes">Buttons sizes</a></li>
+        <li><a href="#groups">Button groups toggle</a></li>
+        <li><a href="#groupsizes">Button groups sizing</a></li>
+      </ul> -->
+    </li>
+    <li style="margin-bottom:0.5em"><a href="#usage">Usability</a></li>
+    <li style="margin-bottom:0.5em"><a href="#faqs">Accessibility</a></li>
+    <li style="margin-bottom:0.5em"><a href="#discussion">Discussion</a></li>
+  </ul>
+</div>
+
+            <h2 id="variations">Variations</h2>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="default">Default Buttons</h3>
+                <p>These are the available button styles you can use in your interface. These basic button styles form the base classes for all other button variations.</p>
+              </div>
+              <div style="width:60%; float:right">
+                <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                    <a href="javascript:;">React</a></div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre><xmp><p>
+  <button>Button</button>
+  <a href="" role="button">Link as a button</a>
+  <button disabled>Disabled button</button>
+</p></xmp></pre>
+              </div>
+            </div>
+
+
+
+
+<p>&nbsp;</p>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="soft">Soft Buttons</h3>
+                <p>Soft buttons place less visual emphasis on the button. Soft buttons are useful when grouping buttons with differing importance.</p>
+              </div>
+              <div style="width:60%; float:right">
+                <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                    <a href="javascript:;">React</a></div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre><xmp><p>
+  <button>Button</button>
+  <a href="" role="button">Link as a button</a>
+  <button disabled>Disabled button</button>
+</p></xmp></pre>
+              </div>
+            </div>
+
+<p>&nbsp;</p>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="disabled">Disabled buttons</h3>
+                <p>These buttons are not active. They can't be clicked and don't react to hover.</p>
+              </div>
+              <div style="width:60%; float:right">
+                <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                    <a href="javascript:;">React</a></div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre><xmp><p>
+  <button>Button</button>
+  <a href="" role="button">Link as a button</a>
+  <button disabled>Disabled button</button>
+</p></xmp></pre>
+              </div>
+            </div>
+
+<p>&nbsp;</p>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="icons">Buttons with icons</h3>
+                <p>Icons in buttons add clarity to the intention of the button action. The icon should inherit the button text colour. Read more about <a href="#">icons.</a>
+                <p>The icons in this example are not included and will have to be added to the Build separately.</p>
+              </div>
+              <div style="width:60%; float:right">
+                <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                    <a href="javascript:;">React</a></div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre><xmp><p>
+  <button>Button</button>
+  <a href="" role="button">Link as a button</a>
+  <button disabled>Disabled button</button>
+</p></xmp></pre>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+                        <div class="clearfix">
+                          <div style="width:35%; float:left">
+                            <h3 id="sizes">Buttons sizes</h3>
+                            <p>Please do not use any other button heights than those shown here. Button widths can be fixed or span columns.</p>
+                          </div>
+                          <div style="width:60%; float:right">
+                            <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                            <div class="codetabs clearfix">
+                              <div class="left">
+                                <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                                <a href="javascript:;">React</a></div>
+                              <div class="right"><a href="javascript:;">Copy code</a></div>
+                            </div>
+                            <pre><xmp><p>
+              <button>Button</button>
+              <a href="" role="button">Link as a button</a>
+              <button disabled>Disabled button</button>
+            </p></xmp></pre>
+                          </div>
+                        </div>
+
+          <p>&nbsp;</p>
+
+                      <div class="clearfix">
+                        <div style="width:35%; float:left">
+                          <h3 id="groups">Button groups toggle</h3>
+                          <p>Please do not use any other button heights than those shown here. Button widths can be fixed or span columns.</p>
+                        </div>
+                        <div style="width:60%; float:right">
+                          <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                          <div class="codetabs clearfix">
+                            <div class="left">
+                              <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                              <a href="javascript:;">React</a></div>
+                            <div class="right"><a href="javascript:;">Copy code</a></div>
+                          </div>
+                          <pre><xmp><p>
+            <button>Button</button>
+            <a href="" role="button">Link as a button</a>
+            <button disabled>Disabled button</button>
+          </p></xmp></pre>
+                        </div>
+                      </div>
+
+          <p>&nbsp;</p>
+
+                      <div class="clearfix">
+                        <div style="width:35%; float:left">
+                          <h3 id="groupsizes">Button groups sizing</h3>
+                          <p>Please do not use any other button heights than those shown here. Button widths can be fixed or span columns.</p>
+                        </div>
+                        <div style="width:60%; float:right">
+                          <img src="http://via.placeholder.com/600x300" style="display:block"/>
+                          <div class="codetabs clearfix">
+                            <div class="left">
+                              <a href="javascript:;">HTML</a>&nbsp;&nbsp;
+                              <a href="javascript:;">React</a></div>
+                            <div class="right"><a href="javascript:;">Copy code</a></div>
+                          </div>
+                          <pre><xmp><p>
+            <button>Button</button>
+            <a href="" role="button">Link as a button</a>
+            <button disabled>Disabled button</button>
+          </p></xmp></pre>
+                        </div>
+                      </div>
+
+
+
+            <br><br>
+            <h2 id="usage">Usage</h2>
+            <ul style="max-width:35em">
+              <li>Use 1 button per page to build a strong call to action. Multiple buttons will force the user to make a choice. If the user needs to make a choice use another kind of element, for example a radio button.</li>
+              <li>Use button text to describe what the button does. Keep it short.</li>
+              <li>The button alignment in forms should put the primary action button at the left edge, in the user’s line of sight.</li>
+              <li>Don’t apply styles to disabled buttons.</li>
+            </ul>
+
+            <div class="clearfix examples">
+              <div><img src="http://via.placeholder.com/300x400"/>
+              <p>Icons must have accompanying text</p>
+              </div>
+              <div><img src="http://via.placeholder.com/300x400"/>
+              <p>Icons must have accompanying text</p>
+              </div>
+              <div><img src="http://via.placeholder.com/300x400"/>
+              <p>Icons must have accompanying text</p>
+              </div>
+            </div>
+            <div class="clearfix examples">
+              <div><img src="http://via.placeholder.com/300x400"/>
+              <p>Icons must have accompanying text</p>
+              </div>
+              <div><img src="http://via.placeholder.com/300x400"/>
+              <p>Icons must have accompanying text</p>
+              </div>
+              <div><img src="http://via.placeholder.com/300x400"/>
+              <p>Icons must have accompanying text</p>
+              </div>
+            </div>
+
+            <br><br>
+
+            <h2 id="usability">Usability</h2>
+            <p>Use 1 button per page to build a strong call to action. Multiple buttons will force the user to make a choice. If the user needs to make a choice use another kind of element, for example a radio button.</p>
+            <p>Use button text to describe what the button does. Keep it short. The button alignment in forms should put the primary action button at the left edge, in the user’s line of sight.</p>
+            <p>Don’t apply styles to disabled buttons.</p>
+
+            <br><br>
+
+            <h2 id="accessibility">Accessibility</h2>
+            <p>Use 1 button per page to build a strong call to action. Multiple buttons will force the user to make a choice. If the user needs to make a choice use another kind of element, for example a radio button.</p>
+            <p>Use button text to describe what the button does. Keep it short. The button alignment in forms should put the primary action button at the left edge, in the user’s line of sight. Don’t apply styles to disabled buttons.</p>
+
+            <br><br>
+
+            <h2 id="faqs">Rationale</h2>
+
+            <div class="clearfix">
+            <h3 style="width:35%; float:left">Underline on hover</h3>
+            <div style="width:60%; float:right">
+              <p>Buttons have an underline on hover in order to address <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">WCAG2.0 Criterion 1.4.1</a><br>
+              <p style="color:#717171; font-size:14px; font-style: italic;">1.4.1 Use of Color: <strong>Color is not used as the only visual means of conveying information,</strong> indicating an action, prompting a response, or distinguishing a visual element. (Level A)</p>
+              <p>Note. Focus state is not underlined as it is conveyed using the global focus (orange outline) state.</p>
+            </div>
+          </div>
+
+<br><br>
+
+          <div class="clearfix">
+          <h3 style="width:35%; float:left">Round corners</h3>
+          <div style="width:60%; float:right">
+            <p>Buttons have an underline on hover in order to address <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">WCAG2.0 Criterion 1.4.1</a><br>
+            <p style="color:#717171; font-size:14px; font-style: italic;">1.4.1 Use of Color: <strong>Color is not used as the only visual means of conveying information,</strong> indicating an action, prompting a response, or distinguishing a visual element. (Level A)</p>
+            <p>Note. Focus state is not underlined as it is conveyed using the global focus (orange outline) state.</p>
+          </div>
+        </div>
+
+
+        <script src="components/component-footer.js"></script>
+
+        </div>
+        <!--
+        ================== ~On this page ==================
+        -->
+      </div>
+    </section>
+
+
+    <script src="components/footer.js"></script>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
+  
+</html>

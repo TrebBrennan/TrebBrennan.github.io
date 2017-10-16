@@ -1,0 +1,131 @@
+
+  <!DOCTYPE html>
+  <!--[if lte IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+  <body>
+
+    <header style="background:#333">
+
+      <script src="components/ribbon.js"></script>
+
+      <div class="wrapper">
+        <div class="banner clearfix">
+          <div style="float:left">
+            <img src="img/gov-logo.png"/>
+          </div>
+          <div style="float:left">
+            <h1 style="float:none; margin:0; padding:0"><a href="index.html">Guides</a></h1>
+            <h2 style="margin-top:0; line-height:1; font-size:1.75em; font-weight:normal; opacity:0.75;">Design System</h2>
+          </div>
+        </div><!--header-->
+
+        <!-- <div class="clearfix">
+          <h1 class="col-8">AusGov : Design System</h1>
+          <p class="col-3 right" style="text-align:right">
+            <input type="search" placeholder="search"/>
+          </p>
+        </div> -->
+      </div><!--wrapper-->
+
+      <!-- Main nav -->
+      <script src="components/main-nav.js"></script>
+    </header>
+
+
+    <section class="wrapper">
+      <div class="clearfix main fullcol">
+
+
+      <!--Sidebar-->
+      <script src="components/bitslist.js"></script>
+
+
+<!--
+================== ~Content ==================
+-->
+        <div class="content maincontent">
+
+          <div class="clearfix">
+            <h1 style="margin-bottom:0; float:left" id="intro">Buttons <sub>v0.5.0</sub></h1>
+          </div>
+
+          <div class="inpageNav clearfix">
+            <nav>
+              <ul>
+                <li><a href="component-v2-overview.html">Summary</a></li>
+                <li><a href="component-v2-usage.html" class="active">Usability</a></li>
+                <li><a href="component-v2-rationale.html">Accessibility</a></li>
+                <li><a href="component-v2-discussion.html">Discussion <sup>3</sup></a></li>
+                <li class="right"><a href="component-demo.html">Live Demo <img src="img/ic_launch_black_24dp_2x.png" style="width:24px; vertical-align: middle; margin-left:0.5em;"></a></li>
+              </ul>
+            </nav>
+          </div><!--inpageNav-->
+
+          <br>
+
+          <h1>Usability</h1>
+          <ul style="max-width:35em">
+            <li>Use 1 button per page to build a strong call to action. Multiple buttons will force the user to make a choice. If the user needs to make a choice use another kind of element, for example a radio button.</li>
+            <li>Use button text to describe what the button does. Keep it short.</li>
+            <li>The button alignment in forms should put the primary action button at the left edge, in the user’s line of sight.</li>
+            <li>Don’t apply styles to disabled buttons.</li>
+          </ul>
+
+          <div class="clearfix examples">
+            <div><img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0B6Okdz75tqQsWVJfOVpiVHYtZ00/components_buttons_main9.png"/>
+            <p>Icons need to have accompanying text</p>
+            </div>
+            <div><img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0B6Okdz75tqQsckpmZTBwSmh1VzQ/components_buttons_main10.png"/>
+            <p>Soft buttons are appropriate in dialogs.</p>
+            </div>
+            <div><img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0B6Okdz75tqQsR0hib1ExN21wWjA/components_buttons_main5.png"/>
+            <p>Soft buttons minimize distraction from content.</p>
+            </div>
+          </div>
+          <div class="clearfix examples">
+            <div><img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0B6Okdz75tqQsX0xZMnFkR1ZOVmc/components_buttons_main6.png"/>
+            <p>Use default buttons to give more prominence to actions in layouts with a lot of varying content.</p>
+            </div>
+            <div><img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0B6Okdz75tqQsMF8xdDNDNUc0Zk0/components_buttons_main7.png"/>
+            <p><strong>Do.</strong> Raised buttons stand out more than flat buttons.</p>
+            </div>
+            <div><img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0B6Okdz75tqQsZk0xMExROVpzLWs/components_buttons_main8.png"/>
+            <p><strong>Don't.</strong> Don’t use soft buttons in UIs where they would be difficult to see.</p>
+            </div>
+          </div>
+
+          <br><br>
+
+            <h2 id="usability">Usability</h2>
+            <p>Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
+            <p><strong>Function:</strong> Is it important and ubiquitous enough to be a floating action button?</p>
+            <p><strong>Dimension:</strong> Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.</p>
+            <p><strong>Layout:</strong> Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
+            <p>Button placement in non-standard dialogs and modal windows depends on the complexity of the content they contain.</p>
+            <p>For dialogs with relatively simple content, it is recommended to place buttons on the right side of a dialog, with the affirmative button to the right of the dismissive button.</p>
+            <p>For lengthy or complex forms, it is recommended to place buttons on the left of the form, with the affirmative button to the left of the dismissive button.</p>
+            <br><br>
+
+
+            <script src="components/component-footer.js"></script>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <script src="components/footer.js"></script>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
