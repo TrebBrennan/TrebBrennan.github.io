@@ -8,7 +8,7 @@ var html = `
   <hr>
   Changelog: <a href="https://github.com/govau/uikit/blob/master/packages/buttons/CHANGELOG.md">2017 Aug 24</a><br>
   NPM Install: <a href="https://www.npmjs.com/package/@gov.au/buttons">@gov.au/buttons</a><br>
-  Tags: <a href="#">Buttons</a> <a href="#">Forms</a> <a href="#">CTA</a>
+  <!--Tags: <a href="#">Buttons</a> <a href="#">Forms</a> <a href="#">CTA</a>-->
 </div>
 `;
 

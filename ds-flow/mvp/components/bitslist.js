@@ -1,8 +1,8 @@
 
 var html = `
 <div class="bits-list sidebar">
-  <input type="search" placeholder="Search Components">
-  <br><br>
+  <!--<input type="search" placeholder="Search Components">
+  <br><br>-->
   <div class="navGroup open" id="live">
     <h4><a href="javascript:;" class=""> Released <span style="color:white; background:#3A8530">28</span></a></h4>
     <ul style="display:block">
@@ -13,6 +13,7 @@ var html = `
       <li><a href="component-v4-overview.html">Grids</a></li>
     </ul>
   </div>
+  <!--
   <div class="navGroup" id="beta">
     <h4><a href="javascript:;" class=""> In progress  <span style="color:white; background:#CB0F78">12</span></a></h4>
     <ul>
@@ -43,6 +44,7 @@ var html = `
       <li><a href="component-wip.html">Labels</a></li>
     </ul>
   </div>
+  -->
   <p><a href="http://designsystem.trydiscourse.com/c/design-system/new-component-request">Make a Suggestion</a></p>
 </div>
 `;
