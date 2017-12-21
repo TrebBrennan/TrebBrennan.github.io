@@ -76,17 +76,17 @@
             <div class="clearfix">
               <div style="width:35%; float:left">
                 <h3 id="default"><i class="" id="variations"></i>Colour</h3>
-<p>Our design system uses colour in a range of meaningful and intentional way to create patterns and visual cues. We offer 5 colour palettes:</p>
-<p>&bull; main palette<br>
-&bull; contrast main palette<br>
-&bull; dark palette<br>
-&bull; contrast dark palette<br>
-&bull; notification palette
-</p>
 
-<p>These 5 palettes work together to support a variety of uses cases and provide a consistent look for action or link colours and focus states regardless of the palette combination./</p>
-<p>Our colour palettes have also been designed to be implemented in a themable manner. The universal colour variables are determined by common roles and usage; they are not based singularly on a colour value (ie unique hex code). The same colour value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.</p>
-<p>Read more</p>
+                <p>Our design system uses colour in a range of meaningful and intentional ways to create patterns and visual cues. We provide the following colour palettes:</p>
+                <p>&bull; main palette<br>
+                &bull; contrast main palette<br>
+                &bull; dark palette<br>
+                &bull; contrast dark palette<br>
+                &bull; notification palette
+                </p>
+              <p>  These palettes work together to support a variety of uses cases and provide a consistent look for action or link colours and focus states regardless of the palette combination.</p>
+
+                <p>Our colour palettes have also been designed to be implemented in a themeable manner. The universal colour variables are determined by common roles and usage; they are not based singularly on a colour value (ie unique hex code). The same colour value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.</p>
 
                 <p style="font-size:14px; margin-top:2em">
                   <strong>Functions</strong> <br>
@@ -99,13 +99,13 @@
                   <a href="component-v4-rationale.html#underline">AU-color-a11y</a>
                 </p>
 
-                <p style="font-size:14px; margin-top:2em"><strong>Contributors</strong><br>
+                <!-- <p style="font-size:14px; margin-top:2em"><strong>Contributors</strong><br>
                   <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
                   <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/sam/25/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
                   <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/charleswalter/25/43914_1.png" class="avatar" title="charleswalter - Original Poster"></a>
                   <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
                   <a href="#">20+</a>
-                </p>
+                </p> -->
 
               </div>
 
@@ -139,26 +139,32 @@ $AU-color-Info:                    #00bfe9 !default;
               </div>
             </div>
 
+
+
+
+
+
+
+
+
 <p>&nbsp;</p><p>&nbsp;</p>
 
             <div class="clearfix">
               <div style="width:35%; float:left">
-                <h3 id="soft">Soft Buttons</h3>
-                <p>Soft buttons place less visual emphasis on the button. Soft buttons are useful when grouping buttons with differing importance.</p>
+                <h3 id="soft">Font families (System fonts)</h3>
+                <p>We use system fonts as they are used by the operating system for displaying text used in menus, icons and errors. Performance may be boosted when the system defaults to a system font because the browser doesn't have to download any font files. It's using one it already had.</p>
+                <p>System fonts have come a long way in recent times. Manufacturers are now shipping some very elegant fonts as default in their operating systems.</p>
+                <p>During research we met many Australians who live in rural and remote areas where Internet access is limited but government services are still required. Using system fonts makes the load times a whole lot faster for such users with only a slight compromise on aesthetics. </p>
               </div>
               <div style="width:60%; float:right">
-                <img src="img/c-button-02.png" style="display:block"/>
+                <img src="https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B7WCemMG6e0VcDd2YmVFbDhCZHc/style-typography.png" style="display:block"/>
                 <div class="codetabs clearfix">
                   <div class="left">
                     <a href="javascript:;">HTML</a>&nbsp;&nbsp;
                     <a href="javascript:;">React</a></div>
                   <div class="right"><a href="javascript:;">Copy code</a></div>
                 </div>
-                <pre><xmp><p>
-  <button>Button</button>
-  <a href="" role="button">Link as a button</a>
-  <button disabled>Disabled button</button>
-</p></xmp></pre>
+                <pre><xmp>??</xmp></pre>
               </div>
             </div>
 
@@ -166,15 +172,26 @@ $AU-color-Info:                    #00bfe9 !default;
 
             <div class="clearfix">
               <div style="width:35%; float:left">
-                <h3 id="disabled">Disabled buttons</h3>
-                <p>These buttons are not active. They can't be clicked and don't react to hover.</p>
+                <h3 id="disabled">Spacing</h3>
+                <p>A consistent unit of measurement is required to avoid layout inconsistencies between pages. </p>
+                <p>Our layout spacing is based on an 8pt grid system. We use a ‘soft’ 8-pt grid system to position individual elements relative to each other instead of to an actual grid (a ‘hard grid’).  This means we use increments of 8 to size and space out elements on a page. So any defined height or width, margin or padding will be an increment of&nbsp;8. </p>
+                <p>By using an even number like 8 to size and space elements, we are able to also scale for a wide variety of devices easily and consistently.</p>
+                <p>In our design system we specify 1unit as 16px or 1rem. </p>
+                <p>We use column grids to align content horizontally, and the 8pt baseline grid to vertically align bodies of text.</p>
+
                 <p style="font-size:14px; margin-top:2em">
-                  <strong>Rationale</strong> <br>
-                  <a href="component-v4-rationale.html#disabled-contrast">Disabled button contrast</a> <br>
+                  <strong>Functions and variables </strong> <br>
+                  <a href="component-v4-rationale.html#underline">breakpoints</a> <br>
+                  <a href="component-v4-rationale.html#underline">max width</a> <br>
+                  <a href="component-v4-rationale.html#underline">border radius</a> <br>
+                  <a href="component-v4-rationale.html#underline">AU-media</a> <br>
+                  <a href="component-v4-rationale.html#underline">AU-fontgrid</a> <br>
+                  <a href="component-v4-rationale.html#underline">AU-space</a> <br>
                 </p>
+
               </div>
               <div style="width:60%; float:right">
-                <img src="img/c-button-03.png" style="display:block"/>
+                <img src="https://storage.googleapis.com/material-design/publish/material_v_12/assets/0Bzhp5Z4wHba3VjlGS3V2Qnh1WXM/layout-metrics-keyline-tablet2.png" style="display:block"/>
                 <div class="codetabs clearfix">
                   <div class="left">
                     <a href="javascript:;">HTML</a>&nbsp;&nbsp;
@@ -193,23 +210,29 @@ $AU-color-Info:                    #00bfe9 !default;
 
             <div class="clearfix">
               <div style="width:35%; float:left">
-                <h3 id="icons">Buttons with icons</h3>
-                <p>Icons in buttons add clarity to the intention of the button action. The icon should inherit the button text colour. Read more about <a href="#">icons.</a>
-                <p>The icons in this example are not included and will have to be added to the Build separately.</p>
+                <h3 id="icons">Screen readers</h3>
+                <p><code><pre>mixin: AU-sronly</pre></code></p>
+                <p>Use the <code>AU-sronly</code> mixin for content which should be visually hidden, but remain accessible to assistive technologies such as screen readers. This can be useful in situations where additional visual information or cues (such as meaning denoted through the use of color) need to also be conveyed to non-visual users.</p>
               </div>
               <div style="width:60%; float:right">
-                <img src="img/c-button-04.png" style="display:block"/>
+                <!-- <img src="img/c-button-04.png" style="display:block"/> -->
                 <div class="codetabs clearfix">
                   <div class="left">
-                    <a href="javascript:;">HTML</a>&nbsp;&nbsp;
-                    <a href="javascript:;">React</a></div>
+                    <!-- <a href="javascript:;">HTML</a>&nbsp;&nbsp; -->
+                    <!-- <a href="javascript:;">SCSS</a> -->
+                  </div>
                   <div class="right"><a href="javascript:;">Copy code</a></div>
                 </div>
-                <pre><xmp><p>
-  <button>Button</button>
-  <a href="" role="button">Link as a button</a>
-  <button disabled>Disabled button</button>
-</p></xmp></pre>
+                <pre><xmp>@mixin AU-sronly() {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}</xmp></pre>
               </div>
             </div>
 
@@ -217,70 +240,53 @@ $AU-color-Info:                    #00bfe9 !default;
 
                         <div class="clearfix">
                           <div style="width:35%; float:left">
-                            <h3 id="sizes">Buttons sizes</h3>
-                            <p>Please do not use any other button heights than those shown here. Button widths can be fixed or span columns.</p>
+                            <h3 id="sizes">Focus</h3>
+                            <p><code><pre>mixin: AU-focus
+mixin: AU-outline</pre></code></p>
+                            <p>Use the <code>AU-focus</code> mixin to add a focus state to any element that is consistent with other elements in the design system.</p>
+                            <p>When used correctly this mixin ensures the focus state is visible in both our light and dark colour themes. </p>
                           </div>
                           <div style="width:60%; float:right">
-                            <img src="img/c-button-05.png" style="display:block"/>
+                            <!-- <img src="img/c-button-05.png" style="display:block"/> -->
                             <div class="codetabs clearfix">
                               <div class="left">
                                 <a href="javascript:;">HTML</a>&nbsp;&nbsp;
                                 <a href="javascript:;">React</a></div>
                               <div class="right"><a href="javascript:;">Copy code</a></div>
                             </div>
-                            <pre><xmp><p>
-  <button>Button</button>
-  <a href="" role="button">Link as a button</a>
-  <button disabled>Disabled button</button>
-</p></xmp></pre>
+                            <pre><xmp>/**
+ * AU-outline - Create outline based on the theme the user is using.
+ *
+ * @param  {keywords} $theme - `dark` or default ( `light` )
+ *
+ * @return {string}          - The code
+ */
+@mixin AU-outline( $theme: 'light' ) {
+	@if $theme == 'dark' {
+		outline: 3px solid $AU-colordark-Focus;
+	}
+	@else {
+		outline: 3px solid $AU-color-Focus;
+	}
+}
+
+
+/**
+ * AU-focus - Add the outline to focus
+ */
+@mixin AU-focus( $theme: 'light' ) {
+	&:focus {
+		@include AU-outline( $theme );
+	}
+
+	// Remove Modzilla inner HTML dotted line. github.com/necolas/normalize.css/blob/master/normalize.css#L285
+	&::-moz-focus-inner {
+		border: 0;
+	}
+}</xmp></pre>
                           </div>
                         </div>
 
-          <p>&nbsp;</p><p>&nbsp;</p>
-
-                      <div class="clearfix">
-                        <div style="width:35%; float:left">
-                          <h3 id="groups">Button groups toggle</h3>
-                          <p>Please do not use any other button heights than those shown here. Button widths can be fixed or span columns.</p>
-                        </div>
-                        <div style="width:60%; float:right">
-                          <img src="img/c-button-06.png" style="display:block"/>
-                          <div class="codetabs clearfix">
-                            <div class="left">
-                              <a href="javascript:;">HTML</a>&nbsp;&nbsp;
-                              <a href="javascript:;">React</a></div>
-                            <div class="right"><a href="javascript:;">Copy code</a></div>
-                          </div>
-                          <pre><xmp><p>
-  <button>Button</button>
-  <a href="" role="button">Link as a button</a>
-  <button disabled>Disabled button</button>
-</p></xmp></pre>
-                        </div>
-                      </div>
-
-          <p>&nbsp;</p><p>&nbsp;</p>
-
-                      <div class="clearfix">
-                        <div style="width:35%; float:left">
-                          <h3 id="groupsizes">Button groups sizing</h3>
-                          <p>Please do not use any other button heights than those shown here. Button widths can be fixed or span columns.</p>
-                        </div>
-                        <div style="width:60%; float:right">
-                          <img src="img/c-button-07.png" style="display:block"/>
-                          <div class="codetabs clearfix">
-                            <div class="left">
-                              <a href="javascript:;">HTML</a>&nbsp;&nbsp;
-                              <a href="javascript:;">React</a></div>
-                            <div class="right"><a href="javascript:;">Copy code</a></div>
-                          </div>
-                          <pre><xmp><p>
-  <button>Button</button>
-  <a href="" role="button">Link as a button</a>
-  <button disabled>Disabled button</button>
-</p></xmp></pre>
-                        </div>
-                      </div>
 
                       <script src="components/component-footer.js"></script>
 
