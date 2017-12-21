@@ -6,7 +6,7 @@ var html = `
   <div class="navGroup open" id="live">
     <h4><a href="javascript:;" class=""> Released <span style="color:white; background:#3A8530">28</span></a></h4>
     <ul style="display:block">
-      <li><a href="component-v4-overview.html">Core</a></li>
+      <li><a href="component-v4-core.html" id="p2">Core</a></li>
       <li><a href="component-v4-overview.html" id="p1">Buttons</a></li>
       <li><a href="component-v4-overview.html">Colours</a></li>
       <li><a href="component-v4-overview.html">Typeface</a></li>
