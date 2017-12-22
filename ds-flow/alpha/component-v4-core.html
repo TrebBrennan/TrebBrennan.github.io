@@ -88,17 +88,6 @@
 
                 <p>Our colour palettes have also been designed to be implemented in a themeable manner. The universal colour variables are determined by common roles and usage; they are not based singularly on a colour value (ie unique hex code). The same colour value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.</p>
 
-                <p style="font-size:14px; margin-top:2em">
-                  <strong>Functions</strong> <br>
-                  <a href="component-v4-rationale.html#underline">AU-replace</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-svguri</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-factorial</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-pow</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-color-luminance</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-color-contrast</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-color-a11y</a>
-                </p>
-
                 <!-- <p style="font-size:14px; margin-top:2em"><strong>Contributors</strong><br>
                   <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
                   <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/sam/25/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
@@ -117,7 +106,7 @@
                     </div>
                   <div class="right"><a href="javascript:;">Copy code</a></div>
                 </div>
-                <pre style="overflow:auto; height:15em"><xmp>
+                <pre class="codeblock"><xmp>
 Light theme                     Dark theme
 $AU-color-Text                  $AU-colordark-Text
 $AU-color-Action                $AU-colordark-Action
@@ -164,7 +153,7 @@ $AU-color-Info:                    #00bfe9 !default;
                     <a href="javascript:;">React</a></div>
                   <div class="right"><a href="javascript:;">Copy code</a></div>
                 </div>
-                <pre><xmp>??</xmp></pre>
+                <pre class="codeblock"><xmp>$uikit-font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;</xmp></pre>
               </div>
             </div>
 
@@ -178,17 +167,6 @@ $AU-color-Info:                    #00bfe9 !default;
                 <p>By using an even number like 8 to size and space elements, we are able to also scale for a wide variety of devices easily and consistently.</p>
                 <p>In our design system we specify 1unit as 16px or 1rem. </p>
                 <p>We use column grids to align content horizontally, and the 8pt baseline grid to vertically align bodies of text.</p>
-
-                <p style="font-size:14px; margin-top:2em">
-                  <strong>Functions and variables </strong> <br>
-                  <a href="component-v4-rationale.html#underline">breakpoints</a> <br>
-                  <a href="component-v4-rationale.html#underline">max width</a> <br>
-                  <a href="component-v4-rationale.html#underline">border radius</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-media</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-fontgrid</a> <br>
-                  <a href="component-v4-rationale.html#underline">AU-space</a> <br>
-                </p>
-
               </div>
               <div style="width:60%; float:right">
                 <img src="https://storage.googleapis.com/material-design/publish/material_v_12/assets/0Bzhp5Z4wHba3VjlGS3V2Qnh1WXM/layout-metrics-keyline-tablet2.png" style="display:block"/>
@@ -198,7 +176,7 @@ $AU-color-Info:                    #00bfe9 !default;
                     <a href="javascript:;">React</a></div>
                   <div class="right"><a href="javascript:;">Copy code</a></div>
                 </div>
-                <pre><xmp><p>
+                <pre class="codeblock"><xmp><p>
   <button>Button</button>
   <a href="" role="button">Link as a button</a>
   <button disabled>Disabled button</button>
@@ -206,13 +184,52 @@ $AU-color-Info:                    #00bfe9 !default;
               </div>
             </div>
 
+
+
+
+
+<p>&nbsp;</p><p>&nbsp;</p>
+
+<div class="clearfix">
+  <div style="width:35%; float:left">
+    <h3 id="icons">Nearest accessible color</h3>
+    <p><code><pre>@function AU-color-a11y( $toMakeA11y, $background, $ratioKey: 'small', $steps: 0.1 )</pre></code></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis itaque iure, laudantium doloribus, expedita at ipsam mollitia sed soluta vel rerum dolore quibusdam alias quisquam, porro, aliquid enim dolor? </p>
+  </div>
+  <div style="width:60%; float:right">
+    <!-- <img src="img/c-button-04.png" style="display:block"/> -->
+    <div class="codetabs clearfix">
+      <div class="left">
+        <!-- <a href="javascript:;">HTML</a>&nbsp;&nbsp; -->
+        <!-- <a href="javascript:;">SCSS</a> -->
+      </div>
+      <div class="right"><a href="javascript:;">Copy code</a></div>
+    </div>
+    <pre class="codeblock"><xmp>/**
+ * AU-color-a11y - The function to find the nearest accessible color
+ *
+ * https://github.com/alex-page/sass-a11ycolor
+ *
+ * @author Alex Page @aalexpaage <http://alexpage.com.au>
+ *
+ * @param  {Color}           $toMakeA11y            - The color that is to be changed
+ * @param  {Color}           $background            - The background color to for the contrast
+ * @param  {'small'|'large'} $ratioKey   ['small']  - The keyword 'small' or 'large' to set the WCAG 2.1 contrast ration or 3.0 or 4.5
+ * @param  {Number}          $steps      [0.1]      - The step size our function is searching for a new color in. The bigger the number the faster the process
+ *                                                    the rougher the found color.
+ *
+ * @return {Color}                                  - Returns the nearest accessible color
+ */</xmp></pre>
+  </div>
+</div>
+
 <p>&nbsp;</p><p>&nbsp;</p>
 
             <div class="clearfix">
               <div style="width:35%; float:left">
-                <h3 id="icons">Screen readers</h3>
-                <p><code><pre>mixin: AU-sronly</pre></code></p>
-                <p>Use the <code>AU-sronly</code> mixin for content which should be visually hidden, but remain accessible to assistive technologies such as screen readers. This can be useful in situations where additional visual information or cues (such as meaning denoted through the use of color) need to also be conveyed to non-visual users.</p>
+                <h3 id="icons">Media queries</h3>
+                <p><code><pre>@include AU-media( $breakpoint ) { @content }</pre></code></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis itaque iure, laudantium doloribus, expedita at ipsam mollitia sed soluta vel rerum dolore quibusdam alias quisquam, porro, aliquid enim dolor? </p>
               </div>
               <div style="width:60%; float:right">
                 <!-- <img src="img/c-button-04.png" style="display:block"/> -->
@@ -223,24 +240,125 @@ $AU-color-Info:                    #00bfe9 !default;
                   </div>
                   <div class="right"><a href="javascript:;">Copy code</a></div>
                 </div>
-                <pre><xmp>@mixin AU-sronly() {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
-}</xmp></pre>
+                <pre class="codeblock"><xmp>* AU-media - Create media queries and wraps the @content code inside of it
+*
+* @param  {keywords} $breakpoint - Either one of the following keywords: xs, sm, md, lg
+*
+* @return {string}               - The code passed in via @content wrapped inside a media query
+            </xmp></pre>
               </div>
             </div>
 
+<p>&nbsp;</p><p>&nbsp;</p>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="icons">Breakpoints</h3>
+                <p>Used in AU-media</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis itaque iure, laudantium doloribus, expedita at ipsam mollitia sed soluta vel rerum dolore quibusdam alias quisquam, porro, aliquid enim dolor? </p>
+              </div>
+              <div style="width:60%; float:right">
+                <!-- <img src="img/c-button-04.png" style="display:block"/> -->
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <!-- <a href="javascript:;">HTML</a>&nbsp;&nbsp; -->
+                    <!-- <a href="javascript:;">SCSS</a> -->
+                  </div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre class="codeblock"><xmp>$AU-media-xs: 576px !default; //media query breakpoints
+$AU-media-sm: 768px !default;
+$AU-media-md: 992px !default;
+$AU-media-lg: 1200px !default;
+            </xmp></pre>
+              </div>
+            </div>
+
+
+
             <p>&nbsp;</p><p>&nbsp;</p>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="icons">Border radius</h3>
+                <p><code><pre>$AU-border-radius</pre></code></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis itaque iure, laudantium doloribus, expedita at ipsam mollitia sed soluta vel rerum dolore quibusdam alias quisquam, porro, aliquid enim dolor? </p>
+              </div>
+              <div style="width:60%; float:right">
+                <!-- <img src="img/c-button-04.png" style="display:block"/> -->
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <!-- <a href="javascript:;">HTML</a>&nbsp;&nbsp; -->
+                    <!-- <a href="javascript:;">SCSS</a> -->
+                  </div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre class="codeblock"><xmp>//VARIABLES
+$AU-border-radius: $AU-unit + 0px !default;
+            </xmp></pre>
+              </div>
+            </div>
+
+
+            <p>&nbsp;</p><p>&nbsp;</p>
+
+            <div class="clearfix">
+              <div style="width:35%; float:left">
+                <h3 id="icons">Max width  </h3>
+                <p><code><pre>$AU-maxwidth</pre></code></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis itaque iure, laudantium doloribus, expedita at ipsam mollitia sed soluta vel rerum dolore quibusdam alias quisquam, porro, aliquid enim dolor? </p>
+              </div>
+              <div style="width:60%; float:right">
+                <!-- <img src="img/c-button-04.png" style="display:block"/> -->
+                <div class="codetabs clearfix">
+                  <div class="left">
+                    <!-- <a href="javascript:;">HTML</a>&nbsp;&nbsp; -->
+                    <!-- <a href="javascript:;">SCSS</a> -->
+                  </div>
+                  <div class="right"><a href="javascript:;">Copy code</a></div>
+                </div>
+                <pre class="codeblock"><xmp>//VARIABLES
+$AU-maxwidth: 42em !default;
+            </xmp></pre>
+              </div>
+            </div>
+
+<p>&nbsp;</p><p>&nbsp;</p>
+
+<div class="clearfix">
+  <div style="width:35%; float:left">
+    <h3 id="icons">Screen readers only</h3>
+    <p><code><pre>mixin: AU-sronly</pre></code></p>
+    <p>Use the <code>AU-sronly</code> mixin for content which should be visually hidden, but remain accessible to assistive technologies such as screen readers. This can be useful in situations where additional visual information or cues (such as meaning denoted through the use of color) need to also be conveyed to non-visual users.</p>
+  </div>
+  <div style="width:60%; float:right">
+    <!-- <img src="img/c-button-04.png" style="display:block"/> -->
+    <div class="codetabs clearfix">
+      <div class="left">
+        <!-- <a href="javascript:;">HTML</a>&nbsp;&nbsp; -->
+        <!-- <a href="javascript:;">SCSS</a> -->
+      </div>
+      <div class="right"><a href="javascript:;">Copy code</a></div>
+    </div>
+    <pre class="codeblock"><xmp>@mixin AU-sronly() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+</xmp></pre>
+  </div>
+</div>
+
+<p>&nbsp;</p><p>&nbsp;</p>
 
                         <div class="clearfix">
                           <div style="width:35%; float:left">
-                            <h3 id="sizes">Focus</h3>
+                            <h3 id="sizes">Focus styles</h3>
                             <p><code><pre>mixin: AU-focus
 mixin: AU-outline</pre></code></p>
                             <p>Use the <code>AU-focus</code> mixin to add a focus state to any element that is consistent with other elements in the design system.</p>
@@ -254,7 +372,7 @@ mixin: AU-outline</pre></code></p>
                                 <a href="javascript:;">React</a></div>
                               <div class="right"><a href="javascript:;">Copy code</a></div>
                             </div>
-                            <pre><xmp>/**
+                            <pre class="codeblock"><xmp>/**
  * AU-outline - Create outline based on the theme the user is using.
  *
  * @param  {keywords} $theme - `dark` or default ( `light` )

@@ -703,6 +703,10 @@ pre {
   background: #eee;
   overflow: hidden;
 }
+.codeblock {
+  height: 15em;
+  overflow:auto;
+}
 xmp {
   margin: 0;
 }
