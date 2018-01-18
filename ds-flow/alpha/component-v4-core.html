@@ -60,7 +60,7 @@
 
           <div class="clearfix">
             <div style="width:68%; float:left">
-              <p class="abstract" style="margin-top:0">Core is comprised of a range of ‘styles’ and ‘bits’ blah blah blah ...<!--text from polaris shopify--></p>
+              <p class="abstract" style="margin-top:0; padding-right:2em;">Core includes a range of styles, and development tools, that form the foundation of how the GOLD design system works.</p>
             </div>
             <div style="width:32%; float:right">
               <script src="components/status-box.js"></script>
@@ -75,9 +75,9 @@
 
             <div class="clearfix">
               <div style="width:35%; float:left">
-                <h3 id="default"><i class="" id="variations"></i>Colour</h3>
+                <h3 id="default"><i class="" id="variations"></i>Colour system</h3>
 
-                <p>Our design system uses colour in a range of meaningful and intentional ways to create patterns and visual cues. We provide the following colour palettes:</p>
+                <p>Our design system uses colour to create patterns and visual cues. We provide the following colour palettes:</p>
                 <p>&bull; main palette<br>
                 &bull; contrast main palette<br>
                 &bull; dark palette<br>
@@ -86,15 +86,15 @@
                 </p>
               <p>  These palettes work together to support a variety of uses cases and provide a consistent look for action or link colours and focus states regardless of the palette combination.</p>
 
-                <p>Our colour palettes have also been designed to be implemented in a themeable manner. The universal colour variables are determined by common roles and usage; they are not based singularly on a colour value (ie unique hex code). The same colour value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.</p>
+                <p>Our colour palettes have also been designed to be implemented in a themeable manner. The universal colour variables are determined by common roles and usage; they are not based on a colour value (ie unique hex code). The same colour value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.</p>
 
-                <!-- <p style="font-size:14px; margin-top:2em"><strong>Contributors</strong><br>
-                  <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
-                  <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/sam/25/5243_1.png" class="avatar" title="sam - Frequent Poster"></a>
-                  <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://cdn-enterprise.discourse.org/meta/user_avatar/meta.discourse.org/charleswalter/25/43914_1.png" class="avatar" title="charleswalter - Original Poster"></a>
-                  <a href="http://designsystem.trydiscourse.com/u/treb/summary"><img alt="" width="24" height="24" src="https://avatars.discourse.org/v3/letter/j/d07c76/25.png" class="avatar latest" title="junwen_yang - Original Poster, Most Recent Poster"></a>
-                  <a href="#">20+</a>
-                </p> -->
+                <h4>Related code</h4>
+                <p>
+                  <a href="#">Color variables</a><br/>
+                  <a href="#">function: AU-color-luminance</a><br/>
+                  <a href="component-v4-core-usage.html#AU-color-contrast">function: Test color-contrast ratio</a><br/>
+                  <a href="#nearest">function: nearest accessible color</a>
+                </p>
 
               </div>
 
@@ -140,8 +140,8 @@ $AU-color-Info:                    #00bfe9 !default;
 
             <div class="clearfix">
               <div style="width:35%; float:left">
-                <h3 id="soft">Font families (System fonts)</h3>
-                <p>We use system fonts as they are used by the operating system for displaying text used in menus, icons and errors. Performance may be boosted when the system defaults to a system font because the browser doesn't have to download any font files. It's using one it already had.</p>
+                <h3 id="soft">System fonts</h3>
+                <p>A system font is a font used by the operating system for displaying text used in menus, icons and errors. Defaulting to the system font of a particular operating system can boost performance because the browser doesn't have to download any font files. It's using one it already had.</p>
                 <p>System fonts have come a long way in recent times. Manufacturers are now shipping some very elegant fonts as default in their operating systems.</p>
                 <p>During research we met many Australians who live in rural and remote areas where Internet access is limited but government services are still required. Using system fonts makes the load times a whole lot faster for such users with only a slight compromise on aesthetics. </p>
               </div>
@@ -167,6 +167,16 @@ $AU-color-Info:                    #00bfe9 !default;
                 <p>By using an even number like 8 to size and space elements, we are able to also scale for a wide variety of devices easily and consistently.</p>
                 <p>In our design system we specify 1unit as 16px or 1rem. </p>
                 <p>We use column grids to align content horizontally, and the 8pt baseline grid to vertically align bodies of text.</p>
+
+<h4>Related code</h4>
+<p>
+  <a href="#">variable: breakpoints</a><br/>
+  <a href="#">variable: max width</a><br/>
+  <a href="#">variable: border radius</a><br/>
+  <a href="#">mixin: AU-media</a><br/>
+  <a href="#">mixin: AU-fontgrid (xs, s, m, l, xl)</a><br/>
+  <a href="#">mixin: AU-space (1 rem = 1 unit)</a>
+</p>
               </div>
               <div style="width:60%; float:right">
                 <img src="https://storage.googleapis.com/material-design/publish/material_v_12/assets/0Bzhp5Z4wHba3VjlGS3V2Qnh1WXM/layout-metrics-keyline-tablet2.png" style="display:block"/>
@@ -184,7 +194,7 @@ $AU-color-Info:                    #00bfe9 !default;
               </div>
             </div>
 
-
+<!-- <a href="#">function: AU-svguri</a><br/> -->
 
 
 
@@ -192,7 +202,7 @@ $AU-color-Info:                    #00bfe9 !default;
 
 <div class="clearfix">
   <div style="width:35%; float:left">
-    <h3 id="icons">Nearest accessible color</h3>
+    <h3 id="nearest">Nearest accessible color</h3>
     <p><code><pre>@function AU-color-a11y( $toMakeA11y, $background, $ratioKey: 'small', $steps: 0.1 )</pre></code></p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis itaque iure, laudantium doloribus, expedita at ipsam mollitia sed soluta vel rerum dolore quibusdam alias quisquam, porro, aliquid enim dolor? </p>
   </div>
