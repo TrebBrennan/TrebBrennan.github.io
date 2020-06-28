@@ -1,76 +1,226 @@
 <!DOCTYPE html>
-<html lang=en>
+
+<!--
+   ==========================================================================
+		You like HTML? Me too! Let's hangout.
+   ==========================================================================
+-->
+
+<html lang="en" class="no-js">
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=X-UA-Compatible content="ie=edge">
-<title>Trevor Brennan: Interaction Designer</title>
-<meta name="Description" content="Digital Interaction Designer and UX developer. I solve problems practically, value simple solutions, and care about collaboration.">
-<style>.back,.front,body{display:grid}@font-face{font-family:Montserrat;font-display:optional;font-style:normal;font-weight:700;src:local("Montserrat Bold"),local("Montserrat-Bold"),url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body,html{margin:0;padding:0;height:100%}body{background:#ccc;color:#717171;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:.75rem;align-items:center}body.on .bg{opacity:0}.bg{position:absolute;top:0;left:0;right:0;bottom:0;background:#a9a9a9;transition:opacity 1s;opacity:1}.flip-container{margin:0 auto;-webkit-perspective:1000px;perspective:1000px;-webkit-tap-highlight-color:transparent}.back,.flip-container,.front{width:297px;height:187px}.flipper{transition:.6s;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:relative}.back,.front{-webkit-backface-visibility:hidden;backface-visibility:hidden;will-change:transform;position:absolute;top:0;left:0;border-radius:8px;border-top:solid 2px red;border-bottom:solid 2px red;box-sizing:border-box;padding:1.5rem;cursor:pointer}.front{z-index:2;-webkit-transform:rotateY(0);transform:rotateY(0);background:#26272b;color:#FFF;border-bottom-color:#131315;border-top-color:#4e4f52;box-shadow:0 20px 40px rgba(0,0,0,.3);grid-template-columns:1fr;align-items:end;justify-items:start}.back{z-index:1;-webkit-transform:rotateY(180deg);transform:rotateY(180deg);background:#f1f1f1;border-bottom-color:#dcdcdc;border-top-color:#fff;box-shadow:0 20px 40px rgba(0,0,0,.1);grid-template-columns:1fr 1fr;grid-template-rows:1f2;align-items:end;justify-items:end}.flip-container.flip .flipper{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}.bio{text-align:left;justify-self:start}.bio h1{font-size:1em;margin:0;font-family:Montserrat,sans-serif;text-transform:uppercase;font-weight:700}.social a{display:block;width:32px;height:32px;color:#717171;border-radius:100%;float:left;margin-left:5px}.social a:focus,.social a:hover{outline:0;color:#91431d;background:#dcdcdc}.social svg{fill:currentColor}.svg_wrapper{display:none}.logo svg{height:1.25rem;-webkit-filter:drop-shadow(0 -2px 0 #131315);filter:drop-shadow(0 -2px 0 #131315)}</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Trevor Brennan: Digital product designer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<!--[if gt IE 8]><!--><link rel="stylesheet" href="assets/css/main.css"><!--<![endif]-->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="assets/css/ie.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script>window.html5 || document.write('<script src="assets/js/html5shiv.js"><\/script>')</script>
+	<![endif]-->
 </head>
 <body>
-<div class=bg></div>
-<div class=flip-container>
-<div class=flipper>
-<div class=front>
-<div class=logo>
-<svg viewBox="0 0 68 29">
-<defs>
-<linearGradient id=gradient x1=0% y1=21% x2=100% y2=79%>
-<stop offset=0% style=stop-color:#dcaa93 />
-<stop offset=100% style=stop-color:#945431 />
-</linearGradient>
-<filter id=inset-shadow width=200% height=200%>
-<feOffset dx=0 dy=-2 />
-<feGaussianBlur stdDeviation=0 result=offset-blur />
-<feComposite operator=out in=SourceGraphic result=inverse />
-<feFlood flood-color=#d8a58d flood-opacity=1 result=color />
-<feComposite operator=in in=color in2=inverse result=shadow />
-<feComponentTransfer in=shadow result=shadow>
-<feFuncA type=linear slope=1 />
-</feComponentTransfer>
-<feComposite operator=over in=shadow in2=SourceGraphic />
-</filter>
-</defs>
-<path filter=url(#inset-shadow) fill=url(#gradient) d="M68 8.7c0-2.5-1-4.5-2.7-6.3C63.5.7 61.2 0 58.8 0H45.5c-2.5 0-4.9.7-6.6 2.4C37.1 4.1 36 6.2 36 8.7V21h-6.8c-.9 0-1.2-.9-1.2-1.7v-1.8c1-.4 2.7-1.2 3.8-2.3 1.8-1.7 2.7-4.1 2.7-6.5 0-2.5-1-4.5-2.8-6.3C29.9.7 27.6 0 25.1 0H1v7h8v22h8V7h8.2c.8 0 1.5.7 1.5 1.5S26 10 25.2 10H20v9.3c0 5.1 4.1 9.7 9.2 9.7H51v-8h-5.6c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5H51v-8h-5.6c-.8 0-1.4-.7-1.4-1.5S44.6 7 45.4 7h13.3c.8 0 1.5.7 1.5 1.5s-.6 1.5-1.4 1.5H54v8h4.8c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5H54v8h4.8c2.5 0 4.8-1.2 6.5-2.9 1.8-1.7 2.7-4.2 2.7-6.6 0-1.9-.6-3.8-1.7-5.4 1.1-1.6 1.7-3.5 1.7-5.4z"/>
-</svg>
-</div>
-</div>
-<div class=back>
-<div class=bio>
-<h1>Trevor Brennan</h1>
-<div>Interaction Designer</div>
-</div>
-<div class=social>
-<a href=https://twitter.com/TrebBrennan id=twitter target=_blank rel=noreferrer>
-<svg viewBox="0 0 32 32"><title>Twitter</title><use xlink:href=#svg_twitter></use></svg>
-</a>
-<a href=https://dribbble.com/Treb id=dribbble target=_blank rel=noreferrer>
-<svg viewBox="0 0 32 32"><title>Dribbble</title><use xlink:href=#svg_dribbble></use></svg>
-</a>
-<a href=https://github.com/trebbrennan id=github target=_blank rel=noreferrer>
-<svg viewBox="0 0 32 32"><title>Github</title><use xlink:href=#svg_github></use></svg>
-</a>
-</div>
-</div>
-</div>
-</div>
-<svg class=svg_wrapper version=1.2 baseProfile=tiny xmlns=http://www.w3.org/2000/svg>
-<defs>
-<g id=svg_logo>
-<path fill=url(#gradient) d="M68 8.7c0-2.5-1-4.5-2.7-6.3C63.5.7 61.2 0 58.8 0H45.5c-2.5 0-4.9.7-6.6 2.4C37.1 4.1 36 6.2 36 8.7V21h-6.8c-.9 0-1.2-.9-1.2-1.7v-1.8c1-.4 2.7-1.2 3.8-2.3 1.8-1.7 2.7-4.1 2.7-6.5 0-2.5-1-4.5-2.8-6.3C29.9.7 27.6 0 25.1 0H1v7h8v22h8V7h8.2c.8 0 1.5.7 1.5 1.5S26 10 25.2 10H20v9.3c0 5.1 4.1 9.7 9.2 9.7H51v-8h-5.6c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5H51v-8h-5.6c-.8 0-1.4-.7-1.4-1.5S44.6 7 45.4 7h13.3c.8 0 1.5.7 1.5 1.5s-.6 1.5-1.4 1.5H54v8h4.8c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5H54v8h4.8c2.5 0 4.8-1.2 6.5-2.9 1.8-1.7 2.7-4.2 2.7-6.6 0-1.9-.6-3.8-1.7-5.4 1.1-1.6 1.7-3.5 1.7-5.4z"/>
-</g>
-<g id=svg_twitter>
-<path d=M13,22.5a9.27,9.27,0,0,0,9.34-9.34c0-.14,0-.28,0-.42A6.79,6.79,0,0,0,24,11a6.45,6.45,0,0,1-1.89.51,3.29,3.29,0,0,0,1.45-1.81,6.54,6.54,0,0,1-2.09.79,3.29,3.29,0,0,0-5.59,3A9.33,9.33,0,0,1,9.11,10.1a3.29,3.29,0,0,0,1,4.38,3.27,3.27,0,0,1-1.49-.41v0a3.29,3.29,0,0,0,2.63,3.22,3.36,3.36,0,0,1-1.48.06,3.3,3.3,0,0,0,3.07,2.28,6.61,6.61,0,0,1-4.08,1.4A6.79,6.79,0,0,1,8,21a9.34,9.34,0,0,0,5,1.47></path>
-</g>
-<g id=svg_dribbble>
-<path d="M16 8a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm6.1 8a15.64 15.64 0 0 0-3.7-.1c-.2-.5-.5-1-.7-1.5a10.62 10.62 0 0 0 3.1-2.1 5.94 5.94 0 0 1 1.3 3.7zm-2.7-5a6.54 6.54 0 0 1-2.6 1.7 26.21 26.21 0 0 0-1.7-2.7c.3 0 .6-.1.9-.1a6 6 0 0 1 3.4 1.1zm-6.3-.4c.5.8 1.2 1.7 1.8 2.7a17.7 17.7 0 0 1-4.7.6 6.7 6.7 0 0 1 2.9-3.3zM9.9 16v-.1h.1a20 20 0 0 0 5.9-.8c.2.4.4.8.6 1.3a11 11 0 0 0-5.1 3.6 6.37 6.37 0 0 1-1.5-4zm2.9 5.2a8.63 8.63 0 0 1 4.3-3 19 19 0 0 1 .9 3.6 7.12 7.12 0 0 1-2.1.4 8.08 8.08 0 0 1-3.1-1zm7-.5a24.6 24.6 0 0 0-.7-2.9 7.82 7.82 0 0 1 2.6.2 5.8 5.8 0 0 1-1.9 2.7z"></path>
-</g>
-<g id=svg_github>
-<path d="M16 8.2a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.39v-1.36c-2.23.49-2.7-1.07-2.7-1.07a2.12 2.12 0 0 0-.89-1.17c-.72-.5.06-.49.06-.49a1.68 1.68 0 0 1 1.22.83 1.7 1.7 0 0 0 2.29.66 1.71 1.71 0 0 1 .51-1.07c-1.78-.2-3.64-.89-3.64-4a3.11 3.11 0 0 1 .82-2.15 2.85 2.85 0 0 1 .08-2.11s.67-.22 2.2.82a7.54 7.54 0 0 1 4 0c1.53-1 2.2-.82 2.2-.82a2.85 2.85 0 0 1 .08 2.11 3.11 3.11 0 0 1 .82 2.15c0 3.07-1.87 3.75-3.65 4a1.88 1.88 0 0 1 .58 1.48v2.19c0 .26.15.47.55.39A8 8 0 0 0 16 8.2z"></path>
-</g>
-</defs>
-</svg>
-<script>var card=document.querySelector(".flip-container"),socialLinks=document.querySelector(".social");card.onclick=function(){window.getSelection().removeAllRanges(),this.classList.toggle("flip"),document.body.classList.toggle("on"),event.stopPropagation()},socialLinks.addEventListener("click",function(t){t.stopPropagation()}),document.addEventListener("touchstart",function(){},!0)</script>
+
+
+
+<section class="intro a4">
+	<div class="va">
+		<div class="wrapper">
+
+			<h1 class="a1">Trevor<br> Brennan</h1>
+
+			<div class="content a2">
+				<p>A digital product designer with experience in front&#8209;end development. I&nbsp;solve problems practically, value simple solutions, and care about collaboration.</p>
+				<!--
+						==========================================================================
+								YEP, I'm a boring designer, but that's how I like it!
+								http://blog.capwatkins.com/the-boring-designer
+						==========================================================================
+				--->
+			</div>
+
+			<div class="row">
+				<p class="detail a3">
+					<strong>Product Designer</strong>
+					<a href="https://www.xero.com" target="_blank">Xero</a>
+				</p>
+
+				<p class="detail a3">
+					<strong>Current experiment</strong>
+					<a href="#">CSS Grid + D&D</a>
+				</p>
+
+				<p class="social a3">
+					<a href="http://twitter.com/TrebBrennan" target="_blank" id="twitter">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#717171" d="M13,22.5a9.27,9.27,0,0,0,9.34-9.34c0-.14,0-.28,0-.42A6.79,6.79,0,0,0,24,11a6.45,6.45,0,0,1-1.89.51,3.29,3.29,0,0,0,1.45-1.81,6.54,6.54,0,0,1-2.09.79,3.29,3.29,0,0,0-5.59,3A9.33,9.33,0,0,1,9.11,10.1a3.29,3.29,0,0,0,1,4.38,3.27,3.27,0,0,1-1.49-.41v0a3.29,3.29,0,0,0,2.63,3.22,3.36,3.36,0,0,1-1.48.06,3.3,3.3,0,0,0,3.07,2.28,6.61,6.61,0,0,1-4.08,1.4A6.79,6.79,0,0,1,8,21a9.34,9.34,0,0,0,5,1.47"/></svg>
+					</a>
+
+					<a href="http://dribbble.com/Treb" target="_blank" id="dribbble">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#717171" d="M16 8a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm6.1 8a15.64 15.64 0 0 0-3.7-.1c-.2-.5-.5-1-.7-1.5a10.62 10.62 0 0 0 3.1-2.1 5.94 5.94 0 0 1 1.3 3.7zm-2.7-5a6.54 6.54 0 0 1-2.6 1.7 26.21 26.21 0 0 0-1.7-2.7c.3 0 .6-.1.9-.1a6 6 0 0 1 3.4 1.1zm-6.3-.4c.5.8 1.2 1.7 1.8 2.7a17.7 17.7 0 0 1-4.7.6 6.7 6.7 0 0 1 2.9-3.3zM9.9 16v-.1h.1a20 20 0 0 0 5.9-.8c.2.4.4.8.6 1.3a11 11 0 0 0-5.1 3.6 6.37 6.37 0 0 1-1.5-4zm2.9 5.2a8.63 8.63 0 0 1 4.3-3 19 19 0 0 1 .9 3.6 7.12 7.12 0 0 1-2.1.4 8.08 8.08 0 0 1-3.1-1zm7-.5a24.6 24.6 0 0 0-.7-2.9 7.82 7.82 0 0 1 2.6.2 5.8 5.8 0 0 1-1.9 2.7z"/></svg>
+					</a>
+
+					<a href="https://github.com/trebbrennan" target="_blank" id="github">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#717171" d="M16 8.2a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.39v-1.36c-2.23.49-2.7-1.07-2.7-1.07a2.12 2.12 0 0 0-.89-1.17c-.72-.5.06-.49.06-.49a1.68 1.68 0 0 1 1.22.83 1.7 1.7 0 0 0 2.29.66 1.71 1.71 0 0 1 .51-1.07c-1.78-.2-3.64-.89-3.64-4a3.11 3.11 0 0 1 .82-2.15 2.85 2.85 0 0 1 .08-2.11s.67-.22 2.2.82a7.54 7.54 0 0 1 4 0c1.53-1 2.2-.82 2.2-.82a2.85 2.85 0 0 1 .08 2.11 3.11 3.11 0 0 1 .82 2.15c0 3.07-1.87 3.75-3.65 4a1.88 1.88 0 0 1 .58 1.48v2.19c0 .26.15.47.55.39A8 8 0 0 0 16 8.2z"/></svg>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="design-system" class="project">
+	<div class="wrapper">
+
+		<figure class="video">
+			<video preload="metadata" loop="loop" autoplay muted poster="img/gold-poster.jpg" class="video">
+				<source src="img/gold.mp4" type="video/mp4" />
+				<img src="img/gold-poster.jpg" alt="Design System website demonstration" />
+			</video>
+		</figure>
+
+		<div class="row">
+			<header class="content">
+				<h2>Australian<br>Government<br>Design System</h2>
+				<p><a href="cv/gold" class="btn">view demo</a></p>
+				<dl class="gap">
+					<dt>Status</dt>
+						<dd>Continuous Delivery</dd>
+						<dd>Rebranded</dd>
+					<dt>Contribution</dt>
+						<dd>Interaction design
+						<dd>Visual design</dd>
+						<dd>Accessibility</dd>
+						<dd>Front-end</dd>
+				</dl>
+			</header>
+
+			<div class="desc content">
+				<p>The Australian Government Design System is&nbsp;a means of uniting government design and development teams.</p>
+				<p>The Australian Government has over 1000 inconsistent websites and a workforce distributed across more than 200 organisations. Providing a consistent brand and user experience for a service that disperse requires cooperation above what a centralized style guide or front-end framework can provide.</p>
+				<p>With such a diverse landscape to support, the Design System team began by comparing flagship products across the service and meeting with existing teams to understand typical design needs.</p>
+				<p>A set of core front-end functions and common design principles were produced, including a themeable and semantic colour-system, a grid-aligned typographic scale, and standardized spacing units. Resulting in a means for the community to create new standardized components that can be shared in a common format.</p>
+			</div>
+	</div>
+
+		<ul>
+			<li><img alt="design system homepage" src="img/gold-01.jpg"/></li>
+			<li><img alt="" src="img/gold-04.jpg"/></li>
+			<li><img alt="colour system demonstration" src="img/gold-colours.gif"/></li>
+			<li><img alt="design system icons" src="img/gold-icons.png"/></li>
+		</ul>
+
+	</div>
+</section>
+
+
+
+<section	id="coat-of-arms" class="project">
+	<div class="wrapper">
+
+		<figure class="video">
+			<video preload="metadata" loop="loop" autoplay muted poster="img/coa-poster.jpg" class="video">
+				<source src="img/coa.mp4" type="video/mp4" />
+				<img src="img/coa-poster.jpg" alt="responsive logo demonstration" />
+			</video>
+		</figure>
+
+		<div class="row">
+			<header class="content">
+				<h2>Responsive <br> Coat of Arms</h2>
+				<!-- <p><a href="#" class="btn btn--dark">view</a></p> -->
+				<dl>
+					<dt>Status</dt>
+						<dd>Proposal</dd>
+					<dt>Contribution</dt>
+						<dd>Visual design</dd>
+				</dl>
+			</header>
+
+			<div class="desc content">
+				<p>The Commonwealth Coat of Arms is the national emblem of the Australian Government. Unfortunately poor illustration quality, and high levels of detail, means the national emblem does not scale down to smaller sizes well and isn't suitable for the modern mobile web or social&nbsp;media.</p>
+				<p>In an effort to update and increase the versatility of the emblem, our team worked on a proposal for a responsive-logo solution, which included a redraw and clean up of the existing full-detail art-work.</p>
+			</div>
+		</div>
+
+		<ul>
+			<li><img alt="" src="img/coa-01.png"/></li>
+			<li><img alt="" src="img/coa-02.png"/></li>
+			<li><img alt="" src="img/coa-03.png"/></li>
+			<li><img alt="" src="img/coa-04.png"/></li>
+		</ul>
+
+	</div>
+</section>
+
+
+
+<section id="voodoo" class="project">
+	<div class="wrapper">
+
+		<!-- <img src="http://via.placeholder.com/960x480/0092c7/007dab"/> -->
+		<figure class="video">
+			<video preload="metadata" loop="loop" autoplay muted poster="img/voodoo-poster.jpg" class="video">
+				<source src="img/voodoo.mp4" type="video/mp4" />
+				<img src="img/voodoo-poster.jpg" alt="voodoo creative website demonstration" />
+			</video>
+		</figure>
+
+		<div class="row">
+			<header class="content">
+				<h2>Voodoo<br>Creative</h2>
+				<p><a href="cv/voodoo" class="btn">view</a></p>
+				<dl>
+					<dt>Status</dt>
+						<dd>Decommissioned</dd>
+					<dt>Contribution</dt>
+						<dd>Interaction design</dd>
+						<dd>Visual design</dd>
+						<dd>User Experience</dd>
+				</dl>
+			</header>
+
+			<div class="desc content">
+				<p>Voodoo Creative is one of one of Canberra’s leading full service marketing and digital design agencies.</p>
+				<p>In my role as creative director I was responsible for maintaining Voodoo's brand and digital presence. Working closely with the team to balance business needs, technical requirements, messaging, and elegant visuals, we produced a marking site which greatly increased the quality of our customer engagement.</p>
+			</div>
+		</div>
+
+		<ul>
+			<li><img alt="" src="img/voodoo-02.jpg"/></li>
+			<li><img alt="" src="img/voodoo-01.jpg"/></li>
+			<li><img alt="" src="img/voodoo-03.jpg"/></li>
+			<li><img alt="" src="img/voodoo-04.jpg"/></li>
+		</ul>
+
+	</div>
+</section>
+
+
+
+<footer class="notes">
+	<div class="wrapper">
+		<p>Copyright © 2015&ndash;18 Trevor Brennan. All Rights Reserved. Featured brands are the intellectual property of their respective owners. Select works may be shown in concept form and may not represent final published work.</p>
+		<div class="logo">
+			<img src="assets/img/treb-logo.svg" alt="treb">
+		</div>
+	</div>
+</footer>
+
+<script>
+	/* animate  */
+	setTimeout(function(){ document.body.className += "animate"; }, 50);
+
+	/* google analytics */
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-17308986-1','auto');ga('send','pageview');
+</script>
+
 </body>
 </html>

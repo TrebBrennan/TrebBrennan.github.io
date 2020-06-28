@@ -1,0 +1,39 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+#-------------------------------------------------------------------------------------------------------------
+
+	Voodoo Creative
+	Site		: http://voodoocreative.com.au
+	Twitter		: @voodoocreative
+	Location	: Canberra, Australia
+
+	UX, UI, FrontEnd	: Trevor Brennan
+	JavaScript		: Roman Martinez
+	
+
+# SITE
+#-------------------------------------------------------------------------------------------------------------
+
+	Server Environment:
+	HTML5, CSS3
+	jQuery, Modernizr
+
+	http://icomoon.io/
+
+
+#-------------------------------------------------------------------------------------------------------------
+	
+  VVVVVVVVVVVVVVV    OOOOOOOOO         OOOOOOOOO     DVDDDDDDDD         OOOOOOOOO         OOOOOOOOO    TM
+   VVVVVVVVVVVVV   OOOOOOOOOOOOO     OOOOOOOOOOOOO   DDDDDDDDDDDD     OOOOOOOOOOOOO     OOOOOOOOOOOOO
+    VVVVVVVVVVV   OOOOOOOOOOOOOOO   OOOOOOOOOOOOOOO  DDDDDDDDDDDDD   OOOOOOOOOOOOOOO   OOOOOOOOOOOOOOO
+     VVVVVVVVV   OOOOOOOOOOOOOOOOO OOOOOOOOOOOOOOOOO DDDDDDDDDDDDDD OOOOOOOOOOOOOOOOO OOOOOOOOOOOOOOOOO
+      VVVVVVV    OOOOOOOOOOOOOOOOO OOOOOOOOOOOOOOOOO DDDDDDDDDDDDDD OOOOOOOOOOOOOOOOO OOOOOOOOOOOOOOOOO
+       VVVVV      OOOOOOOOOOOOOOO   OOOOOOOOOOOOOOO  DDDDDDDDDDDDD   OOOOOOOOOOOOOOO   OOOOOOOOOOOOOOO
+        VVV        OOOOOOOOOOOOO     OOOOOOOOOOOOO   DDDDDDDDDDDD     OOOOOOOOOOOOO     OOOOOOOOOOOOO
+         V           OOOOOOOOO         OOOOOOOOO     DDDDDDDDDD         OOOOOOOOO         OOOOOOOOO
+
+
+
+ 
