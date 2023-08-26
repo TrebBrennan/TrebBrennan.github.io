@@ -6,15 +6,11 @@ body {
 	height: 100%;
 }
 
-html {
-	font-size: 14px;
-}
-
 body {
 	font-family: sans-serif;
 	line-height: 1.8;
 	color: #717171;
-	font-size: 0.875rem;
+	font-size: 1rem;
 }
 
 h1, h2, h3, h4 {
@@ -137,10 +133,10 @@ footer .logo img {
 	border-radius: 99em;
 	transition: background-color 100ms;
 	overflow: hidden;
+	color: inherit;
 }
 
 .social a path {
-	fill: grey;
 	transition: fill 300ms ease;
 }
 .social a:focus {
@@ -170,6 +166,12 @@ footer .logo img {
 .social #github:focus {
 	background-color: #24292e;
 }
+
+.social #codepen:hover,
+.social #codepen:focus {
+	background-color: #47cf73;
+}
+
 
 
 /*====== Animation ====== */
@@ -245,26 +247,33 @@ p {
 	padding: 0.75rem 2.5rem;
 	display: inline-block;
 	text-decoration: none;
-	border: solid 1px rgba(255,255,255,0.2);
-	border-radius: 2px;
 	transition: border-color 100ms;
 	text-transform: uppercase;
+	position:relative;
+	border-radius: 4px;
+	letter-spacing: 0.05em;
 }
 
-.btn:hover,
 .btn:focus {
-	outline: none;
-	border: solid 1px rgba(255,255,255,1);
+	outline: solid 1px currentColor;
+	outline-offset: 0;
 }
 
-.project .btn--dark {
-	color: #717171;
-	border: solid 1px rgba(113, 113, 113,0.2);
+.btn::before{  
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	border:1px solid currentColor;
+	border-radius: 4px;
+	opacity:0.4;
+	transition: opacity 150ms ease;
 }
 
-.btn--dark:hover,
-.btn--dark:focus{
-	border: solid 1px rgba(113, 113, 113,1);
+.btn:hover:before {
+	opacity:1;	
 }
 
 /*====== Folio ====== */
@@ -280,11 +289,12 @@ p {
 .project dt {
 	font-weight: normal;
 	margin-top: 1.5em;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .project dl {
 	margin-bottom: 3em;
+	font-size: 0.812rem;
 }
 
 .project dd {
@@ -320,7 +330,7 @@ p {
 }
 
 .project a{
-	color: white;
+	color: currentColor;
 }
 
 .project li:nth-child(odd) {
@@ -335,23 +345,18 @@ p {
 
 .video {
 	margin: 0;
+	display: block;
 }
 .video video {
 	width: 100%
 }
-
+figure.video{
+	display: none;
+}
 
 /*====== media ====== */
 
 @media (min-width: 768px){
-
-	html {
-		font-size: 16px;
-	}
-
-	body {
-		font-size: 0.875rem;
-	}
 
 	h1 {
 		font-size: 2rem;
@@ -451,4 +456,15 @@ p {
 #voodoo {
 	background:#0a5670;
 	color:white;
+}
+
+
+#xero {
+	background:#ddecf5;
+	color:#213b55;
+}
+
+#karbon {
+	background:#181818;
+	color:#FFF;
 }
