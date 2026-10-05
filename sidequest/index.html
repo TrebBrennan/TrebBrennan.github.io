@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>Scavenger</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="date-line" id="dateLine">MONDAY · 31 AUGUST</div>
+      <div class="streak-line">
+        <span id="streak">STREAK: DAY 0</span>
+        <span class="divider">:</span>
+        <span id="bestStreak">BEST 0</span>
+      </div>
+    </header>
+
+    <section class="task-wrap">
+      <button class="task-card" id="taskCard" type="button" aria-label="Reveal today's task">
+        <span class="task-card-inner">
+          <span class="task-face task-front">
+            <span class="eyebrow">TODAY'S TASK</span>
+            <span class="reveal-hint">TAP TO REVEAL</span>
+          </span>
+          <span class="task-face task-back">
+            <span class="task" id="taskText">Loading today's activity…</span>
+          </span>
+        </span>
+      </button>
+    </section>
+
+    <section class="actions" id="actions">
+      <button class="primary" id="doneButton" type="button">I DID IT</button>
+      <button class="secondary" id="skipButton" type="button">SKIP · −4 CREDITS</button>
+    </section>
+
+    <footer class="credits">
+      <span>TOTAL</span>
+      <strong id="credits">0 CREDITS</strong>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

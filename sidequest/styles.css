@@ -1,0 +1,312 @@
+* { box-sizing: border-box; }
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+
+  --main-padding: 15px;
+  --card-radius: 22px;
+  --card-shadow: 0 20px 30px rgba(0,0,0,0.3);
+
+  --backdrop: #0c0f11;
+  --on-backdrop: #e6e6e6;
+  --on-backdrop-subdued: rgba(230, 230, 230, 0.5);
+  --backdrop-border: rgba(230, 230, 230, 0.1);
+
+  --primary: #e6e6e6;
+  --on-primary: #3a3a3a;
+  --on-primary-subdued: rgba(58, 58, 58, 0.5);
+  --primary-border: rgba(58, 58, 58, 0.1);
+
+  --secondary: #111c23;
+  --on-secondary: #547285;
+  --on-secondary-subdued: rgba(84, 114, 133, 0.5);
+  --secondary-border: rgba(84, 114, 133, 0.1);
+
+  --success: #dcebdc;
+  --on-success: #123f26;
+  --on-success-subdued: #255f25;
+  --success-border: rgba(18, 63, 38, 0.1);
+  --success-card-shadow: 0px 27px 120px -39px rgba(0, 255, 165, 40%);
+
+  --backdrop-success: #101310;
+  --on-backdrop-success: #51ad51;
+  --on-backdrop-success-subdued: rgba(69, 131, 69, 0.7);
+  --backdrop-success-border: rgba(69, 131, 69, 0.1);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--backdrop);
+  color: var(--on-backdrop);
+}
+
+body.completed {
+  background: var(--backdrop-success);
+  color: var(--on-backdrop-success);
+}
+
+button { font: inherit; }
+
+.app {
+  width: min(100%, 560px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 28px 20px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar { display: grid; gap: 8px; }
+
+.date-line,
+.streak-line,
+.credits {
+  font-size: 0.78rem;
+  line-height: 1.2;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.date-line { font-weight: 700; }
+
+.streak-line {
+  display: flex;
+  gap: 8px;
+  color: var(--on-backdrop-subdued);
+}
+.completed .streak-line {
+  color: var(--on-backdrop-success-subdued);
+}
+
+.divider { opacity: 0.6; }
+
+.task-wrap {
+  margin: auto 0;
+  perspective: 1200px;
+}
+
+.task-card {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.task-card-inner {
+  position: absolute;
+  inset: 0;
+  display: block;
+  transform-style: preserve-3d;
+  transition: transform 2000ms cubic-bezier(.2,.75,.2,1);
+  /* 650ms */
+}
+
+.task-card.revealed {
+  cursor: default;
+}
+
+.task-card.revealed .task-card-inner {
+  transform: rotateY(180deg);
+}
+
+.task-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 42px 28px;
+  border-radius: 22px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.task-front {
+  background: var(--secondary);
+  color: var(--on-secondary);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+}
+
+.task-front::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid var(--on-secondary);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.task-front::after {
+  content: "✦";
+  position: absolute;
+  top: 26px;
+  right: 28px;
+  font-size: .9rem;
+  opacity: .55;
+}
+
+.eyebrow {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: .95;
+  letter-spacing: -.04em;
+  text-align: center;
+}
+
+.reveal-hint {
+  position: absolute;
+  bottom: 28px;
+  font-size: .68rem;
+  letter-spacing: .16em;
+  opacity: .56;
+}
+
+.task-back {
+  transform: rotateY(180deg);
+  color: var(--on-primary);
+  background: var(--primary);
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+}
+
+.completed .task-card .task-back {
+  color: var(--on-success);
+  background: var(--success);
+  border-color: var(--success-border);
+  box-shadow: var(--success-card-shadow);~
+}
+
+.completed .task-card .task-back::after {
+    background-color: var(--on-success);
+    color: var(--success);
+    content: "+1";
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    font-size: .9rem;
+    padding: 0.15em 0.75em;
+    border-radius: 99px;
+}
+
+.task {
+  margin: 0;
+  max-width: 18ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 7vw, 3.25rem);
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  text-align: center;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 220ms ease 280ms, transform 220ms ease 280ms;
+}
+
+.actions.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.actions button {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: .08em;
+  font-size: .78rem;
+  font-weight: 800;
+  transition: transform 120ms ease, opacity 120ms ease, background-color 120ms ease;
+}
+
+.actions button:active:not(:disabled) { transform: scale(.985); }
+.actions button:disabled { cursor: default; opacity: .2; }
+
+.primary {
+  border: 1px solid var(--primary-border);
+  color: var(--on-primary);
+  background: var(--primary);
+}
+
+.completed .primary {
+  color: var(--backdrop-success);
+  background: var(--on-backdrop-success);
+}
+
+.secondary {
+  border: solid 1px;
+  color: var(--on-backdrop-subdued);
+  background: transparent;
+}
+
+.completed .secondary {
+  color: var(--on-backdrop-success-subdued);
+}
+
+.credits {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--on-backdrop-subdued);
+}
+
+.completed .credits {
+  color: var(--on-backdrop-success-subdued);
+}
+
+.credits strong {
+  color: var(--on-backdrop);
+  font-size: .88rem;
+}
+
+.completed .credits strong {
+    color: var(--on-backdrop-success);
+}
+
+@media (min-width: 600px) {
+  .app { padding: 44px 28px 32px; }
+  .task-card { min-height: 340px; }
+}
+
+@keyframes completionSpin {
+  0% {
+    transform: rotateY(180deg) scale(1);
+  }
+
+  45% {
+    transform: rotateY(360deg) scale(1.035);
+  }
+
+  100% {
+    transform: rotateY(540deg) scale(1);
+  }
+}
+
+.task-card.completion-spin .task-card-inner {
+  animation: completionSpin 1100ms cubic-bezier(.2,.8,.2,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .task-card-inner,
+  .actions { transition: none; }
+
+  .task-card.completion-spin .task-card-inner {
+    animation: none;
+  }
+}
