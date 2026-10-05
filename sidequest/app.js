@@ -3,7 +3,7 @@ const TASKS = Object.freeze([
   { id: 2, text: "Visit a cafe you've never been to." },
   { id: 3, text: "Go to bed 30 minutes earlier than usual." },
   { id: 4, text: "Watch a show you wouldn't normally choose." },
-  { id: 5, text: "Buy a fruit you've never eaten." },
+  { id: 5, text: "Eat a fruit you've never eaten." },
   { id: 6, text: "Listen to an album released before you were born." },
   { id: 7, text: "Take a photograph of something blue." },
   { id: 8, text: "Call someone instead of messaging them." },
@@ -19,7 +19,6 @@ const TASKS = Object.freeze([
   { id: 18, text: "Try a drink you've never ordered before." },
   { id: 19, text: "Listen to a radio station you've never used." },
   { id: 20, text: "Walk down a street you've never taken." },
-  
   { id: 21, text: "Notice a building you've never paid attention to before." },
   { id: 22, text: "Take a five-minute detour for no practical reason." },
   { id: 23, text: "Stand outside for a minute and listen for the farthest sound you can hear." },
@@ -30,7 +29,7 @@ const TASKS = Object.freeze([
   { id: 28, text: "Walk through a park you normally pass by." },
   { id: 29, text: "Choose the longest way to get somewhere today." },
   { id: 30, text: "Sit outside for one part of your lunch break." },
-  { id: 31, text: "Find something with a date stamped on it." },
+  { id: 31, text: "Research a significant event that happened on your birthday." },
   { id: 32, text: "Take a photo of a reflection." },
   { id: 33, text: "Look for three things you've never noticed on your usual route." },
   { id: 34, text: "Step into a public building you've never entered before." },
@@ -63,22 +62,22 @@ const TASKS = Object.freeze([
   { id: 61, text: "Walk until you find something worth photographing." },
   { id: 62, text: "Find a place nearby that feels strangely empty." },
   { id: 63, text: "Notice five different kinds of trees or plants." },
-  { id: 64, text: "Take a photo straight down at the ground." },
+  { id: 64, text: "Find an ant and follow it for awhile." },
   { id: 65, text: "Find the oldest-looking building on your route today." },
   { id: 66, text: "Stand somewhere you normally only pass through." },
-  { id: 67, text: "Choose a destination by pointing at a nearby map." },
+  { id: 67, text: "Visit a destination by pointing at a nearby map." },
   { id: 68, text: "Walk to the end of a street you've never followed all the way." },
   { id: 69, text: "Find a mural, sticker, or piece of street art you've never seen." },
   { id: 70, text: "Take a photo of something orange." },
   { id: 71, text: "Try a snack you've never bought before." },
   { id: 72, text: "Buy the cheapest unfamiliar item in a bakery or grocery store." },
-  { id: 73, text: "Choose a different bread than you normally buy." },
+  { id: 73, text: "Talk to someone you wouldn't normally talk to." },
   { id: 74, text: "Eat breakfast for dinner, or dinner for breakfast." },
   { id: 75, text: "Try a food from a country you know little about." },
   { id: 76, text: "Make one meal without using your usual seasoning." },
   { id: 77, text: "Buy something from the international aisle you've never tried." },
   { id: 78, text: "Choose the weirdest flavor of something familiar." },
-  { id: 79, text: "Have a meal with no screen nearby." },
+  { id: 79, text: "Eat a meal with no screens nearby." },
   { id: 80, text: "Try a different brand of something you buy regularly." },
   { id: 81, text: "Order the smallest thing on a menu you've never tried." },
   { id: 82, text: "Make a sandwich you've never made before." },
@@ -88,16 +87,16 @@ const TASKS = Object.freeze([
   { id: 86, text: "Drink your usual drink from a different kind of cup or glass." },
   { id: 87, text: "Make a meal from ingredients you already have but rarely use." },
   { id: 88, text: "Buy one vegetable you don't normally cook." },
-  { id: 89, text: "Try a new flavor of tea." },
+  { id: 89, text: "Try a new flavor of drink." },
   { id: 90, text: "Choose a dessert you've never ordered." },
   { id: 91, text: "Eat one meal outside if the weather allows." },
   { id: 92, text: "Pick a recipe because you already own most of the ingredients." },
   { id: 93, text: "Try a different cheese than your usual." },
   { id: 94, text: "Make a hot drink you haven't had in a long time." },
-  { id: 95, text: "Buy one thing from a local bakery instead of a supermarket." },
+  { id: 95, text: "Buy one thing from a local shop instead of a supermarket." },
   { id: 96, text: "Choose the second-most appealing item instead of your first choice." },
   { id: 97, text: "Eat at a different time than usual." },
-  { id: 98, text: "Try a breakfast from another country." },
+  { id: 98, text: "Research what's common for breakfast in another country." },
   { id: 99, text: "Use a fruit you normally eat raw in a cooked dish." },
   { id: 100, text: "Have a meal made entirely from leftovers." },
   { id: 101, text: "Listen to the first album recommended to you by your music app." },
@@ -151,15 +150,15 @@ const TASKS = Object.freeze([
   { id: 149, text: "Ask someone what they've been listening to lately." },
   { id: 150, text: "Give someone a specific compliment." },
   { id: 151, text: "Send someone a song you think they'd like." },
-  { id: 152, text: "Ask a coworker or friend a question you normally wouldn't think to ask." },
+  { id: 152, text: "Ask a friend a question you normally wouldn't think to ask." },
   { id: 153, text: "Thank someone for something small they probably forgot doing." },
   { id: 154, text: "Reply to an old message you meant to answer." },
   { id: 155, text: "Ask someone for a recommendation and actually try it." },
   { id: 156, text: "Tell someone about something funny you noticed today." },
-  { id: 157, text: "Send a postcard or letter if you have one handy." },
+  { id: 157, text: "Send a long-form email to a loved one." },
   { id: 158, text: "Ask someone what their first job was." },
   { id: 159, text: "Let someone else choose where to eat or what to watch." },
-  { id: 160, text: "Ask someone what they're looking forward to this week." },
+  { id: 160, text: "Ask someone what they're looking forward to next week." },
   { id: 161, text: "Send someone a photo of something that reminded you of them." },
   { id: 162, text: "Introduce yourself to someone you see often but don't know." },
   { id: 163, text: "Ask a shopkeeper or barista what they recommend." },
@@ -183,7 +182,7 @@ const TASKS = Object.freeze([
   { id: 181, text: "Recommend something you genuinely love to one person." },
   { id: 182, text: "Buy or make someone a small treat for no occasion." },
   { id: 183, text: "Ask someone to choose between two options for you." },
-  { id: 184, text: "Have one conversation with your phone left in your pocket." },
+  { id: 184, text: "Wait somewhere without a phone or device out." },
   { id: 185, text: "Ask someone what they did last weekend instead of asking how they are." },
   { id: 186, text: "Message the first person who comes to mind when you hear an old song." },
   { id: 187, text: "Ask someone what skill they'd learn if it took only a day." },
@@ -191,24 +190,24 @@ const TASKS = Object.freeze([
   { id: 189, text: "Tell someone when they made your day easier." },
   { id: 190, text: "Ask someone for a local recommendation you've never tried." },
   { id: 191, text: "Say hello to a neighbor you normally only nod at." },
-  { id: 192, text: "Write down one sentence describing the strangest thing you saw today." },
+  { id: 192, text: "Text a friend, describing the strangest thing you saw today." },
   { id: 193, text: "Draw an object near you without erasing anything." },
   { id: 194, text: "Take five photos of the same object from different angles." },
   { id: 195, text: "Write a six-word story about your day." },
   { id: 196, text: "Make a tiny playlist of exactly five songs." },
   { id: 197, text: "Photograph something that looks like a face." },
-  { id: 198, text: "Write down three overheard phrases without context." },
+  { id: 198, text: "Write down an overheard phrase without context." },
   { id: 199, text: "Sketch the view from where you're sitting." },
   { id: 200, text: "Take a photo that uses a doorway as a frame." },
-  { id: 201, text: "Write a fake headline about something that happened today." },
+  { id: 201, text: "Write an imagined positive headline about your future." },
   { id: 202, text: "Make up a name for a color you see." },
   { id: 203, text: "Take a photo of something that looks cinematic." },
-  { id: 204, text: "Write one paragraph about a stranger you noticed, entirely fictional." },
+  { id: 204, text: "Write one sentence about a stranger you noticed, entirely fictional." },
   { id: 205, text: "Photograph the same place twice, several hours apart." },
-  { id: 206, text: "Write a list of ten things you can hear." },
+  { id: 206, text: "Write a list of ten things you can hear from your home." },
   { id: 207, text: "Draw a map from memory of somewhere familiar." },
   { id: 208, text: "Take a photo with no people and no sky in it." },
-  { id: 209, text: "Write a one-sentence review of your day." },
+  { id: 209, text: "Write a one-sentence review of a good thing in your day." },
   { id: 210, text: "Photograph a texture you like." },
   { id: 211, text: "Make a three-song soundtrack for your afternoon." },
   { id: 212, text: "Write down five objects you can see and invent a story connecting them." },
@@ -216,7 +215,7 @@ const TASKS = Object.freeze([
   { id: 214, text: "Draw your room as if it were a game level." },
   { id: 215, text: "Write a tiny poem about something boring." },
   { id: 216, text: "Photograph something through glass." },
-  { id: 217, text: "Make a list of five things that feel very specific to where you live." },
+  { id: 217, text: "Make a list of five things that feel very specific about where you live." },
   { id: 218, text: "Take a photo where the main subject is very small in the frame." },
   { id: 219, text: "Write down one question you genuinely don't know the answer to." },
   { id: 220, text: "Draw an object using your non-dominant hand." },
@@ -224,7 +223,7 @@ const TASKS = Object.freeze([
   { id: 222, text: "Write a fake product description for something on your desk." },
   { id: 223, text: "Make up a backstory for an abandoned or forgotten object." },
   { id: 224, text: "Photograph three things that share the same color." },
-  { id: 225, text: "Write one line of dialogue you heard or imagined today." },
+  { id: 225, text: "Write one line of dialogue you would love to hear." },
   { id: 226, text: "Take a photo with an intentionally crooked horizon." },
   { id: 227, text: "Invent a name for a shop you pass." },
   { id: 228, text: "Write a postcard-length description of your neighborhood." },
@@ -238,10 +237,10 @@ const TASKS = Object.freeze([
   { id: 236, text: "Take a photo of the most boring object you can find." },
   { id: 237, text: "Invent a movie title for your day." },
   { id: 238, text: "Make a list of things you would put in a time capsule from today." },
-  { id: 239, text: "Write one sentence using a word you rarely use." },
+  { id: 239, text: "Look up, and use a word you would rarely use." },
   { id: 240, text: "Take a photo that has exactly one strong color in it." },
   { id: 241, text: "Photograph something from knee height." },
-  { id: 242, text: "Write three alternate names for a familiar place." },
+  { id: 242, text: "Invent three fictional names for a familiar place." },
   { id: 243, text: "Take a photo of something worn, chipped, faded, or repaired." },
   { id: 244, text: "Spend ten minutes doing nothing while a kettle, timer, or song plays." },
   { id: 245, text: "Leave your phone in another room during one meal." },
@@ -266,12 +265,12 @@ const TASKS = Object.freeze([
   { id: 264, text: "Do one thing more slowly than usual on purpose." },
   { id: 265, text: "Take a different seat at your desk or table." },
   { id: 266, text: "Use your non-dominant hand for one simple routine task." },
-  { id: 267, text: "Eat one meal without rushing." },
+  { id: 267, text: "Eat one meal slowly, without rushing." },
   { id: 268, text: "Put your phone on silent for one hour." },
   { id: 269, text: "Take your shoes off somewhere you normally keep them on, if appropriate." },
   { id: 270, text: "Do one small task immediately instead of adding it to a list." },
-  { id: 271, text: "Choose one room and remove five things that don't belong there." },
-  { id: 272, text: "Spend five minutes cleaning an object you normally never clean." },
+  { id: 271, text: "Choose one room and remove 3 things that don't belong there." },
+  { id: 272, text: "Spend a few minutes cleaning an object you normally never clean." },
   { id: 273, text: "Do one everyday task outdoors if practical." },
   { id: 274, text: "Take a break somewhere other than your usual spot." },
   { id: 275, text: "Turn off autoplay for the evening." },
@@ -279,10 +278,10 @@ const TASKS = Object.freeze([
   { id: 277, text: "Spend one hour without checking the time." },
   { id: 278, text: "Use a paper note instead of your phone for one reminder." },
   { id: 279, text: "Take a deliberately slow walk for ten minutes." },
-  { id: 280, text: "Do one small chore before you feel like doing it." },
+  { id: 280, text: "Do one small chore you've been putting off." },
   { id: 281, text: "Change your phone wallpaper to a photo you took yourself." },
-  { id: 282, text: "Rearrange the apps on your home screen." },
-  { id: 283, text: "Delete five screenshots you don't need." },
+  { id: 282, text: "Rearrange the apps on your home screen to avoid bad habits." },
+  { id: 283, text: "Delete five screenshots or photos you don't need." },
   { id: 284, text: "Unsubscribe from one email you never read." },
   { id: 285, text: "Clear one small drawer, shelf, or folder." },
   { id: 286, text: "Rename a badly named file or folder." },
@@ -292,7 +291,7 @@ const TASKS = Object.freeze([
   { id: 290, text: "Turn off one notification you don't need." },
   { id: 291, text: "Spend ten minutes sorting old photos." },
   { id: 292, text: "Read your oldest note in your notes app." },
-  { id: 293, text: "Open a folder on your computer you haven't looked at in a year." },
+  { id: 293, text: "Open a folder on a device you haven't looked at in a year." },
   { id: 294, text: "Find the oldest photo on your phone you still like." },
   { id: 295, text: "Change one password you've reused for too long." },
   { id: 296, text: "Remove one app you haven't used in months." },
@@ -307,12 +306,12 @@ const TASKS = Object.freeze([
   { id: 305, text: "Walk through a shopping center from a different entrance." },
   { id: 306, text: "Find a place nearby that sells something you've never bought." },
   { id: 307, text: "Visit a local market if one is open today." },
-  { id: 308, text: "Go to a bakery you've passed but never tried." },
+  { id: 308, text: "Go to a bakery or cafe you've passed but never tried." },
   { id: 309, text: "Find a small gallery, museum, or exhibit nearby and see what's on." },
   { id: 310, text: "Visit a train or bus stop you've never used and look around." },
   { id: 311, text: "Browse a shelf at the library chosen by a random number." },
   { id: 312, text: "Find the nearest place with public art." },
-  { id: 313, text: "Go to a neighborhood you know mostly by name." },
+  { id: 313, text: "Go to a neighborhood you know only by name." },
   { id: 314, text: "Visit a store that specializes in one oddly specific thing." },
   { id: 315, text: "Look for the oldest shopfront in your local area." },
   { id: 316, text: "Find a local noticeboard and read everything pinned to it." },
@@ -323,7 +322,7 @@ const TASKS = Object.freeze([
   { id: 321, text: "Find a public path or trail you've never followed." },
   { id: 322, text: "Go somewhere nearby because you like its name." },
   { id: 323, text: "Visit a street with a name that makes you curious." },
-  { id: 324, text: "Find a local place that has been there longer than you've been alive." },
+  { id: 324, text: "Find a local business that is older than you." },
   { id: 325, text: "Take public transport for one stop beyond where you'd normally get off." },
   { id: 326, text: "Get off one stop early and walk the rest of the way." },
   { id: 327, text: "Choose a nearby destination based on the first letter of your name." },
@@ -334,7 +333,7 @@ const TASKS = Object.freeze([
   { id: 332, text: "Go to a part of town you normally pass through without stopping." },
   { id: 333, text: "Find a place nearby with a view you didn't know existed." },
   { id: 334, text: "Look for a plaque, memorial, or historical marker and read it." },
-  { id: 335, text: "Visit the closest street to you that starts with the letter B." },
+  { id: 335, text: "Visit the closest street to you that starts with same letter as your first name." },
   { id: 336, text: "Find somewhere nearby that is open later than you expected." },
   { id: 337, text: "Go into a shop and buy nothing; just notice what they sell." },
   { id: 338, text: "Find a place nearby where you can hear running water." },
@@ -344,7 +343,7 @@ const TASKS = Object.freeze([
   { id: 342, text: "Look for an animal you don't usually notice." },
   { id: 343, text: "Count how many different birds you see in ten minutes." },
   { id: 344, text: "Find three objects shaped like circles outdoors." },
-  { id: 345, text: "Look for something older than you are." },
+  { id: 345, text: "Look for an object that is older than you are." },
   { id: 346, text: "Find something with handwriting on it." },
   { id: 347, text: "Find a number larger than 1000 somewhere in public." },
   { id: 348, text: "Look for something that has been repaired instead of replaced." },
@@ -358,7 +357,7 @@ const TASKS = Object.freeze([
   { id: 356, text: "Notice the color of every front door on one block." },
   { id: 357, text: "Find an object with more than three different materials in it." },
   { id: 358, text: "Look for the oldest car you see today." },
-  { id: 359, text: "Find something with a serial number." },
+  { id: 359, text: "Spend time with someone you care about." },
   { id: 360, text: "Look for an object whose purpose you can't immediately guess." },
   { id: 361, text: "Find something that has clearly changed color with age." },
   { id: 362, text: "Notice a sound you usually tune out." },
@@ -369,7 +368,7 @@ const TASKS = Object.freeze([
 
 const STORAGE_KEY = "scavenger-state-v1";
 const SKIP_COST = 4;
-const CHECK_INTERVAL_MS = 60 * 60 * 1000;
+const CHECK_INTERVAL_MS = 60 * 1000;
 
 const els = {
   body: document.querySelector("body"),
@@ -381,7 +380,12 @@ const els = {
   actions: document.querySelector("#actions"),
   doneButton: document.querySelector("#doneButton"),
   skipButton: document.querySelector("#skipButton"),
-  credits: document.querySelector("#credits")
+  credits: document.querySelector("#credits"),
+  settingsButton: document.querySelector("#settingsButton"),
+  settingsDialog: document.querySelector("#settingsDialog"),
+  closeSettingsButton: document.querySelector("#closeSettingsButton"),
+  clearHistoryButton: document.querySelector("#clearHistoryButton"),
+  settingsStatus: document.querySelector("#settingsStatus")
 };
 
 let state = loadState();
@@ -397,14 +401,17 @@ function defaultState() {
     activeTaskId: null,
     completedToday: false,
     revealedToday: false,
-    remainingTaskIds: []
+    skippedToday: 0
   };
 }
 
 function loadState() {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...(stored || {}) };
+    const loaded = { ...defaultState(), ...(stored || {}) };
+    // Discard the old shuffled deck while preserving credits and streaks.
+    delete loaded.remainingTaskIds;
+    return loaded;
   } catch {
     return defaultState();
   }
@@ -438,23 +445,17 @@ function dayDifference(fromKey, toKey) {
   return Math.round((toUtc - fromUtc) / 86400000);
 }
 
-function shuffledTaskIds() {
-  const ids = TASKS.map(task => task.id);
-
-  for (let i = ids.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [ids[i], ids[j]] = [ids[j], ids[i]];
-  }
-
-  return ids;
+function dayOfYear(date = new Date()) {
+  // Use local calendar components with UTC arithmetic to avoid DST offsets.
+  const today = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+  const yearStart = Date.UTC(date.getFullYear(), 0, 1);
+  return Math.floor((today - yearStart) / 86400000) + 1;
 }
 
-function drawTask() {
-  if (state.remainingTaskIds.length === 0) {
-    state.remainingTaskIds = shuffledTaskIds();
-  }
-
-  state.activeTaskId = state.remainingTaskIds.pop();
+function scheduledTaskId(date = new Date()) {
+  // Day 366 wraps to task 1; paid skips advance through the same ordered list.
+  const index = (dayOfYear(date) - 1 + state.skippedToday) % TASKS.length;
+  return TASKS[index].id;
 }
 
 function getActiveTask() {
@@ -462,18 +463,25 @@ function getActiveTask() {
 }
 
 function checkForNewDay() {
-  const today = localDateKey();
+  const now = new Date();
+  const today = localDateKey(now);
 
   if (!state.activeDate) {
     state.activeDate = today;
     state.completedToday = false;
     state.revealedToday = false;
-    drawTask();
+    state.skippedToday = 0;
+    state.activeTaskId = scheduledTaskId(now);
     saveState();
     return;
   }
 
   if (state.activeDate === today) {
+    const taskId = scheduledTaskId(now);
+    if (state.activeTaskId !== taskId) {
+      state.activeTaskId = taskId;
+      saveState();
+    }
     return;
   }
 
@@ -486,7 +494,8 @@ function checkForNewDay() {
   state.activeDate = today;
   state.completedToday = false;
   state.revealedToday = false;
-  drawTask();
+  state.skippedToday = 0;
+  state.activeTaskId = scheduledTaskId(now);
   saveState();
 }
 
@@ -541,7 +550,8 @@ function skipTask() {
   }
 
   state.points -= SKIP_COST;
-  drawTask();
+  state.skippedToday += 1;
+  state.activeTaskId = scheduledTaskId();
   state.revealedToday = false;
 
   saveState();
@@ -561,6 +571,19 @@ function formatToday() {
   }).format(now);
 
   return `${weekday} · ${date}`.toUpperCase();
+}
+
+function openSettings() {
+  els.settingsStatus.textContent = "";
+  els.settingsDialog.showModal();
+}
+
+function clearHistory() {
+  localStorage.clear();
+  state = defaultState();
+  els.taskCard.classList.remove("completion-spin");
+  render();
+  els.settingsStatus.textContent = "History cleared. You're ready for a fresh start.";
 }
 
 function render() {
@@ -590,7 +613,7 @@ function render() {
     state.completedToday ||
     state.points < SKIP_COST;
 
-  els.skipButton.textContent = `SKIP · −${SKIP_COST} CREDITS`;
+  els.skipButton.textContent = `SKIP −${SKIP_COST} CREDITS`;
 }
 
 els.taskCard.addEventListener("animationend", (event) => {
@@ -602,6 +625,14 @@ els.taskCard.addEventListener("animationend", (event) => {
 els.taskCard.addEventListener("click", revealTask);
 els.doneButton.addEventListener("click", completeTask);
 els.skipButton.addEventListener("click", skipTask);
+els.settingsButton.addEventListener("click", openSettings);
+els.closeSettingsButton.addEventListener("click", () => els.settingsDialog.close());
+els.clearHistoryButton.addEventListener("click", clearHistory);
+
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) render();
+});
+window.addEventListener("focus", render);
 
 checkForNewDay();
 render();
