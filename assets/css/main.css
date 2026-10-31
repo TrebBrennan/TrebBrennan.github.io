@@ -6,6 +6,10 @@ body {
 	height: 100%;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: sans-serif;
 	line-height: 1.8;
@@ -31,6 +35,7 @@ h1, h2, h3, h4 {
 
 .project {
 	padding: 10% 0;
+	position: relative;
 }
 
 .row:after {
@@ -172,7 +177,30 @@ footer .logo img {
 	background-color: #47cf73;
 }
 
+.social #linkedin:hover,
+.social #linkedin:focus {
+	background-color: #0A66C2;
+}
 
+.hint {
+	position:absolute;
+	background-color: white;
+	color: black;
+	aspect-ratio: 1;
+	border-radius: 99em;
+	border: none;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 16px;
+}
+.hint:hover {
+	cursor: pointer;
+}
+.hint:focus-visible {
+	outline:solid 2px #717171;
+	outline-offset: 4px;
+}
 
 /*====== Animation ====== */
 
@@ -193,16 +221,23 @@ footer .logo img {
 	transition: ease opacity 3000ms;
 }
 
+.hint {
+	opacity: 0;
+	transition: opacity 2000ms ease;
+}
+
 .animate .intro h1,
 .animate .intro .content,
 .animate .intro .detail { transform: translateX(0);	opacity: 1; }
 .animate .social { opacity: 1; }
+.animate .hint { opacity: 1; }
 .animate .intro {	height: 90%; }
 
 .animate .a1 { transition-delay: 500ms; }
 .animate .a2 { transition-delay: 1000ms; }
 .animate .a3 { transition-delay: 1500ms; }
 .animate .a4 { transition-delay: 2500ms; }
+.animate .hint { transition-delay: 2500ms; }
 
 /*====== Basic type ====== */
 
@@ -354,6 +389,17 @@ figure.video{
 	/* display: none; */
 }
 
+.award {
+	text-align: right;
+}
+
+.award img{
+	display: inline;
+	width: 100px;
+	opacity: 0.6;
+	margin-top: 2.5em;
+}
+
 /*====== media ====== */
 
 @media (min-width: 768px){
@@ -467,4 +513,9 @@ figure.video{
 #karbon {
 	background:#181818;
 	color:#FFF;
+}
+
+#cba {
+	background: #f3f3eb;
+    color: #353535;
 }
